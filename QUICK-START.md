@@ -48,9 +48,9 @@
 - 响应时间：5分钟内
 
 ### 常见问题
-- [支付失败怎么办？](docs/payment-failure-solution.md)
-- [安全性如何保障？](docs/safety-guarantee.md)
-- [iOS充值原理是什么？](docs/ios-recharge-principle.md)
+- [支付失败怎么办？](/docs/payment-failure-solution/)
+- [安全性如何保障？](/docs/safety-guarantee/)
+- [iOS充值原理是什么？](/docs/ios-recharge-principle/)
 
 ## 💰 价格说明
 
@@ -74,4 +74,4 @@
 
 ---
 
-> 💡 **提示**：如果您是野卡用户，请查看[迁移指南](docs/bewildcard-alternative.md)
+> 💡 **提示**：如果您是野卡用户，请查看[迁移指南](/docs/bewildcard-alternative/)

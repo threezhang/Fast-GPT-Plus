@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .main-box { fill: #667eea; stroke: #5a67d8; stroke-width: 2; }
+      .sub-box { fill: #e7f3ff; stroke: #667eea; stroke-width: 2; }
+      .success-box { fill: #4caf50; stroke: #388e3c; stroke-width: 2; }
+      .text-white { fill: white; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; }
+      .text-dark { fill: #333; font-family: Arial, sans-serif; font-size: 14px; }
+      .text-small { fill: #666; font-family: Arial, sans-serif; font-size: 12px; }
+      .arrow { stroke: #667eea; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+      .arrow-success { stroke: #4caf50; stroke-width: 3; fill: none; marker-end: url(#arrowhead-success); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea" />
+    </marker>
+    <marker id="arrowhead-success" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4caf50" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="text-dark" font-size="24" font-weight="bold">iOS充值流程图</text>
+  
+  <!-- Step 1: User -->
+  <rect class="main-box" x="50" y="80" width="150" height="80" rx="10" />
+  <text x="125" y="115" text-anchor="middle" class="text-white">用户</text>
+  <text x="125" y="140" text-anchor="middle" class="text-white" font-size="14">准备充值</text>
+  
+  <!-- Arrow 1 -->
+  <path class="arrow" d="M200 120 L250 120" />
+  <text x="225" y="110" text-anchor="middle" class="text-small">访问充值页面</text>
+  
+  <!-- Step 2: FastGPTPlus Platform -->
+  <rect class="sub-box" x="250" y="80" width="300" height="80" rx="10" />
+  <text x="400" y="115" text-anchor="middle" class="text-dark" font-weight="bold">FastGPTPlus充值平台</text>
+  <text x="400" y="140" text-anchor="middle" class="text-dark">go.fastgptplus.com</text>
+  
+  <!-- Step 2.1: Fill Info -->
+  <rect class="sub-box" x="100" y="200" width="200" height="60" rx="5" />
+  <text x="200" y="225" text-anchor="middle" class="text-dark">1. 填写邮箱</text>
+  <text x="200" y="245" text-anchor="middle" class="text-small">ChatGPT账号邮箱</text>
+  
+  <!-- Step 2.2: Payment -->
+  <rect class="sub-box" x="320" y="200" width="200" height="60" rx="5" />
+  <text x="420" y="225" text-anchor="middle" class="text-dark">2. 选择支付</text>
+  <text x="420" y="245" text-anchor="middle" class="text-small">支付宝/微信 ¥158</text>
+  
+  <!-- Arrow 2 -->
+  <path class="arrow" d="M200 260 L200 300" />
+  <path class="arrow" d="M420 260 L420 300" />
+  
+  <!-- Step 3: Payment Processing -->
+  <rect class="sub-box" x="150" y="300" width="320" height="80" rx="10" />
+  <text x="310" y="335" text-anchor="middle" class="text-dark" font-weight="bold">支付处理中心</text>
+  <text x="310" y="360" text-anchor="middle" class="text-dark">订单验证 & 支付确认</text>
+  
+  <!-- Arrow 3 -->
+  <path class="arrow" d="M310 380 L310 420" />
+  <text x="350" y="405" text-anchor="left" class="text-small">自动处理</text>
+  
+  <!-- Step 4: iOS Recharge System -->
+  <rect class="main-box" x="150" y="420" width="320" height="80" rx="10" />
+  <text x="310" y="455" text-anchor="middle" class="text-white">iOS充值系统</text>
+  <text x="310" y="480" text-anchor="middle" class="text-white" font-size="14">App Store官方渠道</text>
+  
+  <!-- Arrow 4 -->
+  <path class="arrow" d="M470 460 L520 460" />
+  
+  <!-- Step 5: OpenAI -->
+  <rect class="sub-box" x="520" y="420" width="150" height="80" rx="10" />
+  <text x="595" y="455" text-anchor="middle" class="text-dark" font-weight="bold">OpenAI</text>
+  <text x="595" y="480" text-anchor="middle" class="text-dark">激活Plus</text>
+  
+  <!-- Success Arrow -->
+  <path class="arrow-success" d="M595 420 L595 350 L125 350 L125 280" />
+  
+  <!-- Success Box -->
+  <rect class="success-box" x="50" y="540" width="620" height="40" rx="5" />
+  <text x="360" y="565" text-anchor="middle" class="text-white">充值成功！5分钟内生效，请刷新ChatGPT页面查看</text>
+  
+  <!-- Time indicators -->
+  <text x="680" y="140" text-anchor="left" class="text-small" fill="#4caf50">⏱ 1分钟</text>
+  <text x="680" y="240" text-anchor="left" class="text-small" fill="#4caf50">⏱ 1分钟</text>
+  <text x="680" y="340" text-anchor="left" class="text-small" fill="#4caf50">⏱ 2分钟</text>
+  <text x="680" y="460" text-anchor="left" class="text-small" fill="#4caf50">⏱ 1-2分钟</text>
+  
+  <!-- Total time -->
+  <rect x="600" y="80" width="150" height="40" rx="5" fill="#4caf50" />
+  <text x="675" y="105" text-anchor="middle" class="text-white">总计：5分钟</text>
+</svg>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .step-box { fill: #667eea; stroke: #5a67d8; stroke-width: 2; }
+      .active-box { fill: #4caf50; stroke: #388e3c; stroke-width: 2; }
+      .detail-box { fill: #f8f9fa; stroke: #ddd; stroke-width: 1; }
+      .text-title { fill: #333; font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; }
+      .text-white { fill: white; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; }
+      .text-dark { fill: #333; font-family: Arial, sans-serif; font-size: 14px; }
+      .text-small { fill: #666; font-family: Arial, sans-serif; font-size: 12px; }
+      .arrow { stroke: #667eea; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+      .check { fill: #4caf50; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="text-title">ChatGPT Plus iOS充值步骤详解</text>
+  
+  <!-- Step 1 -->
+  <g transform="translate(100, 100)">
+    <circle cx="30" cy="30" r="25" class="step-box" />
+    <text x="30" y="37" text-anchor="middle" class="text-white">1</text>
+    <text x="80" y="25" class="text-dark" font-weight="bold">访问充值页面</text>
+    <text x="80" y="45" class="text-small">go.fastgptplus.com</text>
+    
+    <rect class="detail-box" x="0" y="70" width="250" height="80" rx="5" />
+    <text x="10" y="90" class="text-small">• 打开浏览器</text>
+    <text x="10" y="110" class="text-small">• 输入网址 go.fastgptplus.com</text>
+    <text x="10" y="130" class="text-small">• 确认HTTPS安全标识</text>
+    <text x="10" y="145" class="text-small" fill="#4caf50">⏱ 用时：30秒</text>
+  </g>
+  
+  <!-- Arrow 1->2 -->
+  <path class="arrow" d="M 350 125 L 400 125" />
+  
+  <!-- Step 2 -->
+  <g transform="translate(450, 100)">
+    <circle cx="30" cy="30" r="25" class="step-box" />
+    <text x="30" y="37" text-anchor="middle" class="text-white">2</text>
+    <text x="80" y="25" class="text-dark" font-weight="bold">填写账号信息</text>
+    <text x="80" y="45" class="text-small">ChatGPT账号邮箱</text>
+    
+    <rect class="detail-box" x="0" y="70" width="250" height="80" rx="5" />
+    <text x="10" y="90" class="text-small">• 输入ChatGPT账号邮箱</text>
+    <text x="10" y="110" class="text-small">• 仔细检查拼写</text>
+    <text x="10" y="130" class="text-small">• 无需密码，安全放心</text>
+    <text x="10" y="145" class="text-small" fill="#4caf50">⏱ 用时：1分钟</text>
+  </g>
+  
+  <!-- Arrow 2->3 -->
+  <path class="arrow" d="M 600 200 L 600 240 L 350 240" />
+  
+  <!-- Step 3 -->
+  <g transform="translate(100, 250)">
+    <circle cx="30" cy="30" r="25" class="step-box" />
+    <text x="30" y="37" text-anchor="middle" class="text-white">3</text>
+    <text x="80" y="25" class="text-dark" font-weight="bold">选择支付方式</text>
+    <text x="80" y="45" class="text-small">支付宝/微信 ¥158</text>
+    
+    <rect class="detail-box" x="0" y="70" width="250" height="100" rx="5" />
+    <text x="10" y="90" class="text-small">• 月度套餐：¥158/月</text>
+    <text x="10" y="110" class="text-small">• 支持支付宝扫码</text>
+    <text x="10" y="130" class="text-small">• 支持微信支付</text>
+    <text x="10" y="150" class="text-small">• 确认金额无误</text>
+    <text x="10" y="165" class="text-small" fill="#4caf50">⏱ 用时：30秒</text>
+  </g>
+  
+  <!-- Arrow 3->4 -->
+  <path class="arrow" d="M 350 275 L 400 275" />
+  
+  <!-- Step 4 -->
+  <g transform="translate(450, 250)">
+    <circle cx="30" cy="30" r="25" class="step-box" />
+    <text x="30" y="37" text-anchor="middle" class="text-white">4</text>
+    <text x="80" y="25" class="text-dark" font-weight="bold">完成支付</text>
+    <text x="80" y="45" class="text-small">扫码支付</text>
+    
+    <rect class="detail-box" x="0" y="70" width="250" height="100" rx="5" />
+    <text x="10" y="90" class="text-small">• 手机扫描二维码</text>
+    <text x="10" y="110" class="text-small">• 确认支付金额</text>
+    <text x="10" y="130" class="text-small">• 输入支付密码</text>
+    <text x="10" y="150" class="text-small">• 保存支付凭证</text>
+    <text x="10" y="165" class="text-small" fill="#4caf50">⏱ 用时：1分钟</text>
+  </g>
+  
+  <!-- Arrow 4->5 -->
+  <path class="arrow" d="M 600 390 L 600 430 L 350 430" />
+  
+  <!-- Step 5 -->
+  <g transform="translate(100, 440)">
+    <circle cx="30" cy="30" r="25" class="active-box" />
+    <text x="30" y="37" text-anchor="middle" class="text-white">5</text>
+    <text x="80" y="25" class="text-dark" font-weight="bold">自动充值处理</text>
+    <text x="80" y="45" class="text-small">系统自动完成</text>
+    
+    <rect class="detail-box" x="0" y="70" width="250" height="80" rx="5" />
+    <text x="10" y="90" class="text-small">• 订单自动确认</text>
+    <text x="10" y="110" class="text-small">• iOS系统充值中</text>
+    <text x="10" y="130" class="text-small">• 激活Plus权限</text>
+    <text x="10" y="145" class="text-small" fill="#4caf50">⏱ 用时：2-3分钟</text>
+  </g>
+  
+  <!-- Arrow 5->6 -->
+  <path class="arrow" d="M 350 465 L 400 465" />
+  
+  <!-- Step 6 -->
+  <g transform="translate(450, 440)">
+    <circle cx="30" cy="30" r="25" class="active-box" />
+    <text x="30" y="37" text-anchor="middle" class="text-white">✓</text>
+    <text x="80" y="25" class="text-dark" font-weight="bold">充值成功</text>
+    <text x="80" y="45" class="text-small">开始使用Plus</text>
+    
+    <rect class="detail-box" x="0" y="70" width="250" height="80" rx="5" />
+    <text x="10" y="90" class="text-small">• 刷新ChatGPT页面</text>
+    <text x="10" y="110" class="text-small">• 查看Plus标识</text>
+    <text x="10" y="130" class="text-small">• 使用GPT-4模型</text>
+    <text x="10" y="145" class="text-small" fill="#4caf50">✅ 全流程完成！</text>
+  </g>
+  
+  <!-- Total time -->
+  <rect x="250" y="580" width="300" height="60" rx="10" fill="#4caf50" />
+  <text x="400" y="605" text-anchor="middle" class="text-white" font-size="18">总用时：5分钟</text>
+  <text x="400" y="625" text-anchor="middle" class="text-white">全程自助，安全便捷</text>
+  
+  <!-- Tips -->
+  <rect x="50" y="660" width="700" height="30" rx="5" fill="#e7f3ff" />
+  <text x="400" y="680" text-anchor="middle" class="text-small">💡 温馨提示：充值过程全自动，无需人工干预。如遇问题，微信客服：laozhangdaichong</text>
+</svg>

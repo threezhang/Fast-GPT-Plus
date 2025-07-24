@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bar-official { fill: #ff6b6b; }
+      .bar-virtual { fill: #feca57; }
+      .bar-ios { fill: #4caf50; }
+      .text-title { fill: #333; font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; }
+      .text-label { fill: #333; font-family: Arial, sans-serif; font-size: 14px; }
+      .text-value { fill: white; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; }
+      .text-small { fill: #666; font-family: Arial, sans-serif; font-size: 12px; }
+      .grid-line { stroke: #e0e0e0; stroke-width: 1; stroke-dasharray: 5,5; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="text-title">ChatGPT Plus充值价格对比【2025年1月】</text>
+  
+  <!-- Y-axis labels -->
+  <text x="90" y="405" text-anchor="end" class="text-label">¥0</text>
+  <text x="90" y="355" text-anchor="end" class="text-label">¥50</text>
+  <text x="90" y="305" text-anchor="end" class="text-label">¥100</text>
+  <text x="90" y="255" text-anchor="end" class="text-label">¥150</text>
+  <text x="90" y="205" text-anchor="end" class="text-label">¥200</text>
+  <text x="90" y="155" text-anchor="end" class="text-label">¥250</text>
+  <text x="90" y="105" text-anchor="end" class="text-label">¥300</text>
+  
+  <!-- Grid lines -->
+  <line class="grid-line" x1="100" y1="350" x2="700" y2="350" />
+  <line class="grid-line" x1="100" y1="300" x2="700" y2="300" />
+  <line class="grid-line" x1="100" y1="250" x2="700" y2="250" />
+  <line class="grid-line" x1="100" y1="200" x2="700" y2="200" />
+  <line class="grid-line" x1="100" y1="150" x2="700" y2="150" />
+  <line class="grid-line" x1="100" y1="100" x2="700" y2="100" />
+  
+  <!-- X and Y axis -->
+  <line x1="100" y1="400" x2="700" y2="400" stroke="#333" stroke-width="2" />
+  <line x1="100" y1="100" x2="100" y2="400" stroke="#333" stroke-width="2" />
+  
+  <!-- Bars -->
+  <!-- Official Credit Card -->
+  <g>
+    <rect class="bar-official" x="150" y="241" width="100" height="159" />
+    <text x="200" y="270" text-anchor="middle" class="text-value">¥159</text>
+    <text x="200" y="420" text-anchor="middle" class="text-label">官方信用卡</text>
+    <text x="200" y="438" text-anchor="middle" class="text-small">需国际卡</text>
+    <text x="200" y="455" text-anchor="middle" class="text-small">+手续费</text>
+  </g>
+  
+  <!-- Virtual Card -->
+  <g>
+    <rect class="bar-virtual" x="350" y="206" width="100" height="194" />
+    <text x="400" y="235" text-anchor="middle" class="text-value">¥194</text>
+    <text x="400" y="420" text-anchor="middle" class="text-label">虚拟卡充值</text>
+    <text x="400" y="438" text-anchor="middle" class="text-small">已停服</text>
+    <text x="400" y="455" text-anchor="middle" class="text-small">风险高</text>
+  </g>
+  
+  <!-- iOS Recharge -->
+  <g>
+    <rect class="bar-ios" x="550" y="242" width="100" height="158" />
+    <text x="600" y="271" text-anchor="middle" class="text-value">¥158</text>
+    <text x="600" y="420" text-anchor="middle" class="text-label">iOS充值</text>
+    <text x="600" y="438" text-anchor="middle" class="text-small">支付宝/微信</text>
+    <text x="600" y="455" text-anchor="middle" class="text-small">最优选择 ✓</text>
+  </g>
+  
+  <!-- Savings indicator -->
+  <g>
+    <path d="M 450 206 L 550 242" stroke="#4caf50" stroke-width="2" stroke-dasharray="5,5" />
+    <rect x="470" y="210" width="60" height="25" fill="#4caf50" rx="5" />
+    <text x="500" y="227" text-anchor="middle" font-family="Arial" font-size="12" fill="white">节省¥36</text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(100, 480)">
+    <rect class="bar-official" x="0" y="0" width="20" height="15" />
+    <text x="25" y="12" class="text-small">官方渠道（需国际信用卡）</text>
+    
+    <rect class="bar-virtual" x="200" y="0" width="20" height="15" />
+    <text x="225" y="12" class="text-small">虚拟卡（已停服/风险高）</text>
+    
+    <rect class="bar-ios" x="400" y="0" width="20" height="15" />
+    <text x="425" y="12" class="text-small">iOS充值（推荐）</text>
+  </g>
+  
+  <!-- Additional info -->
+  <rect x="50" y="60" width="700" height="30" fill="#e7f3ff" rx="5" />
+  <text x="400" y="80" text-anchor="middle" class="text-small">💡 iOS充值通过App Store官方渠道，支持支付宝/微信，是目前最安全、最便捷、最实惠的充值方案</text>
+</svg>
