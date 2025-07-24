@@ -1,0 +1,59 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="money-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+    <linearGradient id="money-secondary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <filter id="money-shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Shield background -->
+  <path d="M24 4C24 4 10 8 10 8V24C10 36 24 44 24 44C24 44 38 36 38 24V8C38 8 24 4 24 4Z" 
+        fill="url(#money-gradient)" 
+        opacity="0.1"/>
+  
+  <!-- Shield outline -->
+  <path d="M24 4C24 4 10 8 10 8V24C10 36 24 44 24 44C24 44 38 36 38 24V8C38 8 24 4 24 4Z" 
+        fill="none" 
+        stroke="url(#money-gradient)" 
+        stroke-width="2"/>
+  
+  <!-- Currency symbol -->
+  <text x="24" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="url(#money-gradient)" filter="url(#money-shadow)">¥</text>
+  
+  <!-- Coins floating -->
+  <g class="floating-coins">
+    <circle cx="15" cy="15" r="4" fill="url(#money-secondary)" opacity="0.6">
+      <animate attributeName="cy" values="15;13;15" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="33" cy="18" r="3" fill="url(#money-secondary)" opacity="0.5">
+      <animate attributeName="cy" values="18;16;18" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="24" cy="38" r="3.5" fill="url(#money-secondary)" opacity="0.6">
+      <animate attributeName="cy" values="38;36;38" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Protection waves -->
+  <g opacity="0.4">
+    <circle cx="24" cy="24" r="15" fill="none" stroke="url(#money-gradient)" stroke-width="0.5">
+      <animate attributeName="r" from="15" to="25" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Check mark overlay -->
+  <path d="M18 24L22 28L30 20" 
+        stroke="white" 
+        stroke-width="2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        fill="none"
+        opacity="0.8"/>
+</svg>

@@ -1,0 +1,87 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="data-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#0891b2"/>
+    </linearGradient>
+    <linearGradient id="data-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+    <filter id="data-blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.5"/>
+    </filter>
+  </defs>
+  
+  <!-- Central node -->
+  <circle cx="24" cy="24" r="6" fill="url(#data-gradient)"/>
+  <circle cx="24" cy="24" r="3" fill="white"/>
+  
+  <!-- Outer nodes -->
+  <g class="outer-nodes">
+    <circle cx="12" cy="12" r="4" fill="url(#data-accent)" opacity="0.8"/>
+    <circle cx="36" cy="12" r="4" fill="url(#data-accent)" opacity="0.8"/>
+    <circle cx="36" cy="36" r="4" fill="url(#data-accent)" opacity="0.8"/>
+    <circle cx="12" cy="36" r="4" fill="url(#data-accent)" opacity="0.8"/>
+  </g>
+  
+  <!-- Connection lines -->
+  <g class="connections" stroke="url(#data-gradient)" stroke-width="1" opacity="0.5">
+    <line x1="24" y1="24" x2="12" y2="12"/>
+    <line x1="24" y1="24" x2="36" y2="12"/>
+    <line x1="24" y1="24" x2="36" y2="36"/>
+    <line x1="24" y1="24" x2="12" y2="36"/>
+  </g>
+  
+  <!-- Data packets animation -->
+  <g class="data-packets">
+    <!-- Packet 1 -->
+    <circle r="2" fill="url(#data-gradient)" filter="url(#data-blur)">
+      <animateMotion dur="3s" repeatCount="indefinite">
+        <mpath href="#path1"/>
+      </animateMotion>
+    </circle>
+    <!-- Packet 2 -->
+    <circle r="2" fill="url(#data-accent)" filter="url(#data-blur)">
+      <animateMotion dur="3s" begin="0.75s" repeatCount="indefinite">
+        <mpath href="#path2"/>
+      </animateMotion>
+    </circle>
+    <!-- Packet 3 -->
+    <circle r="2" fill="url(#data-gradient)" filter="url(#data-blur)">
+      <animateMotion dur="3s" begin="1.5s" repeatCount="indefinite">
+        <mpath href="#path3"/>
+      </animateMotion>
+    </circle>
+    <!-- Packet 4 -->
+    <circle r="2" fill="url(#data-accent)" filter="url(#data-blur)">
+      <animateMotion dur="3s" begin="2.25s" repeatCount="indefinite">
+        <mpath href="#path4"/>
+      </animateMotion>
+    </circle>
+  </g>
+  
+  <!-- Encryption shield overlay -->
+  <g transform="translate(24, 24)" opacity="0.3">
+    <path d="M0 -8C0 -8 -6 -6 -6 -6V-1C-6 5 0 9 0 9C0 9 6 5 6 -1V-6C6 -6 0 -8 0 -8Z" 
+          fill="none" 
+          stroke="url(#data-gradient)" 
+          stroke-width="1">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Security rings -->
+  <circle cx="24" cy="24" r="10" fill="none" stroke="url(#data-gradient)" stroke-width="0.5" opacity="0.3">
+    <animate attributeName="r" from="10" to="15" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Hidden paths for animation -->
+  <defs>
+    <path id="path1" d="M24,24 L12,12 L24,24"/>
+    <path id="path2" d="M24,24 L36,12 L24,24"/>
+    <path id="path3" d="M24,24 L36,36 L24,24"/>
+    <path id="path4" d="M24,24 L12,36 L24,24"/>
+  </defs>
+</svg>
