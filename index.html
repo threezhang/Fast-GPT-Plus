@@ -22,105 +22,320 @@
     
     <link rel="canonical" href="https://threezhang.github.io/Fast-GPT-Plus/">
     
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #f5f5f5;
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#667eea',
+                        secondary: '#764ba2',
+                        success: '#4caf50',
+                        danger: '#ef4444'
+                    }
+                }
+            }
         }
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 60px 40px;
-            border-radius: 10px;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        h1 {
-            margin: 0 0 20px 0;
-            font-size: 2.5em;
-        }
-        .subtitle {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
-        .cta-button {
-            display: inline-block;
-            background: #fff;
-            color: #667eea;
-            padding: 15px 40px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            transition: transform 0.2s;
-        }
-        .cta-button:hover {
-            transform: translateY(-2px);
-        }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
-        }
-        .feature {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .feature h3 {
-            color: #667eea;
-            margin-top: 0;
-        }
-        .links {
-            text-align: center;
-            margin: 40px 0;
-        }
-        .links a {
-            display: inline-block;
-            margin: 0 15px;
-            color: #667eea;
-            text-decoration: none;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <div class="hero">
-        <h1>Fast-GPT-Plus</h1>
-        <p class="subtitle">ChatGPT Plus 充值难？我们帮您5分钟搞定！</p>
-        <p>野卡Bewildcard已停服？这里是最可靠的替代方案</p>
-        <a href="https://go.fastgptplus.com" class="cta-button">立即充值 ¥158/月</a>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Fast-GPT-Plus
+                    </h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/Fast-GPT-Plus/quick-start/" class="text-gray-700 hover:text-primary transition">快速开始</a>
+                    <a href="/Fast-GPT-Plus/docs/bewildcard-alternative/" class="text-gray-700 hover:text-primary transition">野卡替代</a>
+                    <a href="/Fast-GPT-Plus/faq/" class="text-gray-700 hover:text-primary transition">常见问题</a>
+                    <a href="https://github.com/threezhang/Fast-GPT-Plus" class="text-gray-700 hover:text-primary transition">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary to-secondary text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                🚀 ChatGPT Plus快速充值指南 - 5分钟搞定
+            </h2>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">
+                欢迎使用Fast-GPT-Plus！本指南将帮助您快速完成ChatGPT Plus充值，解决支付失败、没有信用卡等问题。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://go.fastgptplus.com" class="inline-flex items-center px-8 py-4 bg-white text-primary font-semibold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition duration-200">
+                    <i class="fas fa-bolt mr-2"></i>
+                    立即充值 ¥158/月
+                </a>
+                <a href="/Fast-GPT-Plus/quick-start/" class="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-primary transition duration-200">
+                    <i class="fas fa-book mr-2"></i>
+                    查看教程
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Sidebar -->
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-xl shadow-sm p-6 sticky top-6">
+                    <h3 class="text-lg font-semibold mb-4 flex items-center">
+                        <i class="fas fa-list-check mr-2 text-primary"></i>
+                        开始之前的准备
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-success mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-medium">ChatGPT账号（需要邮箱地址）</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-success mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-medium">支付宝或微信（余额充足）</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-success mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-medium">5分钟时间（真的很快）</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-lg font-semibold mt-8 mb-4 flex items-center">
+                        <i class="fas fa-times-circle mr-2 text-danger"></i>
+                        您不需要准备的
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-times text-danger mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-medium">国际信用卡（不需要VISA/MasterCard）</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-times text-danger mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-medium">复杂的技术操作（全程自助）</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-times text-danger mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-medium">提供账号密码（只需邮箱）</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-times text-danger mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-medium">虚拟卡或代理（我们用iOS官方渠道）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="lg:col-span-2">
+                <!-- Step by Step Guide -->
+                <div class="bg-white rounded-xl shadow-sm p-8 mb-8">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center">
+                        <span class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">🎯</span>
+                        三步完成ChatGPT Plus充值
+                    </h2>
+                    
+                    <!-- Step 1 -->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center">
+                            <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">1</span>
+                            第1步：访问充值页面
+                        </h3>
+                        <p class="text-gray-700 mb-4">打开 <a href="https://go.fastgptplus.com" class="text-primary hover:underline font-semibold">go.fastgptplus.com</a></p>
+                        <div class="bg-blue-50 border-l-4 border-primary p-4 rounded">
+                            <p class="text-sm"><i class="fas fa-lightbulb mr-2 text-primary"></i>提示：这是我们的自助充值系统，安全快捷</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center">
+                            <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">2</span>
+                            第2步：支付充值费用
+                        </h3>
+                        <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-lg font-medium">价格：</span>
+                                <span class="text-3xl font-bold text-primary">¥158/月</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">比官方便宜20%，支持支付宝/微信支付</p>
+                        </div>
+                        <p class="text-gray-700">使用支付宝或微信扫码支付即可。</p>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center">
+                            <span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">3</span>
+                            第3步：提供账号信息
+                        </h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-success mr-2 mt-1"></i>
+                                <span>输入您的ChatGPT账号邮箱</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-success mr-2 mt-1"></i>
+                                <span>确认信息无误</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-success mr-2 mt-1"></i>
+                                <span>点击提交</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 rounded-full p-3 mr-4">
+                                <i class="fas fa-clock text-primary text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold">极速充值</h3>
+                        </div>
+                        <p class="text-gray-600">通过iOS官方渠道充值，5分钟内完成，无需等待。</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-100 rounded-full p-3 mr-4">
+                                <i class="fas fa-shield-alt text-success text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold">安全可靠</h3>
+                        </div>
+                        <p class="text-gray-600">官方认可渠道，不会触发风控，您的账号100%安全。</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-100 rounded-full p-3 mr-4">
+                                <i class="fas fa-piggy-bank text-primary text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold">价格优惠</h3>
+                        </div>
+                        <p class="text-gray-600">利用汇率差价，仅需¥158/月，比官方价格节省20%以上。</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-yellow-100 rounded-full p-3 mr-4">
+                                <i class="fas fa-headset text-yellow-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold">专业客服</h3>
+                        </div>
+                        <p class="text-gray-600">7×24小时客服支持，微信：laozhangdaichong</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="bg-white rounded-xl shadow-sm p-8">
+                    <h2 class="text-2xl font-bold mb-6">常见问题</h2>
+                    
+                    <div class="space-y-4">
+                        <div class="border-b pb-4">
+                            <h4 class="font-semibold mb-2">Q: 充值后多久生效？</h4>
+                            <p class="text-gray-600">A: 一般5分钟内生效。系统会自动处理订单，确保您能快速使用ChatGPT Plus。</p>
+                        </div>
+                        
+                        <div class="border-b pb-4">
+                            <h4 class="font-semibold mb-2">Q: 需要提供密码吗？</h4>
+                            <p class="text-gray-600">A: 不需要！我们只需要您的邮箱地址，绝不索要密码。</p>
+                        </div>
+                        
+                        <div class="border-b pb-4">
+                            <h4 class="font-semibold mb-2">Q: 支持退款吗？</h4>
+                            <p class="text-gray-600">A: 支持。如果充值失败，我们承诺100%退款。</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold mb-2">Q: 和野卡有什么区别？</h4>
+                            <p class="text-gray-600">A: 野卡已经停服。我们使用iOS官方充值渠道，更安全稳定，不会跑路。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 text-center">
+                        <a href="/Fast-GPT-Plus/faq/" class="text-primary hover:underline font-medium">
+                            查看更多常见问题 →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="features">
-        <div class="feature">
-            <h3>🚀 极速充值</h3>
-            <p>通过iOS官方渠道充值，5分钟内完成，无需等待。支持支付宝、微信支付。</p>
+    <!-- CTA Section -->
+    <section class="bg-gradient-to-r from-primary to-secondary py-16 mt-12">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold text-white mb-4">
+                准备好开启ChatGPT Plus之旅了吗？
+            </h2>
+            <p class="text-xl text-white opacity-90 mb-8">
+                10万+用户的选择，5分钟快速充值，立即体验GPT-4的强大功能
+            </p>
+            <a href="https://go.fastgptplus.com" class="inline-flex items-center px-8 py-4 bg-white text-primary font-semibold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition duration-200">
+                <i class="fas fa-rocket mr-2"></i>
+                立即充值 ChatGPT Plus
+            </a>
         </div>
-        <div class="feature">
-            <h3>🔒 安全可靠</h3>
-            <p>不是虚拟卡！使用官方认可渠道，不会触发风控，您的账号100%安全。</p>
-        </div>
-        <div class="feature">
-            <h3>💰 价格优惠</h3>
-            <p>利用汇率差价，仅需¥158/月，比官方价格节省20%以上。</p>
-        </div>
-    </div>
+    </section>
 
-    <div class="links">
-        <a href="https://github.com/threezhang/Fast-GPT-Plus">📖 查看文档</a>
-        <a href="/Fast-GPT-Plus/quick-start/">🚀 快速开始</a>
-        <a href="/Fast-GPT-Plus/docs/bewildcard-alternative/">🔄 野卡用户迁移</a>
-        <a href="https://fastgptplus.com">🌐 访问官网</a>
-    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Fast-GPT-Plus</h3>
+                    <p class="text-sm">专业的ChatGPT Plus iOS充值服务，野卡最佳替代方案。</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">快速链接</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/Fast-GPT-Plus/quick-start/" class="hover:text-white transition">快速开始</a></li>
+                        <li><a href="/Fast-GPT-Plus/docs/ios-recharge-principle/" class="hover:text-white transition">技术原理</a></li>
+                        <li><a href="/Fast-GPT-Plus/docs/safety-guarantee/" class="hover:text-white transition">安全保障</a></li>
+                        <li><a href="https://github.com/threezhang/Fast-GPT-Plus" class="hover:text-white transition">GitHub</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">联系我们</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-globe mr-2"></i>官网：<a href="https://fastgptplus.com" class="hover:text-white transition">fastgptplus.com</a></li>
+                        <li><i class="fab fa-weixin mr-2"></i>微信：laozhangdaichong</li>
+                        <li><i class="fas fa-envelope mr-2"></i>邮箱：support@fastgptplus.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-sm">
+                <p>&copy; 2025 Fast-GPT-Plus. All rights reserved. | Hosted on GitHub Pages</p>
+            </div>
+        </div>
+    </footer>
 
     <script type="application/ld+json">
     {
