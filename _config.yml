@@ -1,7 +1,9 @@
 # GitHub Pages 配置
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal  # 注释掉默认主题，使用自定义layout
 title: Fast-GPT-Plus - ChatGPT Plus iOS充值服务
 description: 野卡Bewildcard最佳替代方案，支付宝微信快充，5分钟搞定
+baseurl: "/Fast-GPT-Plus"  # GitHub仓库名
+url: "https://threezhang.github.io"  # GitHub Pages URL
 show_downloads: false
 google_analytics: # 添加您的Google Analytics ID
 
@@ -34,3 +36,8 @@ navigation:
 
 # URL设置
 permalink: pretty
+
+# 包含文件夹
+include:
+  - _layouts
+  - docs
