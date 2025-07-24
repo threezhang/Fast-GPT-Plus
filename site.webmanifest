@@ -1,0 +1,24 @@
+{
+    "name": "FastGPTPlus - ChatGPT Plus充值服务",
+    "short_name": "FastGPTPlus",
+    "description": "专业的ChatGPT Plus iOS充值服务，野卡最佳替代方案",
+    "icons": [
+        {
+            "src": "/Fast-GPT-Plus/assets/images/icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/Fast-GPT-Plus/favicon.svg",
+            "sizes": "32x32",
+            "type": "image/svg+xml"
+        }
+    ],
+    "theme_color": "#6366f1",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/Fast-GPT-Plus/",
+    "lang": "zh-CN",
+    "orientation": "portrait"
+}

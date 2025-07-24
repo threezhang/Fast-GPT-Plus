@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="48" viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="plusGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon part -->
+  <g>
+    <!-- Background circle -->
+    <circle cx="24" cy="24" r="20" fill="url(#logoGradient)" opacity="0.1"/>
+    
+    <!-- Lightning bolt for "Fast" -->
+    <path d="M28 14L20 24H24L20 34L32 22H26L28 14Z" fill="url(#logoGradient)"/>
+    
+    <!-- G letter outline -->
+    <path d="M18 18C18 16.8954 18.8954 16 20 16H24V18H20V22H24V20H22V24H24C24 25.1046 23.1046 26 22 26H20C18.8954 26 18 25.1046 18 24V18Z" fill="url(#logoGradient)" opacity="0.8"/>
+  </g>
+  
+  <!-- Text part -->
+  <g>
+    <!-- Fast -->
+    <text x="52" y="22" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#1f2937">Fast</text>
+    
+    <!-- GPT -->
+    <text x="52" y="38" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="url(#logoGradient)">GPT</text>
+    
+    <!-- Plus -->
+    <text x="96" y="38" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="url(#plusGradient)">Plus</text>
+  </g>
+</svg>

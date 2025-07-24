@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="48" height="48" rx="12" fill="url(#iconGradient)"/>
+  
+  <!-- Lightning bolt symbol -->
+  <path d="M28 12L18 24H24L18 36L34 22H26L28 12Z" fill="white" opacity="0.95"/>
+  
+  <!-- Small plus sign -->
+  <path d="M36 14H40V18H36V14Z" fill="white" opacity="0.8"/>
+  <path d="M34 16V12H42V16H34Z" fill="white" opacity="0.8"/>
+</svg>
