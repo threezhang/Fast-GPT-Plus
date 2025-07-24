@@ -11,7 +11,7 @@ ChatGPT Plus iOS充值是利用App Store官方订阅系统，通过汇率差价�
 [![Success Rate](https://img.shields.io/badge/success%20rate-99.9%25-green.svg)](https://fastgptplus.com)
 [![Response Time](https://img.shields.io/badge/avg%20time-4.8min-blue.svg)](https://fastgptplus.com)
 
-**[立即充值](https://go.fastgptplus.com)** | **[技术原理](/docs/ios-recharge-principle/)** | **[安全保障](/docs/safety-guarantee/)** | **[用户案例](/docs/user-stories/)**
+**[立即充值](https://go.fastgptplus.com)** | **[技术原理](/Fast-GPT-Plus/docs/ios-recharge-principle/)** | **[安全保障](/Fast-GPT-Plus/docs/safety-guarantee/)** | **[用户案例](/Fast-GPT-Plus/docs/user-stories/)**
 
 </div>
 
@@ -33,18 +33,18 @@ ChatGPT Plus iOS充值是利用App Store官方订阅系统，通过汇率差价�
 ## 📚 ChatGPT Plus iOS充值服务深度解析
 
 ### 🎯 快速开始
-- 🚀 [**5分钟快速上手**](/quick-start/) - 新手必看，快速完成充值
+- 🚀 [**5分钟快速上手**](/Fast-GPT-Plus/quick-start/) - 新手必看，快速完成充值
 
 ### 热门文档
-- 🎯 [**iOS充值完整指南**](/docs/ios-recharge-complete-guide/) - 4000字超详细教程（必看）
-- 🔄 [**野卡替代方案详解**](/docs/bewildcard-alternative/) - Bewildcard/Yeka用户必看
-- 📱 [**iOS充值原理说明**](/docs/ios-recharge-principle/) - 了解技术原理和合法性
-- 💳 [**支付失败解决方案**](/docs/payment-failure-solution/) - 解决ChatGPT支付问题
-- 🛡️ [**安全保障体系**](/docs/safety-guarantee/) - 多重安全保护措施
+- 🎯 [**iOS充值完整指南**](/Fast-GPT-Plus/docs/ios-recharge-complete-guide/) - 4000字超详细教程（必看）
+- 🔄 [**野卡替代方案详解**](/Fast-GPT-Plus/docs/bewildcard-alternative/) - Bewildcard/Yeka用户必看
+- 📱 [**iOS充值原理说明**](/Fast-GPT-Plus/docs/ios-recharge-principle/) - 了解技术原理和合法性
+- 💳 [**支付失败解决方案**](/Fast-GPT-Plus/docs/payment-failure-solution/) - 解决ChatGPT支付问题
+- 🛡️ [**安全保障体系**](/Fast-GPT-Plus/docs/safety-guarantee/) - 多重安全保护措施
 
 ### 用户案例
-- 📖 [**野卡用户迁移故事**](/docs/user-stories/from-bewildcard/) - 真实迁移经历分享
-- 🌟 [**新手成功案例**](/docs/user-stories/first-time-user/) - 第一次使用ChatGPT Plus
+- 📖 [**野卡用户迁移故事**](/Fast-GPT-Plus/docs/user-stories/from-bewildcard/) - 真实迁移经历分享
+- 🌟 [**新手成功案例**](/Fast-GPT-Plus/docs/user-stories/first-time-user/) - 第一次使用ChatGPT Plus
 
 ## 🎯 为什么选择iOS充值ChatGPT Plus？
 
@@ -62,7 +62,7 @@ ChatGPT Plus iOS充值是利用App Store官方订阅系统，通过汇率差价�
 
 ### 🏆 为什么选择iOS充值而非虚拟卡？
 
-![价格对比图](/assets/images/price-comparison.svg)
+![价格对比图](/Fast-GPT-Plus/assets/images/price-comparison.svg)
 
 #### 技术优势
 - **🔐 更安全**：iOS官方充值渠道，不会触发风控
@@ -78,7 +78,7 @@ ChatGPT Plus iOS充值是利用App Store官方订阅系统，通过汇率差价�
 
 ## 🚀 ChatGPT Plus充值快速开始（野卡替代通道）
 
-![充值步骤图](/assets/images/recharge-steps.svg)
+![充值步骤图](/Fast-GPT-Plus/assets/images/recharge-steps.svg)
 
 ### 第一步：选择充值入口
 
@@ -194,7 +194,7 @@ A: 可以。我们是正规公司，支持开具增值税普通发票。
 
 ## 🛡️ iOS充值安全保障
 
-![安全保障体系](/assets/images/security-system.svg)
+![安全保障体系](/Fast-GPT-Plus/assets/images/security-system.svg)
 
 - ✅ **正规公司运营**：工商注册，可开发票
 - ✅ **官方渠道充值**：100%安全，不影响账号

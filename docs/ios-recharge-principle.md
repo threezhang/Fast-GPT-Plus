@@ -26,7 +26,7 @@ Apple在不同国家/地区的App Store采用不同的定价策略：
 
 ## 🔧 ChatGPT Plus iOS充值技术架构
 
-![充值流程图](/assets/images/ios-recharge-flow.svg)
+![充值流程图](/Fast-GPT-Plus/assets/images/ios-recharge-flow.svg)
 
 ### 系统架构图
 ```

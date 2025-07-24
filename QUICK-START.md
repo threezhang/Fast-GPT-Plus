@@ -48,9 +48,9 @@
 - 响应时间：5分钟内
 
 ### 常见问题
-- [支付失败怎么办？](/docs/payment-failure-solution/)
-- [安全性如何保障？](/docs/safety-guarantee/)
-- [iOS充值原理是什么？](/docs/ios-recharge-principle/)
+- [支付失败怎么办？](/Fast-GPT-Plus/docs/payment-failure-solution/)
+- [安全性如何保障？](/Fast-GPT-Plus/docs/safety-guarantee/)
+- [iOS充值原理是什么？](/Fast-GPT-Plus/docs/ios-recharge-principle/)
 
 ## 💰 价格说明
 
@@ -68,10 +68,10 @@
 
 ## 📚 进阶指南
 
-- [ChatGPT Plus 功能详解](docs/chatgpt-plus-features.md)
-- [高效使用技巧](docs/usage-tips.md)
-- [常用提示词模板](docs/prompt-templates.md)
+- [ChatGPT Plus 功能详解](/Fast-GPT-Plus/docs/chatgpt-plus-features/)
+- [高效使用技巧](/Fast-GPT-Plus/docs/usage-tips/)
+- [常用提示词模板](/Fast-GPT-Plus/docs/prompt-templates/)
 
 ---
 
-> 💡 **提示**：如果您是野卡用户，请查看[迁移指南](/docs/bewildcard-alternative/)
+> 💡 **提示**：如果您是野卡用户，请查看[迁移指南](/Fast-GPT-Plus/docs/bewildcard-alternative/)
