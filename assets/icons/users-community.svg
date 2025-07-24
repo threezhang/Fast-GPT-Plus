@@ -1,0 +1,116 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="users-gradient-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#818cf8"/>
+    </linearGradient>
+    <linearGradient id="users-gradient-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#c084fc"/>
+    </linearGradient>
+    <linearGradient id="users-gradient-3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Connection lines -->
+  <g class="connections" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="2,2">
+    <line x1="16" y1="18" x2="24" y2="24">
+      <animate attributeName="stroke-dashoffset" from="0" to="4" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="32" y1="18" x2="24" y2="24">
+      <animate attributeName="stroke-dashoffset" from="0" to="4" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="24" y1="24" x2="24" y2="36">
+      <animate attributeName="stroke-dashoffset" from="0" to="4" dur="2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- User 1 - Top Left -->
+  <g transform="translate(16, 12)" class="user-1">
+    <circle cx="0" cy="0" r="5" fill="url(#users-gradient-1)">
+      <animate attributeName="r" values="5;5.5;5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M-8 12 Q-8 6 -4 4 Q0 3 0 3 Q0 3 4 4 Q8 6 8 12" 
+          fill="url(#users-gradient-1)" 
+          opacity="0.8"/>
+    <!-- Face icon -->
+    <circle cx="0" cy="-1" r="2" fill="white" opacity="0.9"/>
+    <circle cx="-1" cy="-1.5" r="0.3" fill="#6366f1"/>
+    <circle cx="1" cy="-1.5" r="0.3" fill="#6366f1"/>
+    <path d="M-1 0 Q0 0.5 1 0" stroke="#6366f1" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- User 2 - Top Right -->
+  <g transform="translate(32, 12)" class="user-2">
+    <circle cx="0" cy="0" r="5" fill="url(#users-gradient-2)">
+      <animate attributeName="r" values="5;5.5;5" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M-8 12 Q-8 6 -4 4 Q0 3 0 3 Q0 3 4 4 Q8 6 8 12" 
+          fill="url(#users-gradient-2)" 
+          opacity="0.8"/>
+    <!-- Face icon -->
+    <circle cx="0" cy="-1" r="2" fill="white" opacity="0.9"/>
+    <circle cx="-1" cy="-1.5" r="0.3" fill="#a855f7"/>
+    <circle cx="1" cy="-1.5" r="0.3" fill="#a855f7"/>
+    <path d="M-1 0 Q0 0.5 1 0" stroke="#a855f7" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- User 3 - Bottom Center -->
+  <g transform="translate(24, 30)" class="user-3">
+    <circle cx="0" cy="0" r="5" fill="url(#users-gradient-3)">
+      <animate attributeName="r" values="5;5.5;5" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M-8 12 Q-8 6 -4 4 Q0 3 0 3 Q0 3 4 4 Q8 6 8 12" 
+          fill="url(#users-gradient-3)" 
+          opacity="0.8"/>
+    <!-- Face icon -->
+    <circle cx="0" cy="-1" r="2" fill="white" opacity="0.9"/>
+    <circle cx="-1" cy="-1.5" r="0.3" fill="#10b981"/>
+    <circle cx="1" cy="-1.5" r="0.3" fill="#10b981"/>
+    <path d="M-1 0 Q0 0.5 1 0" stroke="#10b981" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Central connection hub -->
+  <g transform="translate(24, 24)">
+    <circle cx="0" cy="0" r="3" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <circle cx="0" cy="0" r="1.5" fill="url(#users-gradient-1)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Floating particles representing data exchange -->
+  <g class="data-exchange">
+    <circle r="1" fill="#6366f1" opacity="0.6">
+      <animateMotion dur="3s" repeatCount="indefinite">
+        <mpath href="#exchange-path-1"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;0.6;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="1" fill="#a855f7" opacity="0.6">
+      <animateMotion dur="3s" begin="1s" repeatCount="indefinite">
+        <mpath href="#exchange-path-2"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;0.6;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="1" fill="#10b981" opacity="0.6">
+      <animateMotion dur="3s" begin="2s" repeatCount="indefinite">
+        <mpath href="#exchange-path-3"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;0.6;0" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Hidden paths for particle animation -->
+  <defs>
+    <path id="exchange-path-1" d="M16 18 Q24 24 32 18"/>
+    <path id="exchange-path-2" d="M32 18 Q24 24 24 36"/>
+    <path id="exchange-path-3" d="M24 36 Q24 24 16 18"/>
+  </defs>
+  
+  <!-- Background decoration -->
+  <circle cx="24" cy="24" r="22" fill="none" stroke="url(#users-gradient-1)" stroke-width="0.5" opacity="0.2" stroke-dasharray="4,4">
+    <animateTransform attributeName="transform" type="rotate" from="0 24 24" to="360 24 24" dur="30s" repeatCount="indefinite"/>
+  </circle>
+</svg>

@@ -1,0 +1,105 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="success-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+    <filter id="success-glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Outer circle rings -->
+  <g class="rings">
+    <circle cx="24" cy="24" r="20" fill="none" stroke="url(#success-gradient)" stroke-width="0.5" opacity="0.3">
+      <animate attributeName="r" from="20" to="23" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="24" cy="24" r="20" fill="none" stroke="url(#success-gradient)" stroke-width="0.5" opacity="0.3">
+      <animate attributeName="r" from="20" to="23" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="24" cy="24" r="20" fill="none" stroke="url(#success-gradient)" stroke-width="0.5" opacity="0.3">
+      <animate attributeName="r" from="20" to="23" dur="2s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Main circle background -->
+  <circle cx="24" cy="24" r="20" fill="url(#success-gradient)" opacity="0.1"/>
+  
+  <!-- Inner circle -->
+  <circle cx="24" cy="24" r="18" fill="none" stroke="url(#success-gradient)" stroke-width="2">
+    <animate attributeName="stroke-dasharray" values="0 113;113 0" dur="1s" fill="freeze"/>
+  </circle>
+  
+  <!-- Check mark -->
+  <path d="M14 24l7 7 15-15" 
+        stroke="url(#success-gradient)" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        fill="none"
+        filter="url(#success-glow)"
+        stroke-dasharray="35"
+        stroke-dashoffset="35">
+    <animate attributeName="stroke-dashoffset" 
+             to="0" 
+             dur="0.5s" 
+             begin="0.5s"
+             fill="freeze"/>
+  </path>
+  
+  <!-- Sparkle effects -->
+  <g class="sparkles">
+    <!-- Top sparkle -->
+    <g transform="translate(24, 8)">
+      <path d="M0 -2 L0 2 M-2 0 L2 0" stroke="url(#success-gradient)" stroke-width="1" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="45" dur="2s" begin="1s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- Right sparkle -->
+    <g transform="translate(38, 24)">
+      <path d="M0 -2 L0 2 M-2 0 L2 0" stroke="url(#success-gradient)" stroke-width="1" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.3s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="45" dur="2s" begin="1.3s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- Bottom sparkle -->
+    <g transform="translate(24, 40)">
+      <path d="M0 -2 L0 2 M-2 0 L2 0" stroke="url(#success-gradient)" stroke-width="1" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.6s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="45" dur="2s" begin="1.6s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- Left sparkle -->
+    <g transform="translate(10, 24)">
+      <path d="M0 -2 L0 2 M-2 0 L2 0" stroke="url(#success-gradient)" stroke-width="1" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.9s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="45" dur="2s" begin="1.9s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+  
+  <!-- Celebration confetti -->
+  <g class="confetti" opacity="0.8">
+    <rect x="15" y="5" width="2" height="6" rx="1" fill="#10b981" transform="rotate(45 16 8)">
+      <animate attributeName="y" values="5;50" dur="3s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 16 8" to="360 16 8" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="30" y="5" width="2" height="6" rx="1" fill="#34d399" transform="rotate(-45 31 8)">
+      <animate attributeName="y" values="5;50" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 31 8" to="-360 31 8" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

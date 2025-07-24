@@ -7,6 +7,14 @@
     <meta name="description" content="ChatGPT Plus iOS充值服务，野卡最佳替代方案。支持支付宝微信支付，5分钟快速充值，仅需¥158/月。">
     <link rel="canonical" href="https://threezhang.github.io/Fast-GPT-Plus{{ page.url }}">
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Design System CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/design-system.css">
+    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -14,32 +22,164 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#667eea',
-                        secondary: '#764ba2',
-                        success: '#4caf50',
-                        danger: '#ef4444'
+                        primary: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            200: '#c7d2fe',
+                            300: '#a5b4fc',
+                            400: '#818cf8',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#312e81'
+                        },
+                        secondary: {
+                            50: '#faf5ff',
+                            100: '#f3e8ff',
+                            200: '#e9d5ff',
+                            300: '#d8b4fe',
+                            400: '#c084fc',
+                            500: '#a855f7',
+                            600: '#9333ea',
+                            700: '#7e22ce',
+                            800: '#6b21a8',
+                            900: '#581c87'
+                        },
+                        gray: {
+                            50: '#fafafa',
+                            100: '#f4f4f5',
+                            200: '#e4e4e7',
+                            300: '#d4d4d8',
+                            400: '#a1a1aa',
+                            500: '#71717a',
+                            600: '#52525b',
+                            700: '#3f3f46',
+                            800: '#27272a',
+                            900: '#18181b'
+                        },
+                        success: '#10b981',
+                        warning: '#f59e0b',
+                        danger: '#ef4444',
+                        info: '#3b82f6'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'PingFang SC', 'sans-serif']
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'gradient': 'gradient 15s ease infinite'
                     }
                 }
             }
         }
     </script>
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <!-- Custom Styles -->
     <style>
-        /* Custom styles for markdown content */
+        /* Enhanced base styles */
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif;
+            font-feature-settings: 'cv11', 'ss01';
+            font-variation-settings: 'opsz' 32;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Custom cursor styles */
+        .custom-cursor {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--primary-500);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transition: all 0.1s ease;
+            mix-blend-mode: difference;
+        }
+        
+        .custom-cursor.hover {
+            transform: scale(1.5);
+            background: var(--primary-500);
+        }
+        
+        /* Ripple effect */
+        .ripple-effect {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            transform: scale(0);
+            animation: ripple 0.6s ease-out;
+            pointer-events: none;
+        }
+        
+        @keyframes ripple {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+        
+        /* Particle animation */
+        .particle {
+            position: absolute;
+            width: var(--particle-size);
+            height: var(--particle-size);
+            background: var(--particle-color);
+            border-radius: 50%;
+            left: var(--particle-left);
+            bottom: -50px;
+            animation: particle-rise var(--particle-duration) var(--particle-delay) infinite;
+        }
+        
+        @keyframes particle-rise {
+            to {
+                bottom: 100vh;
+                opacity: 0;
+            }
+        }
+        
+        /* Glow effect */
+        .glow-on-hover {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .glow-on-hover::before {
+            content: '';
+            position: absolute;
+            top: var(--glow-y, 50%);
+            left: var(--glow-x, 50%);
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.3) 0%, transparent 70%);
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        
+        .glow-on-hover:hover::before {
+            opacity: 1;
+        }
+        
+        /* Enhanced markdown styles */
         .markdown-content h1 {
-            @apply text-3xl font-bold mb-6 text-gray-900;
+            @apply text-4xl font-light mb-6 text-gray-900 tracking-tight;
         }
         .markdown-content h2 {
-            @apply text-2xl font-bold mb-4 mt-8 text-gray-800 border-b-2 border-primary pb-2;
+            @apply text-2xl font-normal mb-4 mt-8 text-gray-800 border-b border-gray-200 pb-2;
         }
         .markdown-content h3 {
-            @apply text-xl font-semibold mb-3 mt-6 text-gray-800;
+            @apply text-xl font-medium mb-3 mt-6 text-gray-800;
         }
         .markdown-content h4 {
-            @apply text-lg font-semibold mb-2 mt-4 text-gray-700;
+            @apply text-lg font-medium mb-2 mt-4 text-gray-700;
         }
         .markdown-content p {
             @apply mb-4 text-gray-700 leading-relaxed;
@@ -54,64 +194,141 @@
             @apply text-gray-700;
         }
         .markdown-content a {
-            @apply text-primary hover:underline font-medium;
+            @apply text-primary-600 hover:text-primary-700 font-medium transition-colors;
         }
         .markdown-content pre {
-            @apply bg-gray-100 rounded-lg p-4 mb-4 overflow-x-auto;
+            @apply bg-gray-50 rounded-xl p-4 mb-4 overflow-x-auto border border-gray-200;
         }
         .markdown-content code {
-            @apply bg-gray-100 px-2 py-1 rounded text-sm;
+            @apply bg-gray-100 px-2 py-1 rounded-md text-sm font-mono;
         }
         .markdown-content blockquote {
-            @apply border-l-4 border-primary bg-blue-50 p-4 mb-4 italic;
+            @apply border-l-4 border-primary-500 bg-primary-50 p-4 mb-4 rounded-r-lg;
         }
         .markdown-content table {
-            @apply w-full mb-4 border-collapse;
+            @apply w-full mb-4 border-collapse overflow-hidden rounded-lg;
         }
         .markdown-content th {
-            @apply bg-gray-100 border border-gray-300 px-4 py-2 text-left font-semibold;
+            @apply bg-gray-100 border border-gray-200 px-4 py-2 text-left font-medium;
         }
         .markdown-content td {
-            @apply border border-gray-300 px-4 py-2;
+            @apply border border-gray-200 px-4 py-2;
         }
         .markdown-content hr {
-            @apply my-8 border-gray-300;
+            @apply my-8 border-gray-200;
+        }
+        
+        /* Loading animation */
+        .page-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+        
+        .page-loader.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .loader-icon {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--gray-200);
+            border-top-color: var(--primary-500);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
         }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 relative">
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-icon"></div>
+    </div>
+    
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm border-b">
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <a href="{{ site.baseurl }}/" class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                        Fast-GPT-Plus
+                    <a href="{{ site.baseurl }}/" class="flex items-center space-x-2 group">
+                        <!-- Logo SVG -->
+                        <svg class="w-8 h-8" viewBox="0 0 32 32" fill="none">
+                            <defs>
+                                <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6366f1"/>
+                                    <stop offset="100%" style="stop-color:#a855f7"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M16 2L4 8v10c0 7.33 5.07 14.17 12 15.84C22.93 32.17 28 25.33 28 18V8L16 2z" 
+                                  fill="url(#logo-gradient)" 
+                                  class="group-hover:opacity-80 transition-opacity"/>
+                            <path d="M11 15l4 4 9-9" 
+                                  stroke="white" 
+                                  stroke-width="2" 
+                                  stroke-linecap="round" 
+                                  stroke-linejoin="round"
+                                  class="svg-draw"/>
+                        </svg>
+                        <span class="text-xl font-semibold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+                            Fast-GPT-Plus
+                        </span>
                     </a>
                 </div>
-                <div class="flex items-center space-x-4">
-                    <a href="{{ site.baseurl }}/quick-start/" class="text-gray-700 hover:text-primary transition">快速开始</a>
-                    <a href="{{ site.baseurl }}/docs/bewildcard-alternative/" class="text-gray-700 hover:text-primary transition">野卡替代</a>
-                    <a href="{{ site.baseurl }}/faq/" class="text-gray-700 hover:text-primary transition">常见问题</a>
-                    <a href="https://github.com/threezhang/Fast-GPT-Plus" class="text-gray-700 hover:text-primary transition">
-                        <i class="fab fa-github text-xl"></i>
+                <div class="flex items-center space-x-6">
+                    <a href="{{ site.baseurl }}/quick-start/" class="text-gray-600 hover:text-primary-600 transition font-medium">快速开始</a>
+                    <a href="{{ site.baseurl }}/docs/bewildcard-alternative/" class="text-gray-600 hover:text-primary-600 transition font-medium">野卡替代</a>
+                    <a href="{{ site.baseurl }}/faq/" class="text-gray-600 hover:text-primary-600 transition font-medium">常见问题</a>
+                    <a href="https://github.com/threezhang/Fast-GPT-Plus" class="text-gray-600 hover:text-primary-600 transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
                     </a>
                 </div>
             </div>
         </div>
     </nav>
     
-    <!-- Header -->
-    <div class="bg-gradient-to-r from-primary to-secondary py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold text-white">{{ page.title | default: "Fast-GPT-Plus" }}</h1>
-            <p class="text-white opacity-90 mt-2">ChatGPT Plus iOS充值服务 - 野卡最佳替代方案</p>
+    <!-- Header with Abstract Background -->
+    <div class="relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 1200 400" preserveAspectRatio="none">
+                <defs>
+                    <pattern id="grid-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid-pattern)" />
+                <circle cx="100" cy="100" r="80" fill="url(#logo-gradient)" opacity="0.3" class="animate-pulse-slow"/>
+                <circle cx="1100" cy="300" r="120" fill="url(#logo-gradient)" opacity="0.2" class="animate-pulse-slow" style="animation-delay: 1s"/>
+            </svg>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative bg-gradient-to-br from-primary-500 to-secondary-600 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-4xl font-light text-white tracking-tight fade-in">{{ page.title | default: "Fast-GPT-Plus" }}</h1>
+                <p class="text-white/90 mt-3 text-lg font-light">ChatGPT Plus iOS充值服务 - 野卡最佳替代方案</p>
+            </div>
         </div>
     </div>
     
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="bg-white rounded-xl shadow-sm p-8">
+        <div class="glass-card bg-white rounded-2xl p-8 scroll-fade">
             <div class="markdown-content">
                 {{ content }}
             </div>
@@ -119,38 +336,95 @@
     </main>
     
     <!-- CTA Section -->
-    <section class="bg-gradient-to-r from-primary to-secondary py-12 mt-12">
-        <div class="max-w-4xl mx-auto text-center px-4">
-            <h2 class="text-2xl font-bold text-white mb-4">
+    <section class="relative overflow-hidden py-16 mt-12">
+        <!-- Background Gradient Mesh -->
+        <div class="absolute inset-0 gradient-mesh opacity-90"></div>
+        
+        <div class="relative max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-3xl font-light text-white mb-4 fade-in">
                 准备好开启ChatGPT Plus之旅了吗？
             </h2>
-            <p class="text-lg text-white opacity-90 mb-6">
+            <p class="text-lg text-white/90 mb-8 font-light">
                 5分钟快速充值，立即体验GPT-4的强大功能
             </p>
-            <a href="https://go.fastgptplus.com" class="inline-flex items-center px-6 py-3 bg-white text-primary font-semibold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition duration-200">
-                <i class="fas fa-rocket mr-2"></i>
+            <a href="https://go.fastgptplus.com" class="glass-button inline-flex items-center px-8 py-4 text-white font-medium rounded-full hover-lift">
+                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
                 立即充值 ¥158/月
             </a>
         </div>
     </section>
     
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 py-8">
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <p class="text-sm">
-                        <a href="/Fast-GPT-Plus/" class="hover:text-white transition">首页</a> | 
-                        <a href="/Fast-GPT-Plus/quick-start/" class="hover:text-white transition">快速开始</a> | 
-                        <a href="/Fast-GPT-Plus/faq/" class="hover:text-white transition">常见问题</a> | 
-                        <a href="https://fastgptplus.com" class="hover:text-white transition">立即充值</a>
-                    </p>
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-6 h-6" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 2L4 8v10c0 7.33 5.07 14.17 12 15.84C22.93 32.17 28 25.33 28 18V8L16 2z" 
+                                  fill="url(#logo-gradient)" 
+                                  opacity="0.8"/>
+                            <path d="M11 15l4 4 9-9" 
+                                  stroke="white" 
+                                  stroke-width="2" 
+                                  stroke-linecap="round" 
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        <span class="text-lg font-semibold">Fast-GPT-Plus</span>
+                    </div>
+                    <p class="text-sm text-gray-400">专业的ChatGPT Plus充值服务</p>
                 </div>
-                <div class="text-sm">
-                    <p>&copy; 2025 Fast-GPT-Plus. All rights reserved.</p>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="{{ site.baseurl }}/" class="text-sm hover:text-white transition">首页</a></li>
+                        <li><a href="{{ site.baseurl }}/quick-start/" class="text-sm hover:text-white transition">快速开始</a></li>
+                        <li><a href="{{ site.baseurl }}/faq/" class="text-sm hover:text-white transition">常见问题</a></li>
+                    </ul>
                 </div>
+                
+                <!-- Resources -->
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">资源</h3>
+                    <ul class="space-y-2">
+                        <li><a href="{{ site.baseurl }}/docs/ios-recharge-principle/" class="text-sm hover:text-white transition">技术原理</a></li>
+                        <li><a href="{{ site.baseurl }}/docs/safety-guarantee/" class="text-sm hover:text-white transition">安全保障</a></li>
+                        <li><a href="https://github.com/threezhang/Fast-GPT-Plus" class="text-sm hover:text-white transition">GitHub</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">立即充值</h3>
+                    <a href="https://fastgptplus.com" class="inline-flex items-center px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition">
+                        访问充值网站
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-sm text-gray-400">&copy; 2025 Fast-GPT-Plus. All rights reserved.</p>
             </div>
         </div>
     </footer>
+    
+    <!-- Scripts -->
+    <script src="{{ site.baseurl }}/assets/js/animations.js"></script>
+    <script>
+        // Hide loader when page is ready
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('pageLoader').classList.add('hidden');
+            }, 300);
+        });
+    </script>
 </body>
 </html>

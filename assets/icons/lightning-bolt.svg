@@ -1,0 +1,41 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lightning-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="50%" style="stop-color:#818cf8"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Lightning bolt shape -->
+  <path d="M28 2L12 20h10L16 46l20-28H24L28 2z" 
+        fill="url(#lightning-gradient)" 
+        filter="url(#glow)"
+        class="lightning-path"/>
+  
+  <!-- Animated spark lines -->
+  <g class="spark-lines" opacity="0.6">
+    <path d="M8 24L2 22" stroke="#6366f1" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M40 20L46 18" stroke="#a855f7" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M38 32L44 34" stroke="#818cf8" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Pulse effect -->
+  <circle cx="24" cy="24" r="20" fill="none" stroke="url(#lightning-gradient)" stroke-width="0.5" opacity="0">
+    <animate attributeName="r" from="20" to="35" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

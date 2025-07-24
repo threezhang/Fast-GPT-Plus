@@ -1,0 +1,59 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shield-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <pattern id="shield-pattern" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.5" fill="#10b981" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Shield background -->
+  <path d="M24 2L6 10v14c0 11.1 7.67 21.47 18 24 10.33-2.53 18-12.9 18-24V10L24 2z" 
+        fill="url(#shield-pattern)" 
+        stroke="url(#shield-gradient)" 
+        stroke-width="2"/>
+  
+  <!-- Shield inner glow -->
+  <path d="M24 6L10 12.5v11.5c0 8.5 5.83 16.45 14 18.7 8.17-2.25 14-10.2 14-18.7V12.5L24 6z" 
+        fill="url(#shield-gradient)" 
+        opacity="0.1"/>
+  
+  <!-- Check mark -->
+  <g class="check-mark">
+    <path d="M16 23l6 6 12-12" 
+          stroke="url(#shield-gradient)" 
+          stroke-width="3" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"
+          fill="none"
+          stroke-dasharray="30"
+          stroke-dashoffset="30">
+      <animate attributeName="stroke-dashoffset" 
+               to="0" 
+               dur="0.5s" 
+               begin="0.5s"
+               fill="freeze"/>
+    </path>
+  </g>
+  
+  <!-- Security waves -->
+  <g opacity="0.5">
+    <circle cx="24" cy="24" r="18" fill="none" stroke="url(#shield-gradient)" stroke-width="0.5">
+      <animate attributeName="r" from="18" to="28" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="24" cy="24" r="18" fill="none" stroke="url(#shield-gradient)" stroke-width="0.5">
+      <animate attributeName="r" from="18" to="28" dur="3s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Lock icon overlay -->
+  <g transform="translate(24, 24)" opacity="0.3">
+    <rect x="-6" y="-3" width="12" height="9" rx="1" fill="url(#shield-gradient)"/>
+    <path d="M-4 -3v-3a4 4 0 0 1 8 0v3" stroke="url(#shield-gradient)" stroke-width="2" fill="none"/>
+    <circle cx="0" cy="2" r="1" fill="white"/>
+  </g>
+</svg>
