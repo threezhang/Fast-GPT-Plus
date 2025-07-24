@@ -26,8 +26,11 @@ social:
 # 导航菜单
 navigation:
   - title: 快速开始
-    url: /QUICK-START
+    url: /quick-start/
   - title: 野卡替代方案
-    url: /docs/bewildcard-alternative
+    url: /docs/bewildcard-alternative/
   - title: 常见问题
-    url: /docs/payment-failure-solution
+    url: /docs/payment-failure-solution/
+
+# URL设置
+permalink: pretty
