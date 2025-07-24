@@ -1,217 +1,185 @@
 ---
 layout: default
-title: iOS充值技术原理 - ChatGPT Plus充值
+title: iOS充值ChatGPT Plus技术原理详解 - Fast-GPT-Plus
 permalink: /docs/ios-recharge-principle/
 ---
 
-<div class="max-w-4xl mx-auto">
-  <!-- Page Header -->
-  <div class="mb-12 scroll-fade">
-    <h1 class="text-4xl font-light mb-6 text-gray-900 tracking-tight">
-      iOS充值ChatGPT Plus技术原理详解
-    </h1>
-    
-    <div class="glass-card bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-6 mb-8">
-      <div class="flex items-start">
-        <img src="/Fast-GPT-Plus/assets/icons/tech-circuit.svg" class="w-12 h-12 mr-4" alt="Tech">
-        <p class="text-gray-800 leading-relaxed">
-          iOS充值技术是通过App Store官方订阅系统，利用汇率差价实现低成本ChatGPT Plus充值的合法方案。本文深入解析其技术架构、实现原理和安全机制，帮助您理解为什么这是野卡最佳替代方案。
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- Hero Section -->
+    <div class="text-center mb-12 scroll-fade">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+            📱 iOS充值ChatGPT Plus技术原理详解【2025最新】
+        </h1>
+        <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+            iOS充值技术是通过App Store官方订阅系统，利用汇率差价实现低成本ChatGPT Plus充值的合法方案。本文深入解析其技术架构、实现原理和安全机制。
         </p>
-      </div>
     </div>
-  </div>
 
-  <!-- iOS充值核心原理 -->
-  <section class="mb-12 scroll-fade">
-    <h2 class="text-2xl font-medium mb-8 text-gray-800 border-b border-gray-200 pb-3">
-      iOS充值核心原理：全球汇率差价
-    </h2>
+    <!-- Core Principle Section -->
+    <div class="glass-card bg-white rounded-2xl p-8 mb-8">
+        <h2 class="text-2xl font-semibold mb-6 flex items-center">
+            <div class="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl p-3 mr-4">
+                <svg class="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 2v20M2 12h20M16.24 7.76l-8.48 8.48M7.76 7.76l8.48 8.48"/>
+                </svg>
+            </div>
+            🌍 iOS充值核心原理：全球汇率差价
+        </h2>
 
-    <div class="space-y-6">
-      <!-- App Store定价机制 -->
-      <div class="glass-card bg-white rounded-2xl p-6 hover-lift">
-        <h3 class="text-xl font-medium mb-4 text-gray-800 flex items-center">
-          <svg class="w-6 h-6 mr-3" viewBox="0 0 24 24" fill="none" stroke="url(#gradient-pricing)" stroke-width="2">
-            <defs>
-              <linearGradient id="gradient-pricing" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#6366f1"/>
-                <stop offset="100%" style="stop-color:#a855f7"/>
-              </linearGradient>
-            </defs>
-            <circle cx="12" cy="12" r="10"/>
-            <path d="M12 2v20M2 12h20M16.24 7.76l-8.48 8.48M7.76 7.76l8.48 8.48"/>
-          </svg>
-          1. App Store定价机制
-        </h3>
-        <p class="text-gray-700 mb-4">Apple在不同国家/地区的App Store采用不同的定价策略：</p>
-        <div class="grid md:grid-cols-3 gap-4">
-          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4">
-            <svg class="w-8 h-8 mb-2 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10 2a8 8 0 100 16 8 8 0 000-16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z"/>
-            </svg>
-            <h4 class="font-medium text-gray-800 mb-1">考虑当地购买力</h4>
-            <p class="text-sm text-gray-600">根据各地区经济水平调整</p>
-          </div>
-          <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4">
-            <svg class="w-8 h-8 mb-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-            </svg>
-            <h4 class="font-medium text-gray-800 mb-1">适应当地市场</h4>
-            <p class="text-sm text-gray-600">符合区域消费习惯</p>
-          </div>
-          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-4">
-            <svg class="w-8 h-8 mb-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
-            </svg>
-            <h4 class="font-medium text-gray-800 mb-1">汇率浮动调整</h4>
-            <p class="text-sm text-gray-600">动态优化价格策略</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 价格对比表 -->
-      <div class="glass-card bg-white rounded-2xl overflow-hidden">
-        <h3 class="text-xl font-medium p-6 pb-4 text-gray-800">2. ChatGPT Plus在各地区价格对比</h3>
-        <div class="overflow-x-auto">
-          <table class="w-full">
-            <thead>
-              <tr class="bg-gradient-to-r from-primary-600 to-secondary-600 text-white">
-                <th class="px-6 py-4 text-left font-medium">地区</th>
-                <th class="px-6 py-4 text-left font-medium">本地价格</th>
-                <th class="px-6 py-4 text-left font-medium">折合人民币</th>
-                <th class="px-6 py-4 text-left font-medium">对比官方</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-              <tr class="hover:bg-gray-50 transition-colors">
-                <td class="px-6 py-4">
-                  <div class="flex items-center">
-                    <span class="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
-                    美国
-                  </div>
-                </td>
-                <td class="px-6 py-4 font-mono">$19.99</td>
-                <td class="px-6 py-4 font-medium">¥144</td>
-                <td class="px-6 py-4">
-                  <span class="text-gray-600 text-sm">基准价</span>
-                </td>
-              </tr>
-              <tr class="hover:bg-gray-50 transition-colors">
-                <td class="px-6 py-4">
-                  <div class="flex items-center">
-                    <span class="w-2 h-2 bg-red-600 rounded-full mr-2"></span>
-                    土耳其
-                  </div>
-                </td>
-                <td class="px-6 py-4 font-mono">₺649</td>
-                <td class="px-6 py-4 font-medium">¥136</td>
-                <td class="px-6 py-4">
-                  <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                    -5.6%
-                  </span>
-                </td>
-              </tr>
-              <tr class="hover:bg-gray-50 transition-colors">
-                <td class="px-6 py-4">
-                  <div class="flex items-center">
-                    <span class="w-2 h-2 bg-orange-600 rounded-full mr-2"></span>
-                    印度
-                  </div>
-                </td>
-                <td class="px-6 py-4 font-mono">₹1,999</td>
-                <td class="px-6 py-4 font-medium">¥175</td>
-                <td class="px-6 py-4">
-                  <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">
-                    +21.5%
-                  </span>
-                </td>
-              </tr>
-              <tr class="bg-gradient-to-r from-green-50 to-emerald-50">
-                <td class="px-6 py-4 font-semibold">
-                  <div class="flex items-center">
-                    <span class="w-2 h-2 bg-green-600 rounded-full mr-2"></span>
-                    特定地区
-                  </div>
-                </td>
-                <td class="px-6 py-4 font-semibold">优惠价</td>
-                <td class="px-6 py-4 font-bold text-green-600">¥110-130</td>
-                <td class="px-6 py-4">
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
-                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+        <!-- App Store Pricing Mechanism -->
+        <div class="mb-8">
+            <h3 class="text-xl font-medium mb-4">1. App Store定价机制</h3>
+            <p class="text-gray-700 mb-4">Apple在不同国家/地区的App Store采用不同的定价策略：</p>
+            
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4">
+                    <svg class="w-8 h-8 mb-2 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 2a8 8 0 100 16 8 8 0 000-16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z"/>
                     </svg>
-                    -24%
-                  </span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                    <h4 class="font-medium text-gray-800 mb-1">考虑当地购买力</h4>
+                    <p class="text-sm text-gray-600">根据各地区经济水平调整</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4">
+                    <svg class="w-8 h-8 mb-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                    </svg>
+                    <h4 class="font-medium text-gray-800 mb-1">适应当地市场</h4>
+                    <p class="text-sm text-gray-600">符合区域消费习惯</p>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-4">
+                    <svg class="w-8 h-8 mb-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                    </svg>
+                    <h4 class="font-medium text-gray-800 mb-1">汇率浮动调整</h4>
+                    <p class="text-sm text-gray-600">动态优化价格策略</p>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- 合法性说明 -->
-      <div class="glass-card bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6">
-        <h3 class="text-xl font-medium mb-4 text-gray-800 flex items-center">
-          <img src="/Fast-GPT-Plus/assets/icons/shield-security.svg" class="w-8 h-8 mr-3" alt="Security">
-          3. 合法性说明
-        </h3>
-        <div class="grid md:grid-cols-3 gap-4">
-          <div class="bg-white rounded-xl p-4">
-            <svg class="w-10 h-10 text-green-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-            </svg>
-            <h4 class="font-semibold text-gray-800 mb-1">完全合法</h4>
-            <p class="text-sm text-gray-600">利用汇率差价是正常商业行为</p>
-          </div>
-          <div class="bg-white rounded-xl p-4">
-            <svg class="w-10 h-10 text-green-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-            <h4 class="font-semibold text-gray-800 mb-1">官方认可</h4>
-            <p class="text-sm text-gray-600">通过App Store官方渠道订阅</p>
-          </div>
-          <div class="bg-white rounded-xl p-4">
-            <svg class="w-10 h-10 text-green-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-            <h4 class="font-semibold text-gray-800 mb-1">类似代购</h4>
-            <p class="text-sm text-gray-600">本质上是"数字产品代购"</p>
-          </div>
+        <!-- Price Comparison Table -->
+        <div class="mb-8">
+            <h3 class="text-xl font-medium mb-4">2. ChatGPT Plus在各地区价格对比</h3>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-primary-600 to-secondary-600 text-white">
+                            <th class="px-6 py-4 text-left font-medium">地区</th>
+                            <th class="px-6 py-4 text-left font-medium">本地价格</th>
+                            <th class="px-6 py-4 text-left font-medium">折合人民币</th>
+                            <th class="px-6 py-4 text-left font-medium">对比官方</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="px-6 py-4">
+                                <div class="flex items-center">
+                                    <span class="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                                    美国
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 font-mono">$19.99</td>
+                            <td class="px-6 py-4 font-medium">¥144</td>
+                            <td class="px-6 py-4">
+                                <span class="text-gray-600 text-sm">基准价</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="px-6 py-4">
+                                <div class="flex items-center">
+                                    <span class="w-2 h-2 bg-red-600 rounded-full mr-2"></span>
+                                    土耳其
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 font-mono">₺649</td>
+                            <td class="px-6 py-4 font-medium">¥136</td>
+                            <td class="px-6 py-4">
+                                <span class="text-green-600 text-sm">-5.6%</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="px-6 py-4">
+                                <div class="flex items-center">
+                                    <span class="w-2 h-2 bg-orange-600 rounded-full mr-2"></span>
+                                    印度
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 font-mono">₹1,999</td>
+                            <td class="px-6 py-4 font-medium">¥175</td>
+                            <td class="px-6 py-4">
+                                <span class="text-red-600 text-sm">+21.5%</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition-colors bg-green-50">
+                            <td class="px-6 py-4">
+                                <div class="flex items-center">
+                                    <span class="w-2 h-2 bg-green-600 rounded-full mr-2"></span>
+                                    <strong>特定地区</strong>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 font-mono font-semibold">优惠价</td>
+                            <td class="px-6 py-4 font-bold text-green-600">¥110-130</td>
+                            <td class="px-6 py-4">
+                                <span class="text-green-600 font-semibold">-24%</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-      </div>
+
+        <!-- Legality Note -->
+        <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-xl">
+            <h3 class="font-semibold text-green-800 mb-2">3. 合法性说明</h3>
+            <ul class="space-y-1 text-green-700">
+                <li>✅ <strong>完全合法</strong>：利用汇率差价是正常商业行为</li>
+                <li>✅ <strong>官方认可</strong>：通过App Store官方渠道订阅</li>
+                <li>✅ <strong>类似代购</strong>：本质上是"数字产品代购"</li>
+            </ul>
+        </div>
     </div>
-  </section>
 
-  <!-- 技术架构 -->
-  <section class="mb-12 scroll-fade">
-    <h2 class="text-2xl font-medium mb-8 text-gray-800 border-b border-gray-200 pb-3">
-      ChatGPT Plus iOS充值技术架构
-    </h2>
+    <!-- Technical Architecture -->
+    <div class="glass-card bg-white rounded-2xl p-8 mb-8">
+        <h2 class="text-2xl font-semibold mb-6 flex items-center">
+            <div class="bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl p-3 mr-4">
+                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                </svg>
+            </div>
+            🔧 ChatGPT Plus iOS充值技术架构
+        </h2>
 
-    <!-- 系统架构图 -->
-    <div class="glass-card bg-gray-50 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-medium mb-4 text-gray-800">系统架构图</h3>
-      <div class="bg-white p-6 rounded-xl">
-        <img src="/Fast-GPT-Plus/assets/images/ios-recharge-flow.svg" alt="System Architecture" class="w-full h-auto">
-      </div>
-    </div>
-
-    <!-- 技术实现场景 -->
-    <div class="space-y-6">
-      <!-- 场景1：高并发充值处理 -->
-      <div class="glass-card bg-white rounded-2xl p-6">
-        <h3 class="text-xl font-medium mb-4 text-gray-800">技术实现场景1：高并发充值处理</h3>
-        
-        <div class="mb-4">
-          <p class="text-gray-700 mb-3">
-            <strong>场景描述</strong>：当多个用户同时发起充值请求时，系统如何保证每个订单都能在5分钟内完成。
-          </p>
+        <!-- System Architecture Diagram -->
+        <div class="bg-gray-50 rounded-xl p-6 mb-6 overflow-x-auto">
+            <pre class="text-sm text-gray-700 font-mono">
+用户端                 FastGPTPlus系统              iOS充值系统
+   │                        │                          │
+   ├─────[提交订单]──────→ │                          │
+   │                        ├──[订单验证]──→         │
+   │                        │                          │
+   │                        ├──[汇率计算]──→         │
+   │                        │                          │
+   │                        │←─[充值请求]───────────→│
+   │                        │                          │
+   │                        │                    [处理充值]
+   │                        │                          │
+   │←─────[充值成功]──────┼←─────[回调通知]───────┤
+            </pre>
         </div>
 
-        <div class="mb-4">
-          <p class="font-medium text-gray-800 mb-2">技术方案：</p>
-          <div class="bg-gray-50 p-4 rounded-xl overflow-x-auto">
-            <pre class="language-javascript"><code>// 充值队列管理系统
+        <!-- Technical Implementation Scenarios -->
+        <div class="space-y-6">
+            <!-- Scenario 1 -->
+            <div class="border-l-4 border-primary-500 pl-6">
+                <h3 class="text-lg font-semibold mb-2">技术实现场景1：高并发充值处理</h3>
+                <p class="text-gray-700 mb-3"><strong>场景描述</strong>：当多个用户同时发起充值请求时，系统如何保证每个订单都能在5分钟内完成。</p>
+                
+                <div class="bg-gray-50 rounded-xl p-4 mb-3">
+                    <p class="text-sm font-medium text-gray-800 mb-2">技术方案：</p>
+                    <pre class="text-xs text-gray-700 overflow-x-auto">
+// 充值队列管理系统
 class RechargeQueueManager {
   constructor() {
     this.queue = new PriorityQueue();
@@ -226,43 +194,34 @@ class RechargeQueueManager {
     // 动态调度工作线程
     return this.scheduleWorker();
   }
-}</code></pre>
-          </div>
-        </div>
-
-        <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-4">
-          <p class="font-medium text-gray-800 mb-3">效果验证：</p>
-          <div class="grid md:grid-cols-3 gap-4">
-            <div class="bg-white rounded-lg p-3 text-center">
-              <div class="text-2xl font-bold text-green-600">4.8分钟</div>
-              <p class="text-sm text-gray-600">平均处理时间</p>
+}</pre>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-primary-600">4.8分钟</p>
+                        <p class="text-sm text-gray-600">平均处理时间</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-primary-600">100笔/分钟</p>
+                        <p class="text-sm text-gray-600">并发处理能力</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-primary-600">99.9%</p>
+                        <p class="text-sm text-gray-600">成功率</p>
+                    </div>
+                </div>
             </div>
-            <div class="bg-white rounded-lg p-3 text-center">
-              <div class="text-2xl font-bold text-blue-600">100笔/分钟</div>
-              <p class="text-sm text-gray-600">并发处理能力</p>
-            </div>
-            <div class="bg-white rounded-lg p-3 text-center">
-              <div class="text-2xl font-bold text-purple-600">99.9%</div>
-              <p class="text-sm text-gray-600">成功率</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- 场景2：智能汇率优化 -->
-      <div class="glass-card bg-white rounded-2xl p-6">
-        <h3 class="text-xl font-medium mb-4 text-gray-800">技术实现场景2：智能汇率优化</h3>
-        
-        <div class="mb-4">
-          <p class="text-gray-700 mb-3">
-            <strong>场景描述</strong>：实时监控全球多个地区的App Store汇率，自动选择最优充值路径。
-          </p>
-        </div>
-
-        <div class="mb-4">
-          <p class="font-medium text-gray-800 mb-2">技术实现：</p>
-          <div class="bg-gray-50 p-4 rounded-xl overflow-x-auto">
-            <pre class="language-python"><code># 汇率监控与决策系统
+            <!-- Scenario 2 -->
+            <div class="border-l-4 border-secondary-500 pl-6">
+                <h3 class="text-lg font-semibold mb-2">技术实现场景2：智能汇率优化</h3>
+                <p class="text-gray-700 mb-3"><strong>场景描述</strong>：实时监控全球多个地区的App Store汇率，自动选择最优充值路径。</p>
+                
+                <div class="bg-gray-50 rounded-xl p-4 mb-3">
+                    <p class="text-sm font-medium text-gray-800 mb-2">技术实现：</p>
+                    <pre class="text-xs text-gray-700 overflow-x-auto">
+# 汇率监控与决策系统
 class ExchangeRateOptimizer:
     def __init__(self):
         self.regions = ['TR', 'IN', 'BR', 'PH']  # 监控地区
@@ -281,43 +240,34 @@ class ExchangeRateOptimizer:
             for region in self.regions
         }
         
-        return max(scores, key=scores.get)</code></pre>
-          </div>
-        </div>
-
-        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4">
-          <p class="font-medium text-gray-800 mb-3">优化效果：</p>
-          <div class="grid md:grid-cols-3 gap-4">
-            <div class="bg-white rounded-lg p-3 text-center">
-              <div class="text-2xl font-bold text-blue-600">15-25%</div>
-              <p class="text-sm text-gray-600">汇率优化节省</p>
+        return max(scores, key=scores.get)</pre>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-secondary-600">15-25%</p>
+                        <p class="text-sm text-gray-600">汇率优化节省</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-secondary-600">每5分钟</p>
+                        <p class="text-sm text-gray-600">动态调整频率</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-secondary-600">¥126/月</p>
+                        <p class="text-sm text-gray-600">平均成本优化</p>
+                    </div>
+                </div>
             </div>
-            <div class="bg-white rounded-lg p-3 text-center">
-              <div class="text-2xl font-bold text-indigo-600">每5分钟</div>
-              <p class="text-sm text-gray-600">动态调整频率</p>
-            </div>
-            <div class="bg-white rounded-lg p-3 text-center">
-              <div class="text-2xl font-bold text-purple-600">¥126/月</div>
-              <p class="text-sm text-gray-600">平均成本优化</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- 场景3：安全防护体系 -->
-      <div class="glass-card bg-white rounded-2xl p-6">
-        <h3 class="text-xl font-medium mb-4 text-gray-800">技术实现场景3：安全防护体系</h3>
-        
-        <div class="mb-4">
-          <p class="text-gray-700 mb-3">
-            <strong>场景描述</strong>：防止恶意充值、保护用户隐私、确保资金安全。
-          </p>
-        </div>
-
-        <div class="mb-4">
-          <p class="font-medium text-gray-800 mb-2">多层防护架构：</p>
-          <div class="bg-gray-50 p-4 rounded-xl overflow-x-auto">
-            <pre class="language-yaml"><code>安全层级:
+            <!-- Scenario 3 -->
+            <div class="border-l-4 border-green-500 pl-6">
+                <h3 class="text-lg font-semibold mb-2">技术实现场景3：安全防护体系</h3>
+                <p class="text-gray-700 mb-3"><strong>场景描述</strong>：防止恶意充值、保护用户隐私、确保资金安全。</p>
+                
+                <div class="bg-gray-50 rounded-xl p-4 mb-3">
+                    <p class="text-sm font-medium text-gray-800 mb-2">多层防护架构：</p>
+                    <pre class="text-xs text-gray-700 overflow-x-auto">
+安全层级:
   L1_接入层:
     - IP限流: 100次/小时
     - 设备指纹: 防止批量攻击
@@ -331,525 +281,415 @@ class ExchangeRateOptimizer:
   L3_数据层:
     - 敏感信息加密: AES-256
     - 操作日志: 全链路追踪
-    - 备份机制: 实时多地备份</code></pre>
-          </div>
+    - 备份机制: 实时多地备份</pre>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-green-600">99.99%</p>
+                        <p class="text-sm text-gray-600">恶意请求拦截率</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-green-600">0</p>
+                        <p class="text-sm text-gray-600">数据泄露事件</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-green-600">100%</p>
+                        <p class="text-sm text-gray-600">安全审计通过率</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-4">
-          <p class="font-medium text-gray-800 mb-3">安全指标：</p>
-          <div class="grid md:grid-cols-3 gap-4">
-            <div class="bg-white rounded-lg p-3 text-center">
-              <div class="text-2xl font-bold text-purple-600">99.99%</div>
-              <p class="text-sm text-gray-600">恶意请求拦截率</p>
-            </div>
-            <div class="bg-white rounded-lg p-3 text-center">
-              <div class="text-2xl font-bold text-pink-600">0</div>
-              <p class="text-sm text-gray-600">数据泄露事件</p>
-            </div>
-            <div class="bg-white rounded-lg p-3 text-center">
-              <div class="text-2xl font-bold text-indigo-600">100%</div>
-              <p class="text-sm text-gray-600">安全审计通过率</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <!-- 成本与定价 -->
-  <section class="mb-12 scroll-fade">
-    <h2 class="text-2xl font-medium mb-8 text-gray-800 border-b border-gray-200 pb-3">
-      ChatGPT Plus充值成本与定价
-    </h2>
-
-    <div class="grid md:grid-cols-2 gap-6">
-      <!-- 成本构成 -->
-      <div class="glass-card bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-6">
-        <h3 class="text-xl font-medium mb-4 text-gray-800 flex items-center">
-          <svg class="w-6 h-6 mr-3 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
-          </svg>
-          我们的成本
-        </h3>
-        <ol class="space-y-3 text-gray-700">
-          <li class="flex items-start">
-            <div class="bg-yellow-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-sm font-bold flex-shrink-0">1</div>
-            <div>
-              <strong>订阅成本</strong>
-              <p class="text-sm text-gray-600 mt-1">¥110-130（根据汇率浮动）</p>
+    <!-- Cost and Pricing -->
+    <div class="grid lg:grid-cols-2 gap-8 mb-8">
+        <div class="glass-card bg-white rounded-2xl p-8">
+            <h2 class="text-2xl font-semibold mb-6">💰 ChatGPT Plus充值成本与定价</h2>
+            
+            <div class="space-y-4">
+                <h3 class="font-semibold text-lg mb-3">我们的成本</h3>
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span class="text-gray-700">订阅成本</span>
+                        <span class="font-medium">¥110-130</span>
+                    </div>
+                    <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span class="text-gray-700">技术成本</span>
+                        <span class="font-medium">系统开发维护</span>
+                    </div>
+                    <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span class="text-gray-700">人工成本</span>
+                        <span class="font-medium">客服支持</span>
+                    </div>
+                    <div class="flex justify-between items-center py-2">
+                        <span class="text-gray-700">支付成本</span>
+                        <span class="font-medium">支付通道手续费</span>
+                    </div>
+                </div>
             </div>
-          </li>
-          <li class="flex items-start">
-            <div class="bg-yellow-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-sm font-bold flex-shrink-0">2</div>
-            <div>
-              <strong>技术成本</strong>
-              <p class="text-sm text-gray-600 mt-1">自动化系统开发维护</p>
+            
+            <div class="mt-6 bg-gradient-to-r from-primary-50 to-secondary-50 rounded-xl p-6">
+                <h3 class="font-semibold text-lg mb-2">用户价格：¥158/月</h3>
+                <ul class="space-y-1 text-sm text-gray-700">
+                    <li>✓ 保证服务质量</li>
+                    <li>✓ 覆盖运营成本</li>
+                    <li>✓ 提供售后保障</li>
+                    <li>✓ 仍比官方便宜20%+</li>
+                </ul>
             </div>
-          </li>
-          <li class="flex items-start">
-            <div class="bg-yellow-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-sm font-bold flex-shrink-0">3</div>
-            <div>
-              <strong>人工成本</strong>
-              <p class="text-sm text-gray-600 mt-1">客服支持</p>
-            </div>
-          </li>
-          <li class="flex items-start">
-            <div class="bg-yellow-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-sm font-bold flex-shrink-0">4</div>
-            <div>
-              <strong>支付成本</strong>
-              <p class="text-sm text-gray-600 mt-1">支付通道手续费</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-
-      <!-- 用户价格 -->
-      <div class="glass-card bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6">
-        <h3 class="text-xl font-medium mb-4 text-gray-800 flex items-center">
-          <svg class="w-6 h-6 mr-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-          </svg>
-          用户价格：¥158/月
-        </h3>
-        <ul class="space-y-3 text-gray-700">
-          <li class="flex items-start">
-            <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-            </svg>
-            <div>
-              <strong>保证服务质量</strong>
-              <p class="text-sm text-gray-600 mt-1">专业技术团队支持</p>
-            </div>
-          </li>
-          <li class="flex items-start">
-            <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-            </svg>
-            <div>
-              <strong>覆盖运营成本</strong>
-              <p class="text-sm text-gray-600 mt-1">确保可持续服务</p>
-            </div>
-          </li>
-          <li class="flex items-start">
-            <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-            </svg>
-            <div>
-              <strong>提供售后保障</strong>
-              <p class="text-sm text-gray-600 mt-1">7×24小时客服</p>
-            </div>
-          </li>
-          <li class="flex items-start">
-            <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-            </svg>
-            <div>
-              <strong>仍比官方便宜20%+</strong>
-              <p class="text-sm text-gray-600 mt-1">性价比最高的选择</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- 安全保障 -->
-  <section class="mb-12 scroll-fade">
-    <h2 class="text-2xl font-medium mb-8 text-gray-800 border-b border-gray-200 pb-3">
-      iOS充值ChatGPT Plus安全保障
-    </h2>
-
-    <div class="space-y-6">
-      <!-- 对用户账号的影响 -->
-      <div class="glass-card bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6">
-        <h3 class="text-xl font-medium mb-4 text-gray-800 flex items-center">
-          <img src="/Fast-GPT-Plus/assets/icons/shield-security.svg" class="w-8 h-8 mr-3" alt="Security">
-          对用户账号的影响
-        </h3>
-        <div class="grid md:grid-cols-2 gap-4">
-          <div class="bg-white rounded-xl p-4">
-            <div class="flex items-start">
-              <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-              <div>
-                <strong>零风险</strong>
-                <p class="text-sm text-gray-600 mt-1">官方订阅渠道</p>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white rounded-xl p-4">
-            <div class="flex items-start">
-              <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-              <div>
-                <strong>不违规</strong>
-                <p class="text-sm text-gray-600 mt-1">不涉及账号共享</p>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white rounded-xl p-4">
-            <div class="flex items-start">
-              <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-              <div>
-                <strong>保护隐私</strong>
-                <p class="text-sm text-gray-600 mt-1">无需提供密码</p>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white rounded-xl p-4">
-            <div class="flex items-start">
-              <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-              <div>
-                <strong>正常使用</strong>
-                <p class="text-sm text-gray-600 mt-1">享受完整Plus权益</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <!-- 与虚拟卡的本质区别 -->
-      <div class="glass-card bg-white rounded-2xl overflow-hidden">
-        <h3 class="text-xl font-medium p-6 pb-4 text-gray-800">与虚拟卡的本质区别</h3>
-        <div class="overflow-x-auto">
-          <table class="w-full">
-            <thead>
-              <tr class="bg-gradient-to-r from-primary-600 to-secondary-600 text-white">
-                <th class="px-6 py-4 text-left font-medium">对比维度</th>
-                <th class="px-6 py-4 text-left font-medium">iOS充值</th>
-                <th class="px-6 py-4 text-left font-medium">虚拟卡充值</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-              <tr class="hover:bg-gray-50 transition-colors">
-                <td class="px-6 py-4 font-medium">充值渠道</td>
-                <td class="px-6 py-4 text-green-600 font-medium">App Store官方</td>
-                <td class="px-6 py-4 text-gray-600">第三方信用卡</td>
-              </tr>
-              <tr class="hover:bg-gray-50 transition-colors">
-                <td class="px-6 py-4 font-medium">合规性</td>
-                <td class="px-6 py-4">
-                  <span class="inline-flex items-center text-green-600">
-                    <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+        <!-- Security Guarantee -->
+        <div class="glass-card bg-white rounded-2xl p-8">
+            <h2 class="text-2xl font-semibold mb-6">🛡️ iOS充值ChatGPT Plus安全保障</h2>
+            
+            <div class="space-y-4">
+                <h3 class="font-semibold text-lg mb-3">对用户账号的影响</h3>
+                <div class="space-y-2">
+                    <div class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>零风险</strong>：官方订阅渠道
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>不违规</strong>：不涉及账号共享
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>保护隐私</strong>：无需提供密码
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <strong>正常使用</strong>：享受完整Plus权益
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comparison with Virtual Cards -->
+    <div class="glass-card bg-white rounded-2xl overflow-hidden mb-8">
+        <div class="bg-gradient-to-r from-primary-600 to-secondary-600 p-6">
+            <h2 class="text-2xl font-semibold text-white">与虚拟卡的本质区别</h2>
+        </div>
+        <div class="p-8">
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead>
+                        <tr class="border-b-2 border-gray-200">
+                            <th class="text-left py-4 px-4 font-semibold">对比维度</th>
+                            <th class="text-center py-4 px-4 font-semibold">iOS充值</th>
+                            <th class="text-center py-4 px-4 font-semibold">虚拟卡充值</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-100 hover:bg-gray-50">
+                            <td class="py-4 px-4 font-medium">充值渠道</td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="text-green-600">✅ App Store官方</span>
+                            </td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="text-red-600">❌ 第三方信用卡</span>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-100 hover:bg-gray-50">
+                            <td class="py-4 px-4 font-medium">合规性</td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="text-green-600">✅ 完全合规</span>
+                            </td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="text-red-600">❌ 灰色地带</span>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-100 hover:bg-gray-50">
+                            <td class="py-4 px-4 font-medium">账号安全</td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="text-green-600">✅ 无封号风险</span>
+                            </td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="text-orange-600">⚠️ 可能触发风控</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-4 font-medium">稳定性</td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="text-green-600">✅ 长期稳定</span>
+                            </td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="text-red-600">❌ 随时可能失效</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="glass-card bg-white rounded-2xl p-8 mb-8">
+        <h2 class="text-2xl font-semibold mb-6">🤔 ChatGPT Plus iOS充值技术解答</h2>
+        
+        <div class="space-y-6">
+            <div class="border-b border-gray-100 pb-6">
+                <h4 class="font-semibold mb-3 text-lg">Q1: 为什么不自己用iOS充值？</h4>
+                <p class="text-gray-600"><strong>A</strong>: 需要具备以下条件：</p>
+                <ul class="mt-2 space-y-1 text-gray-600 ml-4">
+                    <li>• 特定地区的Apple ID</li>
+                    <li>• 当地的支付方式</li>
+                    <li>• 了解操作流程</li>
+                    <li>• 承担失败风险</li>
+                </ul>
+            </div>
+            
+            <div class="border-b border-gray-100 pb-6">
+                <h4 class="font-semibold mb-3 text-lg">Q2: 会不会被OpenAI检测到？</h4>
+                <p class="text-gray-600"><strong>A</strong>: 不会。这是通过官方App Store订阅，OpenAI认可此渠道。</p>
+            </div>
+            
+            <div class="border-b border-gray-100 pb-6">
+                <h4 class="font-semibold mb-3 text-lg">Q3: 汇率变动怎么办？</h4>
+                <p class="text-gray-600"><strong>A</strong>: 我们承担汇率风险，用户价格始终稳定在¥158/月。</p>
+            </div>
+            
+            <div>
+                <h4 class="font-semibold mb-3 text-lg">Q4: 可以自动续费吗？</h4>
+                <p class="text-gray-600"><strong>A</strong>: 可以。iOS订阅支持自动续费，永不掉订阅。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Real Data Section -->
+    <div class="grid lg:grid-cols-2 gap-8 mb-8">
+        <div class="glass-card bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+            <h2 class="text-2xl font-semibold mb-6">📊 ChatGPT Plus充值真实数据</h2>
+            
+            <h3 class="font-semibold mb-4">服务数据（2025年1月）</h3>
+            <div class="space-y-3">
+                <div class="flex justify-between items-center">
+                    <span class="text-gray-700">累计服务用户</span>
+                    <span class="text-2xl font-bold text-blue-600">100,000+</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-gray-700">月均充值订单</span>
+                    <span class="text-2xl font-bold text-blue-600">8,000+</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-gray-700">充值成功率</span>
+                    <span class="text-2xl font-bold text-blue-600">99.9%</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-gray-700">平均充值时间</span>
+                    <span class="text-2xl font-bold text-blue-600">4.8分钟</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="glass-card bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8">
+            <h2 class="text-2xl font-semibold mb-6">用户反馈统计</h2>
+            
+            <div class="space-y-4">
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-gray-700">价格满意度</span>
+                        <span class="font-semibold">98.5%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-green-600 h-2 rounded-full" style="width: 98.5%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-gray-700">服务满意度</span>
+                        <span class="font-semibold">99.7%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-green-600 h-2 rounded-full" style="width: 99.7%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-gray-700">推荐意愿度</span>
+                        <span class="font-semibold">96.3%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-green-600 h-2 rounded-full" style="width: 96.3%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Suitable Users -->
+    <div class="glass-card bg-white rounded-2xl p-8 mb-8">
+        <h2 class="text-2xl font-semibold mb-6">🎯 iOS充值ChatGPT Plus适用人群</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="font-semibold text-lg mb-4 text-green-600">特别适合：</h3>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>没有国际信用卡的用户</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>追求性价比的用户</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>需要稳定服务的用户</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>企业批量采购需求</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="font-semibold text-lg mb-4 text-red-600">不适合：</h3>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-red-600 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>已有美国信用卡且不在意价格</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-red-600 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>极度追求低价（低于¥150）</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technical Advantages -->
+    <div class="glass-card bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8 mb-8">
+        <h2 class="text-2xl font-semibold mb-6">💡 ChatGPT Plus iOS充值技术优势</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="text-center">
+                <div class="bg-white rounded-full p-4 w-16 h-16 mx-auto mb-3 shadow-md">
+                    <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                     </svg>
-                    完全合规
-                  </span>
-                </td>
-                <td class="px-6 py-4">
-                  <span class="inline-flex items-center text-red-600">
-                    <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                </div>
+                <h4 class="font-semibold mb-2">合法合规</h4>
+                <p class="text-sm text-gray-600">官方认可的订阅渠道</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="bg-white rounded-full p-4 w-16 h-16 mx-auto mb-3 shadow-md">
+                    <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
-                    灰色地带
-                  </span>
-                </td>
-              </tr>
-              <tr class="hover:bg-gray-50 transition-colors">
-                <td class="px-6 py-4 font-medium">账号安全</td>
-                <td class="px-6 py-4">
-                  <span class="inline-flex items-center text-green-600">
-                    <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </div>
+                <h4 class="font-semibold mb-2">价格优势</h4>
+                <p class="text-sm text-gray-600">比官方便宜20%以上</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="bg-white rounded-full p-4 w-16 h-16 mx-auto mb-3 shadow-md">
+                    <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                     </svg>
-                    无封号风险
-                  </span>
-                </td>
-                <td class="px-6 py-4">
-                  <span class="inline-flex items-center text-yellow-600">
-                    <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                </div>
+                <h4 class="font-semibold mb-2">安全可靠</h4>
+                <p class="text-sm text-gray-600">不影响账号安全</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="bg-white rounded-full p-4 w-16 h-16 mx-auto mb-3 shadow-md">
+                    <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                     </svg>
-                    可能触发风控
-                  </span>
-                </td>
-              </tr>
-              <tr class="hover:bg-gray-50 transition-colors">
-                <td class="px-6 py-4 font-medium">稳定性</td>
-                <td class="px-6 py-4">
-                  <span class="inline-flex items-center text-green-600">
-                    <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </div>
+                <h4 class="font-semibold mb-2">服务稳定</h4>
+                <p class="text-sm text-gray-600">不受政策影响</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="bg-white rounded-full p-4 w-16 h-16 mx-auto mb-3 shadow-md">
+                    <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                     </svg>
-                    长期稳定
-                  </span>
-                </td>
-                <td class="px-6 py-4">
-                  <span class="inline-flex items-center text-red-600">
-                    <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
-                    </svg>
-                    随时可能失效
-                  </span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                </div>
+                <h4 class="font-semibold mb-2">操作简单</h4>
+                <p class="text-sm text-gray-600">5分钟自助完成</p>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
 
-  <!-- 技术解答 -->
-  <section class="mb-12 scroll-fade">
-    <h2 class="text-2xl font-medium mb-8 text-gray-800 border-b border-gray-200 pb-3">
-      ChatGPT Plus iOS充值技术解答
-    </h2>
-
-    <div class="space-y-4">
-      <div class="glass-card bg-white rounded-2xl p-6 hover-lift">
-        <h3 class="text-lg font-semibold mb-3 text-gray-800">Q1: 为什么不自己用iOS充值？</h3>
-        <div class="text-gray-700">
-          <strong>A</strong>: 需要具备以下条件：
-          <ul class="mt-2 ml-6 space-y-1 list-disc">
-            <li>特定地区的Apple ID</li>
-            <li>当地的支付方式</li>
-            <li>了解操作流程</li>
-            <li>承担失败风险</li>
-          </ul>
+    <!-- CTA Section -->
+    <div class="text-center">
+        <div class="glass-card bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl p-8 text-white">
+            <h2 class="text-3xl font-semibold mb-4">📱 立即体验ChatGPT Plus充值</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div>
+                    <svg class="w-8 h-8 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 2a5 5 0 00-5 5v2a2 2 0 00-2 2v5a2 2 0 002 2h10a2 2 0 002-2v-5a2 2 0 00-2-2H7V7a3 3 0 015.905-.75 1 1 0 001.937-.5A5.002 5.002 0 0010 2z"/>
+                    </svg>
+                    <p class="font-medium">🚀 快速充值</p>
+                    <p class="text-sm opacity-90">go.fastgptplus.com</p>
+                </div>
+                <div>
+                    <svg class="w-8 h-8 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"/>
+                        <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"/>
+                    </svg>
+                    <p class="font-medium">💬 技术咨询</p>
+                    <p class="text-sm opacity-90">微信 laozhangdaichong</p>
+                </div>
+                <div>
+                    <svg class="w-8 h-8 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                    </svg>
+                    <p class="font-medium">📧 商务合作</p>
+                    <p class="text-sm opacity-90">support@fastgptplus.com</p>
+                </div>
+            </div>
+            
+            <a href="https://go.fastgptplus.com" class="inline-flex items-center px-10 py-4 bg-white text-primary-600 font-medium rounded-full hover:shadow-xl transform hover:-translate-y-1 transition duration-200">
+                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+                立即开始充值
+            </a>
         </div>
-      </div>
-
-      <div class="glass-card bg-white rounded-2xl p-6 hover-lift">
-        <h3 class="text-lg font-semibold mb-3 text-gray-800">Q2: 会不会被OpenAI检测到？</h3>
-        <p class="text-gray-700">
-          <strong>A</strong>: 不会。这是通过官方App Store订阅，OpenAI认可此渠道。
-        </p>
-      </div>
-
-      <div class="glass-card bg-white rounded-2xl p-6 hover-lift">
-        <h3 class="text-lg font-semibold mb-3 text-gray-800">Q3: 汇率变动怎么办？</h3>
-        <p class="text-gray-700">
-          <strong>A</strong>: 我们承担汇率风险，用户价格始终稳定在¥158/月。
-        </p>
-      </div>
-
-      <div class="glass-card bg-white rounded-2xl p-6 hover-lift">
-        <h3 class="text-lg font-semibold mb-3 text-gray-800">Q4: 可以自动续费吗？</h3>
-        <p class="text-gray-700">
-          <strong>A</strong>: 可以。iOS订阅支持自动续费，永不掉订阅。
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 真实数据 -->
-  <section class="mb-12 scroll-fade">
-    <h2 class="text-2xl font-medium mb-8 text-gray-800 border-b border-gray-200 pb-3">
-      ChatGPT Plus充值真实数据
-    </h2>
-
-    <div class="grid md:grid-cols-2 gap-6">
-      <!-- 服务数据 -->
-      <div class="glass-card bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6">
-        <h3 class="text-xl font-medium mb-4 text-gray-800">服务数据（2025年1月）</h3>
-        <div class="space-y-4">
-          <div class="flex justify-between items-end">
-            <span class="text-gray-600">累计服务用户</span>
-            <span class="text-3xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">100,000+</span>
-          </div>
-          <div class="flex justify-between items-end">
-            <span class="text-gray-600">月均充值订单</span>
-            <span class="text-3xl font-bold text-primary-600">8,000+</span>
-          </div>
-          <div class="flex justify-between items-end">
-            <span class="text-gray-600">充值成功率</span>
-            <span class="text-3xl font-bold text-success">99.9%</span>
-          </div>
-          <div class="flex justify-between items-end">
-            <span class="text-gray-600">平均充值时间</span>
-            <span class="text-3xl font-bold text-secondary-600">4.8分钟</span>
-          </div>
+        
+        <div class="mt-8 text-gray-600">
+            <p class="font-medium">💡 小贴士</p>
+            <p>iOS充值是目前最稳定、最安全的ChatGPT Plus充值方式，已服务10万+用户。</p>
         </div>
-      </div>
-
-      <!-- 用户反馈统计 -->
-      <div class="glass-card bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6">
-        <h3 class="text-xl font-medium mb-4 text-gray-800">用户反馈统计</h3>
-        <div class="space-y-5">
-          <div>
-            <div class="flex justify-between mb-2">
-              <span class="text-gray-600">价格满意度</span>
-              <span class="font-semibold">98.5%</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-3">
-              <div class="bg-gradient-to-r from-green-400 to-green-600 h-3 rounded-full" style="width: 98.5%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between mb-2">
-              <span class="text-gray-600">服务满意度</span>
-              <span class="font-semibold">99.7%</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-3">
-              <div class="bg-gradient-to-r from-blue-400 to-blue-600 h-3 rounded-full" style="width: 99.7%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between mb-2">
-              <span class="text-gray-600">推荐意愿度</span>
-              <span class="font-semibold">96.3%</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-3">
-              <div class="bg-gradient-to-r from-purple-400 to-purple-600 h-3 rounded-full" style="width: 96.3%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-
-  <!-- 适用人群 -->
-  <section class="mb-12 scroll-fade">
-    <h2 class="text-2xl font-medium mb-8 text-gray-800 border-b border-gray-200 pb-3">
-      iOS充值ChatGPT Plus适用人群
-    </h2>
-
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="glass-card bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6">
-        <h3 class="text-xl font-medium mb-4 text-green-800 flex items-center">
-          <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-          </svg>
-          特别适合
-        </h3>
-        <ul class="space-y-3 text-gray-700">
-          <li class="flex items-center">
-            <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-            <span>没有国际信用卡的用户</span>
-          </li>
-          <li class="flex items-center">
-            <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-            <span>追求性价比的用户</span>
-          </li>
-          <li class="flex items-center">
-            <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-            <span>需要稳定服务的用户</span>
-          </li>
-          <li class="flex items-center">
-            <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-            <span>企业批量采购需求</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="glass-card bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-6">
-        <h3 class="text-xl font-medium mb-4 text-red-800 flex items-center">
-          <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
-          </svg>
-          不适合
-        </h3>
-        <ul class="space-y-3 text-gray-700">
-          <li class="flex items-center">
-            <div class="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
-            <span>已有美国信用卡且不在意价格</span>
-          </li>
-          <li class="flex items-center">
-            <div class="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
-            <span>极度追求低价（低于¥150）</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- 技术优势 -->
-  <section class="mb-12 scroll-fade">
-    <h2 class="text-2xl font-medium mb-8 text-gray-800 border-b border-gray-200 pb-3">
-      ChatGPT Plus iOS充值技术优势
-    </h2>
-
-    <div class="grid md:grid-cols-5 gap-4">
-      <div class="glass-card bg-white rounded-2xl p-4 text-center hover-lift">
-        <svg class="w-12 h-12 mx-auto mb-3 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
-        </svg>
-        <h4 class="font-medium text-gray-800 mb-1">合法合规</h4>
-        <p class="text-sm text-gray-600">官方认可的订阅渠道</p>
-      </div>
-      
-      <div class="glass-card bg-white rounded-2xl p-4 text-center hover-lift">
-        <svg class="w-12 h-12 mx-auto mb-3 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-        </svg>
-        <h4 class="font-medium text-gray-800 mb-1">价格优势</h4>
-        <p class="text-sm text-gray-600">比官方便宜20%以上</p>
-      </div>
-      
-      <div class="glass-card bg-white rounded-2xl p-4 text-center hover-lift">
-        <svg class="w-12 h-12 mx-auto mb-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-        </svg>
-        <h4 class="font-medium text-gray-800 mb-1">安全可靠</h4>
-        <p class="text-sm text-gray-600">不影响账号安全</p>
-      </div>
-      
-      <div class="glass-card bg-white rounded-2xl p-4 text-center hover-lift">
-        <svg class="w-12 h-12 mx-auto mb-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-        </svg>
-        <h4 class="font-medium text-gray-800 mb-1">服务稳定</h4>
-        <p class="text-sm text-gray-600">不受政策影响</p>
-      </div>
-      
-      <div class="glass-card bg-white rounded-2xl p-4 text-center hover-lift">
-        <img src="/Fast-GPT-Plus/assets/icons/lightning-bolt.svg" class="w-12 h-12 mx-auto mb-3" alt="Speed">
-        <h4 class="font-medium text-gray-800 mb-1">操作简单</h4>
-        <p class="text-sm text-gray-600">5分钟自助完成</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 立即体验 -->
-  <section class="mb-12 scroll-fade">
-    <h2 class="text-2xl font-medium mb-8 text-gray-800 border-b border-gray-200 pb-3">
-      立即体验ChatGPT Plus充值
-    </h2>
-
-    <div class="grid md:grid-cols-3 gap-4">
-      <a href="https://go.fastgptplus.com" class="glass-card bg-gradient-to-r from-primary-500 to-secondary-600 text-white rounded-2xl p-6 text-center hover-lift group">
-        <svg class="w-12 h-12 mx-auto mb-3 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-        </svg>
-        <h3 class="text-lg font-semibold mb-2">快速充值</h3>
-        <p>go.fastgptplus.com</p>
-      </a>
-      
-      <div class="glass-card bg-white rounded-2xl p-6 text-center">
-        <svg class="w-12 h-12 mx-auto mb-3 text-green-600" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-        </svg>
-        <h3 class="text-lg font-semibold mb-2">技术咨询</h3>
-        <p class="text-gray-700">微信：laozhangdaichong</p>
-      </div>
-      
-      <div class="glass-card bg-white rounded-2xl p-6 text-center">
-        <svg class="w-12 h-12 mx-auto mb-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-        </svg>
-        <h3 class="text-lg font-semibold mb-2">商务合作</h3>
-        <p class="text-gray-700">support@fastgptplus.com</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 底部提示 -->
-  <div class="glass-card bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6 scroll-fade">
-    <div class="flex items-start">
-      <svg class="w-6 h-6 text-primary-600 mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
-      </svg>
-      <div>
-        <strong class="text-gray-800">小贴士</strong>
-        <p class="text-gray-700 mt-1">iOS充值是目前最稳定、最安全的ChatGPT Plus充值方式，已服务10万+用户。</p>
-      </div>
-    </div>
-  </div>
 </div>
