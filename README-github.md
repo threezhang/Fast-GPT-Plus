@@ -46,16 +46,14 @@
 ### 第一步：访问官网
 访问 [FastGPTPlus.com](https://fastgptplus.com)
 
-### 第二步：选择套餐
-- 月付：¥158/月
-- 季付：¥450/3个月（省¥24）
-- 年付：¥1680/年（省¥216）
+### 第二步：确认价格
+- 价格：¥158/月
 
 ### 第三步：完成支付
 支持支付宝、微信支付，扫码即可完成
 
-### 第四步：激活账号
-客服会在5分钟内帮您完成ChatGPT Plus激活
+### 第四步：自助充值完成
+系统会在5分钟内自动完成ChatGPT Plus充值，无需人工介入
 
 ## 📊 服务数据
 
@@ -72,12 +70,6 @@
 
 ## 🎓 使用教程
 
-### 视频教程
-- [如何使用FastGPTPlus充值ChatGPT Plus](https://fastgptplus.com/tutorial)
-- [ChatGPT Plus功能介绍](https://fastgptplus.com/features)
-
-### 图文教程
-
 <details>
 <summary>点击展开详细步骤</summary>
 
@@ -85,14 +77,14 @@
    - 访问 [chat.openai.com](https://chat.openai.com)
    - 使用邮箱注册账号
 
-2. **联系客服充值**
-   - 访问 [FastGPTPlus.com](https://fastgptplus.com)
-   - 点击"立即充值"按钮
+2. **开始自助充值**
+   - 访问 [go.fastgptplus.com](https://go.fastgptplus.com)
    - 选择充值套餐
+   - 使用支付宝或微信支付
 
-3. **提供账号信息**
-   - 向客服提供ChatGPT账号邮箱
-   - 等待客服操作（约5分钟）
+3. **自动充值处理**
+   - 输入ChatGPT账号邮箱
+   - 系统自动处理充值（约5分钟）
 
 4. **验证订阅状态**
    - 刷新ChatGPT页面

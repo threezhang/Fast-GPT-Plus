@@ -136,7 +136,6 @@
 如果您也是野卡受害者，或者正在寻找稳定的ChatGPT Plus充值服务：
 
 - 💬 微信客服：**laozhangdaichong**（备注"野卡用户"）
-- 🎁 专属优惠：野卡用户首月减10元
 - ⚡ 快速通道：[go.fastgptplus.com](https://go.fastgptplus.com)
 
 > 选择FastGPTPlus，告别虚拟卡时代，拥抱稳定未来！

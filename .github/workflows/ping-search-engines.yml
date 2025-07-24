@@ -1,0 +1,25 @@
+name: Ping Search Engines
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    # 每周一早上8点运行
+    - cron: '0 0 * * 1'
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Ping Google
+      run: |
+        curl -s "https://www.google.com/ping?sitemap=https://threezhang.github.io/Fast-GPT-Plus/sitemap.xml"
+        
+    - name: Ping Bing
+      run: |
+        curl -s "https://www.bing.com/ping?sitemap=https://threezhang.github.io/Fast-GPT-Plus/sitemap.xml"
+        
+    - name: Update README timestamp
+      run: |
+        echo "<!-- Last updated: $(date) -->" >> README.md

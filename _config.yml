@@ -1,0 +1,33 @@
+# GitHub Pages 配置
+theme: jekyll-theme-minimal
+title: Fast-GPT-Plus - ChatGPT Plus iOS充值服务
+description: 野卡Bewildcard最佳替代方案，支付宝微信快充，5分钟搞定
+show_downloads: false
+google_analytics: # 添加您的Google Analytics ID
+
+# 插件
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO标签
+tagline: ChatGPT Plus充值最便捷的解决方案
+author:
+  name: FastGPTPlus Team
+  url: https://fastgptplus.com
+
+# 社交链接
+social:
+  - name: GitHub
+    link: https://github.com/threezhang/Fast-GPT-Plus
+  - name: Website
+    link: https://fastgptplus.com
+
+# 导航菜单
+navigation:
+  - title: 快速开始
+    url: /QUICK-START
+  - title: 野卡替代方案
+    url: /docs/bewildcard-alternative
+  - title: 常见问题
+    url: /docs/payment-failure-solution

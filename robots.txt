@@ -1,0 +1,14 @@
+# robots.txt for Fast-GPT-Plus
+User-agent: *
+Allow: /
+
+# 重要页面
+Allow: /README.md
+Allow: /QUICK-START.md
+Allow: /docs/
+
+# GitHub Pages sitemap
+Sitemap: https://threezhang.github.io/Fast-GPT-Plus/sitemap.xml
+
+# 主站
+Sitemap: https://fastgptplus.com/sitemap.xml
