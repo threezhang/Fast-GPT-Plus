@@ -181,53 +181,62 @@
         }
         
         /* Enhanced markdown styles */
+        .markdown-content {
+            @apply text-lg;
+        }
         .markdown-content h1 {
-            @apply text-4xl font-light mb-6 text-gray-900 tracking-tight;
+            @apply text-4xl font-bold mb-8 text-gray-900 tracking-tight;
         }
         .markdown-content h2 {
-            @apply text-2xl font-normal mb-4 mt-8 text-gray-800 border-b border-gray-200 pb-2;
+            @apply text-3xl font-semibold mb-6 mt-12 text-gray-800 border-b-2 border-gray-200 pb-3;
         }
         .markdown-content h3 {
-            @apply text-xl font-medium mb-3 mt-6 text-gray-800;
+            @apply text-2xl font-semibold mb-4 mt-8 text-gray-800;
         }
         .markdown-content h4 {
-            @apply text-lg font-medium mb-2 mt-4 text-gray-700;
+            @apply text-xl font-medium mb-3 mt-6 text-gray-700;
         }
         .markdown-content p {
-            @apply mb-4 text-gray-700 leading-relaxed;
+            @apply mb-6 text-gray-700 leading-loose text-lg;
         }
         .markdown-content ul {
-            @apply list-disc list-inside mb-4 space-y-2;
+            @apply list-disc ml-6 mb-6 space-y-3;
         }
         .markdown-content ol {
-            @apply list-decimal list-inside mb-4 space-y-2;
+            @apply list-decimal ml-6 mb-6 space-y-3;
         }
         .markdown-content li {
-            @apply text-gray-700;
+            @apply text-gray-700 leading-relaxed pl-2;
+        }
+        .markdown-content li strong {
+            @apply font-semibold text-gray-800;
         }
         .markdown-content a {
-            @apply text-primary-600 hover:text-primary-700 font-medium transition-colors;
+            @apply text-primary-600 hover:text-primary-700 font-medium transition-colors underline;
         }
         .markdown-content pre {
-            @apply bg-gray-50 rounded-xl p-4 mb-4 overflow-x-auto border border-gray-200;
+            @apply bg-gray-50 rounded-xl p-6 mb-6 overflow-x-auto border border-gray-200 text-base;
         }
         .markdown-content code {
             @apply bg-gray-100 px-2 py-1 rounded-md text-sm font-mono;
         }
         .markdown-content blockquote {
-            @apply border-l-4 border-primary-500 bg-primary-50 p-4 mb-4 rounded-r-lg;
+            @apply border-l-4 border-primary-500 bg-primary-50 p-6 mb-6 rounded-r-lg italic;
+        }
+        .markdown-content blockquote p {
+            @apply mb-0 text-gray-800;
         }
         .markdown-content table {
-            @apply w-full mb-4 border-collapse overflow-hidden rounded-lg;
+            @apply w-full mb-6 border-collapse overflow-hidden rounded-lg shadow-sm;
         }
         .markdown-content th {
-            @apply bg-gray-100 border border-gray-200 px-4 py-2 text-left font-medium;
+            @apply bg-gray-100 border border-gray-200 px-6 py-3 text-left font-semibold text-gray-800;
         }
         .markdown-content td {
-            @apply border border-gray-200 px-4 py-2;
+            @apply border border-gray-200 px-6 py-3 text-gray-700;
         }
         .markdown-content hr {
-            @apply my-8 border-gray-200;
+            @apply my-12 border-gray-200;
         }
         
         /* Loading animation */
@@ -340,7 +349,7 @@
     
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="glass-card bg-white rounded-2xl p-8 scroll-fade">
+        <div class="glass-card bg-white rounded-2xl p-12 scroll-fade">
             <div class="markdown-content">
                 {{ content }}
             </div>
