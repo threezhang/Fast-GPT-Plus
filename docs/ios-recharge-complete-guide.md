@@ -1,3 +1,8 @@
+---
+layout: default
+title: ChatGPT Plus iOS充值完整指南
+---
+
 # 🎯 ChatGPT Plus iOS充值完整指南【2025最新版】
 
 > 本指南是最全面的ChatGPT Plus iOS充值技术教程，涵盖从原理到实操的所有细节。无论您是技术小白还是经验用户，都能通过本指南成功完成充值。

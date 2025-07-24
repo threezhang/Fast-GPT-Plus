@@ -1,3 +1,8 @@
+---
+layout: default
+title: iOS充值ChatGPT Plus技术原理详解
+---
+
 # 📱 iOS充值ChatGPT Plus技术原理详解【2025最新】
 
 > iOS充值技术是通过App Store官方订阅系统，利用汇率差价实现低成本ChatGPT Plus充值的合法方案。本文深入解析其技术架构、实现原理和安全机制，帮助您理解为什么这是野卡最佳替代方案。

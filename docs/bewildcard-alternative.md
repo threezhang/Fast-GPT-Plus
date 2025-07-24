@@ -1,3 +1,8 @@
+---
+layout: default
+title: Bewildcard/野卡/Yeka.ai 最佳替代方案详解
+---
+
 # 🔄 Bewildcard/野卡/Yeka.ai 最佳替代方案详解
 
 > 2025年7月，多家虚拟卡服务商相继停服，数万用户受影响。本文将详细分析事件始末，并提供可靠的替代方案。

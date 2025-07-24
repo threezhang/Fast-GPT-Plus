@@ -1,3 +1,8 @@
+---
+layout: default
+title: ChatGPT Plus新手用户成功案例
+---
+
 # 🌟 ChatGPT Plus新手用户成功案例
 
 > 记录第一次使用ChatGPT Plus的用户，如何通过FastGPTPlus轻松开启AI之旅

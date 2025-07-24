@@ -1,3 +1,8 @@
+---
+layout: default
+title: FastGPTPlus 常见问题解答
+---
+
 # 🤔 FastGPTPlus 常见问题解答
 
 ## 📌 服务相关

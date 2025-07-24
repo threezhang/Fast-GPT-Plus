@@ -1,3 +1,8 @@
+---
+layout: default
+title: FastGPTPlus 安全保障体系
+---
+
 # 🛡️ FastGPTPlus 安全保障体系
 
 > 安全是我们的首要承诺。本文详细介绍我们的多重安全保障措施。

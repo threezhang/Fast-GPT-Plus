@@ -1,3 +1,8 @@
+---
+layout: default
+title: ChatGPT Plus支付失败完整解决方案
+---
+
 # 💳 ChatGPT Plus支付失败完整解决方案
 
 > 90%的国内用户在订阅ChatGPT Plus时会遇到支付失败。本文详细分析失败原因并提供解决方案。
