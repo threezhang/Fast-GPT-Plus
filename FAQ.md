@@ -113,4 +113,4 @@ FastGPTPlus 是专为中国用户提供的 ChatGPT Plus 代充值服务。我们
 
 还有其他问题？欢迎联系我们的客服团队！
 
-[返回首页](/Fast-GPT-Plus/) | [立即充值](https://fastgptplus.com)
+[返回首页](./) | [立即充值](https://fastgptplus.com)

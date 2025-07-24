@@ -191,4 +191,4 @@ DALL·E 3 使用技巧：
 
 ---
 
-[返回首页](/Fast-GPT-Plus/) | [常见问题](/Fast-GPT-Plus/faq/) | [立即充值](https://fastgptplus.com)
+[返回首页](../) | [常见问题](FAQ.md) | [立即充值](https://fastgptplus.com)
