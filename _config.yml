@@ -1,7 +1,7 @@
 # GitHub Pages 配置
 # theme: jekyll-theme-minimal  # 注释掉默认主题，使用自定义layout
 title: Fast-GPT-Plus - ChatGPT Plus iOS充值服务
-description: 野卡Bewildcard最佳替代方案，支付宝微信快充，5分钟搞定
+description: 野卡Bewildcard最佳替代方案，支付宝微信快充，5分钟搞定。官方iOS渠道，安全稳定，10万+用户信赖。
 baseurl: "/Fast-GPT-Plus"  # GitHub仓库名
 url: "https://threezhang.github.io"  # GitHub Pages URL
 show_downloads: false
@@ -12,18 +12,36 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# SEO标签
+# SEO优化
 tagline: ChatGPT Plus充值最便捷的解决方案
+keywords: "ChatGPT Plus充值,Bewildcard替代,野卡替代,iOS充值,支付宝充值,微信支付,GPT-4订阅,OpenAI充值"
+lang: zh-CN
 author:
-  name: FastGPTPlus Team
+  name: Fast-GPT-Plus Team
+  email: support@fastgptplus.com
   url: https://fastgptplus.com
 
 # 社交链接
 social:
-  - name: GitHub
-    link: https://github.com/threezhang/Fast-GPT-Plus
-  - name: Website
-    link: https://fastgptplus.com
+  name: Fast-GPT-Plus
+  links:
+    - https://github.com/threezhang/Fast-GPT-Plus
+    - https://fastgptplus.com
+
+# Twitter
+twitter:
+  username: fastgptplus
+  card: summary_large_image
+
+# Logo
+logo: /Fast-GPT-Plus/assets/images/logo.svg
+
+# 默认值
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /Fast-GPT-Plus/assets/images/og-image.png
 
 # 导航菜单
 navigation:

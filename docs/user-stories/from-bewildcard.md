@@ -1,6 +1,8 @@
 ---
 layout: default
 title: 野卡用户成功迁移案例
+description: Bewildcard/Yeka用户迁移到FastGPTPlus的真实故事，告别虚拟卡时代，选择更稳定的iOS充值方案
+keywords: Bewildcard迁移, Yeka替代方案, 野卡跑路, FastGPTPlus迁移, iOS充值ChatGPT, 虚拟卡替代, ChatGPT Plus稳定充值, 野卡用户迁移案例
 ---
 
 # 📖 野卡用户成功迁移案例

@@ -1,3 +1,11 @@
+---
+layout: default
+title: 快速开始 - ChatGPT Plus充值5分钟教程
+description: 详细的ChatGPT Plus充值教程，支持支付宝微信支付，5分钟完成充值。无需信用卡，iOS官方渠道，安全快速。
+keywords: ChatGPT Plus充值教程,ChatGPT快速充值,支付宝充值ChatGPT,微信充值GPT-4,iOS充值指南
+permalink: /quick-start/
+---
+
 # 🚀 快速上手指南
 
 欢迎使用 Fast-GPT-Plus！本指南将帮助您在5分钟内成功订阅 ChatGPT Plus。

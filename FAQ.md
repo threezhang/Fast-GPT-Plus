@@ -1,6 +1,8 @@
 ---
 layout: default
-title: FastGPTPlus 常见问题解答
+title: FastGPTPlus 常见问题解答 - ChatGPT Plus充值FAQ
+description: 解答ChatGPT Plus iOS充值的所有疑问：价格、安全性、充值流程、支付方式等。野卡替代最佳方案，10万+用户的共同选择。
+keywords: ChatGPT Plus充值问题,ChatGPT代充安全,野卡替代方案,iOS充值教程,支付宝充值ChatGPT
 permalink: /faq/
 ---
 
