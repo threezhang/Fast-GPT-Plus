@@ -85,9 +85,21 @@
             font-variation-settings: 'opsz' 32;
         }
         
-        /* Smooth scrolling */
-        html {
+        /* Smooth scrolling - disabled for better performance */
+        /* html {
             scroll-behavior: smooth;
+        } */
+        
+        /* Performance optimizations */
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Reduce animations on scroll for better performance */
+        .fade-in-up {
+            opacity: 1;
+            animation: none;
         }
         
         /* Custom cursor styles */

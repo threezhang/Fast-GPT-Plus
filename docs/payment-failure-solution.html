@@ -5,49 +5,69 @@ permalink: /docs/payment-failure-solution/
 ---
 
 <div class="max-w-4xl mx-auto">
-  <h1 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-    💳 ChatGPT Plus支付失败完整解决方案
-  </h1>
+  <!-- Hero Section -->
+  <div class="relative mb-12">
+    <div class="absolute inset-0 bg-gradient-to-br from-red-100 to-orange-100 rounded-3xl opacity-20"></div>
+    <div class="relative glass-card rounded-3xl p-8 md:p-12">
+      <div class="flex items-center justify-center mb-6">
+        <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-500 rounded-2xl flex items-center justify-center animate-float">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+          </svg>
+        </div>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center gradient-text">
+        ChatGPT Plus支付失败完整解决方案
+      </h1>
 
-  <div class="bg-blue-50 border-l-4 border-primary rounded-r-xl p-6 mb-8">
-    <p class="text-gray-800">
-      90%的国内用户在订阅ChatGPT Plus时会遇到支付失败。本文详细分析失败原因并提供解决方案。
-    </p>
+      <div class="glass-card bg-gradient-to-br from-blue-50/50 to-indigo-50/50 p-6 max-w-3xl mx-auto">
+        <p class="text-gray-700 text-center">
+          90%的国内用户在订阅ChatGPT Plus时会遇到支付失败。本文详细分析失败原因并提供解决方案。
+        </p>
+      </div>
+    </div>
   </div>
 
   <!-- 支付失败常见提示 -->
-  <section class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b-2 border-primary pb-2">
-      🚫 ChatGPT Plus支付失败常见提示
-    </h2>
+  <section class="mb-12 fade-in-up">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 mr-3 bg-gradient-to-br from-red-500 to-pink-500 rounded-lg flex items-center justify-center">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
+        </svg>
+      </div>
+      <h2 class="text-2xl font-bold gradient-text">
+        ChatGPT Plus支付失败常见提示
+      </h2>
+    </div>
 
     <div class="grid md:grid-cols-2 gap-4">
-      <div class="bg-red-50 rounded-xl p-4 border-l-4 border-red-500">
-        <h3 class="font-semibold text-gray-800 mb-2">1. "Your credit card was declined"</h3>
+      <div class="glass-card p-4 bg-gradient-to-br from-red-50/50 to-pink-50/50 border-l-4 border-red-500 hover-lift">
+        <h3 class="font-semibold gradient-text mb-2">1. "Your credit card was declined"</h3>
         <p class="text-gray-700">
           <strong>中文</strong>：您的信用卡被拒绝<br>
           <strong>原因</strong>：国内银行卡不被接受
         </p>
       </div>
 
-      <div class="bg-orange-50 rounded-xl p-4 border-l-4 border-orange-500">
-        <h3 class="font-semibold text-gray-800 mb-2">2. "Payment method not available in your region"</h3>
+      <div class="glass-card p-4 bg-gradient-to-br from-orange-50/50 to-amber-50/50 border-l-4 border-orange-500 hover-lift">
+        <h3 class="font-semibold gradient-text mb-2">2. "Payment method not available in your region"</h3>
         <p class="text-gray-700">
           <strong>中文</strong>：您所在地区不支持此支付方式<br>
           <strong>原因</strong>：地区限制
         </p>
       </div>
 
-      <div class="bg-yellow-50 rounded-xl p-4 border-l-4 border-yellow-500">
-        <h3 class="font-semibold text-gray-800 mb-2">3. "Transaction failed. Please try again"</h3>
+      <div class="glass-card p-4 bg-gradient-to-br from-yellow-50/50 to-amber-50/50 border-l-4 border-yellow-500 hover-lift">
+        <h3 class="font-semibold gradient-text mb-2">3. "Transaction failed. Please try again"</h3>
         <p class="text-gray-700">
           <strong>中文</strong>：交易失败，请重试<br>
           <strong>原因</strong>：多种可能，包括风控、余额等
         </p>
       </div>
 
-      <div class="bg-purple-50 rounded-xl p-4 border-l-4 border-purple-500">
-        <h3 class="font-semibold text-gray-800 mb-2">4. "Unable to process payment"</h3>
+      <div class="glass-card p-4 bg-gradient-to-br from-purple-50/50 to-pink-50/50 border-l-4 border-purple-500 hover-lift">
+        <h3 class="font-semibold gradient-text mb-2">4. "Unable to process payment"</h3>
         <p class="text-gray-700">
           <strong>中文</strong>：无法处理付款<br>
           <strong>原因</strong>：支付渠道问题
@@ -57,25 +77,46 @@ permalink: /docs/payment-failure-solution/
   </section>
 
   <!-- 支付失败根本原因 -->
-  <section class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b-2 border-primary pb-2">
-      🔍 ChatGPT Plus支付失败根本原因
-    </h2>
+  <section class="mb-12 fade-in-up">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 mr-3 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-lg flex items-center justify-center">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+      </div>
+      <h2 class="text-2xl font-bold gradient-text">
+        ChatGPT Plus支付失败根本原因
+      </h2>
+    </div>
 
     <div class="space-y-6">
       <!-- 支付方式限制 -->
-      <div class="bg-white rounded-xl shadow-sm p-6">
-        <h3 class="text-xl font-semibold mb-4 text-gray-800">1. 支付方式限制</h3>
+      <div class="glass-card p-6 hover-lift">
+        <h3 class="text-xl font-semibold mb-4 gradient-text">1. 支付方式限制</h3>
         <div class="grid md:grid-cols-2 gap-4">
-          <div class="bg-red-50 rounded-lg p-4">
-            <h4 class="font-semibold text-red-800 mb-2">❌ 不支持</h4>
+          <div class="glass-card p-4 bg-gradient-to-br from-red-50/50 to-pink-50/50">
+            <h4 class="font-semibold text-red-800 mb-2">
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+                不支持
+              </div>
+            </h4>
             <ul class="space-y-1 text-gray-700">
               <li>• 银联卡、国内信用卡</li>
               <li>• 支付宝、微信直接支付</li>
             </ul>
           </div>
-          <div class="bg-green-50 rounded-lg p-4">
-            <h4 class="font-semibold text-green-800 mb-2">✅ 仅支持</h4>
+          <div class="glass-card p-4 bg-gradient-to-br from-green-50/50 to-emerald-50/50">
+            <h4 class="font-semibold text-green-800 mb-2">
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                仅支持
+              </div>
+            </h4>
             <ul class="space-y-1 text-gray-700">
               <li>• Visa、MasterCard</li>
               <li>• PayPal等国际支付</li>
@@ -85,38 +126,50 @@ permalink: /docs/payment-failure-solution/
       </div>
 
       <!-- 地区限制 -->
-      <div class="bg-white rounded-xl shadow-sm p-6">
-        <h3 class="text-xl font-semibold mb-4 text-gray-800">2. 地区限制</h3>
+      <div class="glass-card p-6 hover-lift">
+        <h3 class="text-xl font-semibold mb-4 gradient-text">2. 地区限制</h3>
         <ul class="space-y-2 text-gray-700">
           <li class="flex items-start">
-            <i class="fas fa-times-circle text-red-500 mr-3 mt-1"></i>
+            <svg class="w-5 h-5 text-red-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
             <span>部分地区被OpenAI限制</span>
           </li>
           <li class="flex items-start">
-            <i class="fas fa-times-circle text-red-500 mr-3 mt-1"></i>
+            <svg class="w-5 h-5 text-red-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
             <span>IP地址与账单地址不匹配</span>
           </li>
           <li class="flex items-start">
-            <i class="fas fa-times-circle text-red-500 mr-3 mt-1"></i>
+            <svg class="w-5 h-5 text-red-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
             <span>使用了不合适的代理</span>
           </li>
         </ul>
       </div>
 
       <!-- 风控系统 -->
-      <div class="bg-white rounded-xl shadow-sm p-6">
-        <h3 class="text-xl font-semibold mb-4 text-gray-800">3. 风控系统</h3>
+      <div class="glass-card p-6 hover-lift">
+        <h3 class="text-xl font-semibold mb-4 gradient-text">3. 风控系统</h3>
         <ul class="space-y-2 text-gray-700">
           <li class="flex items-start">
-            <i class="fas fa-exclamation-triangle text-yellow-500 mr-3 mt-1"></i>
+            <svg class="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
             <span>检测到异常支付行为</span>
           </li>
           <li class="flex items-start">
-            <i class="fas fa-exclamation-triangle text-yellow-500 mr-3 mt-1"></i>
+            <svg class="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
             <span>虚拟卡被识别</span>
           </li>
           <li class="flex items-start">
-            <i class="fas fa-exclamation-triangle text-yellow-500 mr-3 mt-1"></i>
+            <svg class="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
             <span>批量支付触发风控</span>
           </li>
         </ul>
@@ -125,16 +178,23 @@ permalink: /docs/payment-failure-solution/
   </section>
 
   <!-- 解决方案对比 -->
-  <section class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b-2 border-primary pb-2">
-      💡 ChatGPT Plus支付失败解决方案对比
-    </h2>
+  <section class="mb-12 fade-in-up">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 mr-3 bg-gradient-to-br from-yellow-500 to-amber-500 rounded-lg flex items-center justify-center">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+        </svg>
+      </div>
+      <h2 class="text-2xl font-bold gradient-text">
+        ChatGPT Plus支付失败解决方案对比
+      </h2>
+    </div>
 
-    <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+    <div class="glass-card overflow-hidden hover-lift">
       <div class="overflow-x-auto">
         <table class="w-full">
           <thead>
-            <tr class="bg-gradient-to-r from-primary to-secondary text-white">
+            <tr class="bg-gradient-to-r from-primary-500 to-secondary-500 text-white">
               <th class="px-6 py-3 text-left">解决方案</th>
               <th class="px-6 py-3 text-left">成功率</th>
               <th class="px-6 py-3 text-left">难度</th>
@@ -178,15 +238,22 @@ permalink: /docs/payment-failure-solution/
   </section>
 
   <!-- 最佳解决方案 -->
-  <section class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b-2 border-primary pb-2">
-      ✅ 支付失败最佳解决：iOS充值ChatGPT Plus
-    </h2>
+  <section class="mb-12 fade-in-up">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 mr-3 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+        </svg>
+      </div>
+      <h2 class="text-2xl font-bold gradient-text">
+        支付失败最佳解决：iOS充值ChatGPT Plus
+      </h2>
+    </div>
 
     <div class="space-y-6">
       <!-- 为什么选择iOS充值 -->
-      <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6">
-        <h3 class="text-xl font-semibold mb-4 text-gray-800">为什么选择iOS充值？</h3>
+      <div class="glass-card p-6 bg-gradient-to-br from-green-50/50 to-emerald-50/50 hover-lift">
+        <h3 class="text-xl font-semibold mb-4 gradient-text">为什么选择iOS充值？</h3>
         <div class="grid md:grid-cols-2 gap-4">
           <div class="flex items-start">
             <span class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm font-bold flex-shrink-0">1</span>
@@ -220,8 +287,8 @@ permalink: /docs/payment-failure-solution/
       </div>
 
       <!-- 具体操作流程 -->
-      <div class="bg-white rounded-xl shadow-sm p-6">
-        <h3 class="text-xl font-semibold mb-6 text-gray-800">具体操作流程</h3>
+      <div class="glass-card p-6 hover-lift">
+        <h3 class="text-xl font-semibold mb-6 gradient-text">具体操作流程</h3>
         <div class="space-y-4">
           <!-- 第1步 -->
           <div class="flex items-start">
@@ -279,15 +346,22 @@ permalink: /docs/payment-failure-solution/
   </section>
 
   <!-- 真实案例 -->
-  <section class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b-2 border-primary pb-2">
-      📊 ChatGPT Plus支付失败真实案例
-    </h2>
+  <section class="mb-12 fade-in-up">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 mr-3 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-lg flex items-center justify-center">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+        </svg>
+      </div>
+      <h2 class="text-2xl font-bold gradient-text">
+        ChatGPT Plus支付失败真实案例
+      </h2>
+    </div>
 
     <div class="space-y-4">
       <!-- 案例1 -->
-      <div class="bg-gradient-to-r from-red-50 to-pink-50 rounded-xl p-6">
-        <h3 class="text-lg font-semibold mb-3 text-gray-800">案例1：张先生（北京）</h3>
+      <div class="glass-card p-6 bg-gradient-to-br from-red-50/50 to-pink-50/50 hover-lift">
+        <h3 class="text-lg font-semibold mb-3 gradient-text">案例1：张先生（北京）</h3>
         <div class="space-y-2 text-gray-700">
           <p><strong>问题</strong>：使用招商银行信用卡，提示"card declined"</p>
           <p><strong>尝试</strong>：换了3张不同银行的卡，都失败</p>
@@ -296,8 +370,8 @@ permalink: /docs/payment-failure-solution/
       </div>
 
       <!-- 案例2 -->
-      <div class="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl p-6">
-        <h3 class="text-lg font-semibold mb-3 text-gray-800">案例2：李女士（上海）</h3>
+      <div class="glass-card p-6 bg-gradient-to-br from-orange-50/50 to-yellow-50/50 hover-lift">
+        <h3 class="text-lg font-semibold mb-3 gradient-text">案例2：李女士（上海）</h3>
         <div class="space-y-2 text-gray-700">
           <p><strong>问题</strong>：购买虚拟卡充值，账号被风控</p>
           <p><strong>损失</strong>：虚拟卡余额200元无法使用</p>
@@ -306,8 +380,8 @@ permalink: /docs/payment-failure-solution/
       </div>
 
       <!-- 案例3 -->
-      <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6">
-        <h3 class="text-lg font-semibold mb-3 text-gray-800">案例3：王同学（深圳）</h3>
+      <div class="glass-card p-6 bg-gradient-to-br from-blue-50/50 to-indigo-50/50 hover-lift">
+        <h3 class="text-lg font-semibold mb-3 gradient-text">案例3：王同学（深圳）</h3>
         <div class="space-y-2 text-gray-700">
           <p><strong>问题</strong>：PayPal绑定国内卡，支付失败</p>
           <p><strong>尝试</strong>：更换IP、清理缓存，仍然失败</p>
@@ -318,17 +392,24 @@ permalink: /docs/payment-failure-solution/
   </section>
 
   <!-- 安全性对比 -->
-  <section class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b-2 border-primary pb-2">
-      🛡️ 支付失败解决方案安全性对比
-    </h2>
+  <section class="mb-12 fade-in-up">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 mr-3 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+        </svg>
+      </div>
+      <h2 class="text-2xl font-bold gradient-text">
+        支付失败解决方案安全性对比
+      </h2>
+    </div>
 
-    <div class="bg-white rounded-xl shadow-sm overflow-hidden">
-      <h3 class="text-xl font-semibold p-6 pb-4 text-gray-800">虚拟卡 vs iOS充值</h3>
+    <div class="glass-card overflow-hidden hover-lift">
+      <h3 class="text-xl font-semibold p-6 pb-4 gradient-text">虚拟卡 vs iOS充值</h3>
       <div class="overflow-x-auto">
         <table class="w-full">
           <thead>
-            <tr class="bg-gradient-to-r from-primary to-secondary text-white">
+            <tr class="bg-gradient-to-r from-primary-500 to-secondary-500 text-white">
               <th class="px-6 py-3 text-left">安全维度</th>
               <th class="px-6 py-3 text-left">虚拟卡方案</th>
               <th class="px-6 py-3 text-left">iOS充值方案</th>
@@ -337,23 +418,63 @@ permalink: /docs/payment-failure-solution/
           <tbody class="divide-y divide-gray-200">
             <tr>
               <td class="px-6 py-4 font-medium">账号安全</td>
-              <td class="px-6 py-4 text-yellow-600">⚠️ 易触发封号</td>
-              <td class="px-6 py-4 text-green-600">✅ 官方渠道安全</td>
+              <td class="px-6 py-4">
+                <span class="text-yellow-600 inline-flex items-center">
+                  <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                  易触发封号
+                </span>
+              </td>
+              <td class="px-6 py-4">
+                <span class="text-green-600 inline-flex items-center">
+                  <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  官方渠道安全
+                </span>
+              </td>
             </tr>
             <tr class="bg-gray-50">
               <td class="px-6 py-4 font-medium">资金安全</td>
-              <td class="px-6 py-4 text-yellow-600">⚠️ 需预充值</td>
-              <td class="px-6 py-4 text-green-600">✅ 即充即用</td>
+              <td class="px-6 py-4">
+                <span class="text-yellow-600 inline-flex items-center">
+                  <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                  需预充值
+                </span>
+              </td>
+              <td class="px-6 py-4">
+                <span class="text-green-600 inline-flex items-center">
+                  <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  即充即用
+                </span>
+              </td>
             </tr>
             <tr>
               <td class="px-6 py-4 font-medium">隐私保护</td>
-              <td class="px-6 py-4 text-red-600">❌ 需要KYC认证</td>
-              <td class="px-6 py-4 text-green-600">✅ 仅需邮箱</td>
+              <td class="px-6 py-4">
+                <span class="text-red-600 inline-flex items-center">
+                  <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                  需要KYC认证
+                </span>
+              </td>
+              <td class="px-6 py-4">
+                <span class="text-green-600 inline-flex items-center">
+                  <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  仅需邮箱
+                </span>
+              </td>
             </tr>
             <tr class="bg-gray-50">
               <td class="px-6 py-4 font-medium">长期稳定</td>
-              <td class="px-6 py-4 text-red-600">❌ 随时可能失效</td>
-              <td class="px-6 py-4 text-green-600">✅ 持续可用</td>
+              <td class="px-6 py-4">
+                <span class="text-red-600 inline-flex items-center">
+                  <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                  随时可能失效
+                </span>
+              </td>
+              <td class="px-6 py-4">
+                <span class="text-green-600 inline-flex items-center">
+                  <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  持续可用
+                </span>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -362,14 +483,21 @@ permalink: /docs/payment-failure-solution/
   </section>
 
   <!-- 费用对比 -->
-  <section class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b-2 border-primary pb-2">
-      💰 ChatGPT Plus充值费用对比
-    </h2>
+  <section class="mb-12 fade-in-up">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 mr-3 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      </div>
+      <h2 class="text-2xl font-bold gradient-text">
+        ChatGPT Plus充值费用对比
+      </h2>
+    </div>
 
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-xl shadow-sm p-6">
-        <h3 class="text-lg font-semibold mb-3 text-gray-800">1. 官方直接订阅</h3>
+      <div class="glass-card p-6 hover-lift">
+        <h3 class="text-lg font-semibold mb-3 gradient-text">1. 官方直接订阅</h3>
         <ul class="space-y-2 text-gray-700">
           <li class="flex justify-between">
             <span>月费：</span>
@@ -383,8 +511,8 @@ permalink: /docs/payment-failure-solution/
         </ul>
       </div>
 
-      <div class="bg-white rounded-xl shadow-sm p-6">
-        <h3 class="text-lg font-semibold mb-3 text-gray-800">2. 虚拟卡充值</h3>
+      <div class="glass-card p-6 hover-lift">
+        <h3 class="text-lg font-semibold mb-3 gradient-text">2. 虚拟卡充值</h3>
         <ul class="space-y-2 text-gray-700">
           <li class="flex justify-between">
             <span>月费：</span>
@@ -398,8 +526,8 @@ permalink: /docs/payment-failure-solution/
         </ul>
       </div>
 
-      <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6">
-        <h3 class="text-lg font-semibold mb-3 text-gray-800">3. FastGPTPlus iOS充值</h3>
+      <div class="glass-card p-6 bg-gradient-to-br from-green-50/50 to-emerald-50/50 hover-lift">
+        <h3 class="text-lg font-semibold mb-3 gradient-text">3. FastGPTPlus iOS充值</h3>
         <ul class="space-y-2 text-gray-700">
           <li class="flex justify-between">
             <span>月费：</span>
@@ -416,47 +544,69 @@ permalink: /docs/payment-failure-solution/
   </section>
 
   <!-- 适用人群 -->
-  <section class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b-2 border-primary pb-2">
-      🎯 iOS充值解决支付失败适用人群
-    </h2>
+  <section class="mb-12 fade-in-up">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 mr-3 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+        </svg>
+      </div>
+      <h2 class="text-2xl font-bold gradient-text">
+        iOS充值解决支付失败适用人群
+      </h2>
+    </div>
 
     <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6">
-        <h3 class="text-xl font-semibold mb-4 text-gray-800">强烈推荐</h3>
+      <div class="glass-card p-6 bg-gradient-to-br from-blue-50/50 to-indigo-50/50 hover-lift">
+        <h3 class="text-xl font-semibold mb-4 gradient-text">强烈推荐</h3>
         <ul class="space-y-2 text-gray-700">
           <li class="flex items-start">
-            <span class="text-green-500 mr-2">✅</span>
+            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            </svg>
             <span>多次支付失败的用户</span>
           </li>
           <li class="flex items-start">
-            <span class="text-green-500 mr-2">✅</span>
+            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            </svg>
             <span>没有国际信用卡的用户</span>
           </li>
           <li class="flex items-start">
-            <span class="text-green-500 mr-2">✅</span>
+            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            </svg>
             <span>担心账号安全的用户</span>
           </li>
           <li class="flex items-start">
-            <span class="text-green-500 mr-2">✅</span>
+            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            </svg>
             <span>需要快速开通的用户</span>
           </li>
         </ul>
       </div>
 
-      <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6">
-        <h3 class="text-xl font-semibold mb-4 text-gray-800">特别适合</h3>
+      <div class="glass-card p-6 bg-gradient-to-br from-purple-50/50 to-pink-50/50 hover-lift">
+        <h3 class="text-xl font-semibold mb-4 gradient-text">特别适合</h3>
         <ul class="space-y-2 text-gray-700">
           <li class="flex items-start">
-            <span class="text-purple-500 mr-2">✅</span>
+            <svg class="w-5 h-5 text-purple-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            </svg>
             <span>学生群体（无信用卡）</span>
           </li>
           <li class="flex items-start">
-            <span class="text-purple-500 mr-2">✅</span>
+            <svg class="w-5 h-5 text-purple-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            </svg>
             <span>企业用户（需要发票）</span>
           </li>
           <li class="flex items-start">
-            <span class="text-purple-500 mr-2">✅</span>
+            <svg class="w-5 h-5 text-purple-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            </svg>
             <span>长期使用者（稳定需求）</span>
           </li>
         </ul>
@@ -465,26 +615,45 @@ permalink: /docs/payment-failure-solution/
   </section>
 
   <!-- 快速开始 -->
-  <section class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b-2 border-primary pb-2">
-      📱 解决ChatGPT Plus支付失败快速开始
-    </h2>
+  <section class="mb-12 fade-in-up">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 mr-3 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg flex items-center justify-center">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+        </svg>
+      </div>
+      <h2 class="text-2xl font-bold gradient-text">
+        解决ChatGPT Plus支付失败快速开始
+      </h2>
+    </div>
 
-    <div class="bg-gradient-to-r from-yellow-50 to-amber-50 rounded-xl p-8 text-center">
+    <div class="glass-card p-8 text-center bg-gradient-to-br from-yellow-50/50 to-amber-50/50">
       <div class="grid md:grid-cols-3 gap-6">
-        <div>
-          <div class="text-3xl mb-2">⚡</div>
-          <h3 class="font-semibold text-gray-800 mb-2">立即充值</h3>
+        <div class="hover-lift">
+          <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-amber-400 rounded-xl flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold gradient-text mb-2">立即充值</h3>
           <a href="https://go.fastgptplus.com" class="text-primary hover:underline font-semibold">go.fastgptplus.com</a>
         </div>
-        <div>
-          <div class="text-3xl mb-2">💬</div>
-          <h3 class="font-semibold text-gray-800 mb-2">微信客服</h3>
+        <div class="hover-lift">
+          <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-400 rounded-xl flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold gradient-text mb-2">微信客服</h3>
           <p class="font-semibold">laozhangdaichong</p>
         </div>
-        <div>
-          <div class="text-3xl mb-2">⏰</div>
-          <h3 class="font-semibold text-gray-800 mb-2">服务时间</h3>
+        <div class="hover-lift">
+          <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-xl flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold gradient-text mb-2">服务时间</h3>
           <p class="font-semibold">7×24小时</p>
         </div>
       </div>
@@ -492,42 +661,59 @@ permalink: /docs/payment-failure-solution/
   </section>
 
   <!-- 常见问题 -->
-  <section class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b-2 border-primary pb-2">
-      ❓ 支付失败解决常见问题
-    </h2>
+  <section class="mb-12 fade-in-up">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 mr-3 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      </div>
+      <h2 class="text-2xl font-bold gradient-text">
+        支付失败解决常见问题
+      </h2>
+    </div>
 
     <div class="space-y-4">
-      <div class="bg-white rounded-xl shadow-sm p-6">
-        <h3 class="text-lg font-semibold mb-2 text-gray-800">Q: 支付失败会扣款吗？</h3>
+      <div class="glass-card p-6 hover-lift">
+        <h3 class="text-lg font-semibold mb-2 gradient-text">Q: 支付失败会扣款吗？</h3>
         <p class="text-gray-700">A: 不会。支付失败不会产生实际扣款。</p>
       </div>
 
-      <div class="bg-white rounded-xl shadow-sm p-6">
-        <h3 class="text-lg font-semibold mb-2 text-gray-800">Q: iOS充值后能在电脑上用吗？</h3>
+      <div class="glass-card p-6 hover-lift">
+        <h3 class="text-lg font-semibold mb-2 gradient-text">Q: iOS充值后能在电脑上用吗？</h3>
         <p class="text-gray-700">A: 可以。Plus会员权限全平台通用。</p>
       </div>
 
-      <div class="bg-white rounded-xl shadow-sm p-6">
-        <h3 class="text-lg font-semibold mb-2 text-gray-800">Q: 可以开发票吗？</h3>
+      <div class="glass-card p-6 hover-lift">
+        <h3 class="text-lg font-semibold mb-2 gradient-text">Q: 可以开发票吗？</h3>
         <p class="text-gray-700">A: 可以。我们提供正规发票。</p>
       </div>
 
-      <div class="bg-white rounded-xl shadow-sm p-6">
-        <h3 class="text-lg font-semibold mb-2 text-gray-800">Q: 充值失败怎么办？</h3>
+      <div class="glass-card p-6 hover-lift">
+        <h3 class="text-lg font-semibold mb-2 gradient-text">Q: 充值失败怎么办？</h3>
         <p class="text-gray-700">A: 100%退款保证，无需担心。</p>
       </div>
     </div>
   </section>
 
   <!-- 底部CTA -->
-  <div class="bg-gradient-to-r from-primary to-secondary rounded-xl p-8 text-center text-white">
-    <p class="text-xl mb-6">
-      <i class="fas fa-lightbulb mr-2"></i>
-      <strong>总结</strong>：与其尝试各种可能失败的支付方式，不如选择稳定可靠的iOS充值方案，省时省力省钱。
+  <div class="glass-card p-8 text-center bg-gradient-to-r from-primary to-secondary text-white hover-lift">
+    <div class="flex items-center justify-center mb-6">
+      <div class="w-12 h-12 bg-white/20 backdrop-blur rounded-xl flex items-center justify-center mr-3">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+        </svg>
+      </div>
+      <h2 class="text-2xl font-bold">总结</h2>
+    </div>
+    <p class="text-xl mb-8">
+      与其尝试各种可能失败的支付方式，不如选择稳定可靠的iOS充值方案，省时省力省钱。
     </p>
-    <a href="https://go.fastgptplus.com" class="inline-flex items-center px-8 py-4 bg-white text-primary font-bold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition duration-200">
-      立即解决支付问题 →
+    <a href="https://go.fastgptplus.com" class="inline-flex items-center px-8 py-4 bg-white text-primary font-bold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition duration-200 glass-button">
+      <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+      </svg>
+      立即解决支付问题
     </a>
   </div>
 </div>

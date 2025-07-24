@@ -5,16 +5,22 @@
 
 class AnimationSystem {
   constructor() {
+    // Check for reduced motion preference
+    this.prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     this.init();
   }
 
   init() {
-    this.initScrollAnimations();
-    this.initSVGAnimations();
-    this.initParallax();
-    this.initInteractiveElements();
-    this.initNumberCounters();
-    this.initMouseEffects();
+    // Only initialize heavy animations if user hasn't requested reduced motion
+    if (!this.prefersReducedMotion) {
+      this.initScrollAnimations();
+      this.initSVGAnimations();
+      this.initParallax();
+      this.initInteractiveElements();
+      this.initNumberCounters();
+      // Disable custom cursor for better performance
+      // this.initMouseEffects();
+    }
   }
 
   /**
@@ -100,7 +106,9 @@ class AnimationSystem {
   initParallax() {
     const parallaxElements = document.querySelectorAll('.parallax');
     
-    window.addEventListener('scroll', () => {
+    // Throttle scroll events for better performance
+    let ticking = false;
+    function updateParallax() {
       const scrolled = window.pageYOffset;
       
       parallaxElements.forEach(el => {
@@ -108,6 +116,15 @@ class AnimationSystem {
         const offset = scrolled * speed;
         el.style.transform = `translateY(${offset}px)`;
       });
+      
+      ticking = false;
+    }
+    
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateParallax);
+        ticking = true;
+      }
     });
   }
 
