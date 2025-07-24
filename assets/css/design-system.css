@@ -476,3 +476,73 @@
     box-shadow: none;
   }
 }
+
+/* ===========================
+   HTML Content Pages Fix
+   =========================== */
+
+/* Fix for HTML content pages that have their own structure */
+.markdown-content > .max-w-4xl,
+.markdown-content > .max-w-3xl,
+.markdown-content > .max-w-2xl {
+  /* Remove markdown-content's max-width constraints */
+  max-width: 100% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ensure glass-card styles work inside markdown-content */
+.markdown-content .glass-card {
+  /* Preserve glass-card styles */
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.8)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Fix nested containers */
+.glass-card .glass-card {
+  /* Avoid double glass effect */
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+/* Ensure proper spacing for HTML content */
+.markdown-content > div[class*="mx-auto"] {
+  padding: 0;
+}
+
+/* Preserve original text styles in HTML content */
+.markdown-content .text-4xl,
+.markdown-content .text-3xl,
+.markdown-content .text-2xl,
+.markdown-content .text-xl {
+  /* Ensure headings keep their size */
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+/* Fix table styles in HTML content */
+.markdown-content table {
+  /* Ensure tables display correctly */
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.markdown-content th,
+.markdown-content td {
+  /* Preserve table cell styles */
+  padding: inherit;
+  border: inherit;
+}
