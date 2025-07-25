@@ -14,11 +14,11 @@
         {% if include.items %}
             {% for item in include.items %}
             <div class="border border-gray-200 rounded-lg">
-                <button @click="activeIndex = activeIndex === {{ forloop.index0 }} ? null : {{ forloop.index0 }}" 
+                <button x-on:click="activeIndex = activeIndex === {{ forloop.index0 }} ? null : {{ forloop.index0 }}" 
                         class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition">
                     <span class="font-medium">{{ item.question }}</span>
                     <svg class="w-5 h-5 text-gray-500 transform transition-transform" 
-                         :class="activeIndex === {{ forloop.index0 }} ? 'rotate-180' : ''"
+                         x-bind:class="activeIndex === {{ forloop.index0 }} ? 'rotate-180' : ''"
                          fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
@@ -35,11 +35,11 @@
         {% else %}
             <!-- Default FAQ items -->
             <div class="border border-gray-200 rounded-lg">
-                <button @click="activeIndex = activeIndex === 0 ? null : 0" 
+                <button x-on:click="activeIndex = activeIndex === 0 ? null : 0" 
                         class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition">
                     <span class="font-medium">充值后多久生效？</span>
                     <svg class="w-5 h-5 text-gray-500 transform transition-transform" 
-                         :class="activeIndex === 0 ? 'rotate-180' : ''"
+                         x-bind:class="activeIndex === 0 ? 'rotate-180' : ''"
                          fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
@@ -54,11 +54,11 @@
             </div>
             
             <div class="border border-gray-200 rounded-lg">
-                <button @click="activeIndex = activeIndex === 1 ? null : 1" 
+                <button x-on:click="activeIndex = activeIndex === 1 ? null : 1" 
                         class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition">
                     <span class="font-medium">需要提供密码吗？</span>
                     <svg class="w-5 h-5 text-gray-500 transform transition-transform" 
-                         :class="activeIndex === 1 ? 'rotate-180' : ''"
+                         x-bind:class="activeIndex === 1 ? 'rotate-180' : ''"
                          fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
@@ -73,11 +73,11 @@
             </div>
             
             <div class="border border-gray-200 rounded-lg">
-                <button @click="activeIndex = activeIndex === 2 ? null : 2" 
+                <button x-on:click="activeIndex = activeIndex === 2 ? null : 2" 
                         class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition">
                     <span class="font-medium">充值失败怎么办？</span>
                     <svg class="w-5 h-5 text-gray-500 transform transition-transform" 
-                         :class="activeIndex === 2 ? 'rotate-180' : ''"
+                         x-bind:class="activeIndex === 2 ? 'rotate-180' : ''"
                          fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>

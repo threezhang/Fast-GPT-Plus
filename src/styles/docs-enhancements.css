@@ -2,7 +2,7 @@
 
 /* 文档页面标题区域美化 */
 .page-header-docs {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  @apply bg-gradient-to-br from-primary-500 to-secondary-600;
   position: relative;
   overflow: hidden;
 }

@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import Modern UI Effects */
-@import 'modern-ui.css';
-
-/* Import Advanced Animations */
-@import 'animations.css';
-
 /* Base Typography Improvements */
 @layer base {
   html {
