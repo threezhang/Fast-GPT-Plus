@@ -134,35 +134,19 @@
     @apply absolute -top-4 left-4 text-6xl text-primary-300 font-serif;
   }
   
-  /* 代码块语法高亮 - 现代编辑器风格 */
+  /* 代码块语法高亮 - 简洁风格 */
   .markdown-content pre {
-    @apply relative bg-[#0d1117] text-gray-100 p-6 rounded-2xl overflow-x-auto;
+    @apply relative bg-gray-50 text-gray-800 p-6 rounded-xl overflow-x-auto shadow-sm border border-gray-200;
     tab-size: 2;
-    box-shadow: 0 0 40px rgba(64, 192, 255, 0.1);
-  }
-  
-  /* 代码块头部 */
-  .markdown-content pre::before {
-    content: '';
-    @apply absolute top-4 left-6 flex gap-2;
-    width: 60px;
-    height: 12px;
-    background: radial-gradient(circle, #ff5f57 6px, transparent 6px) 0 0 / 20px 20px no-repeat,
-                radial-gradient(circle, #ffbd2e 6px, transparent 6px) 20px 0 / 20px 20px no-repeat,
-                radial-gradient(circle, #28ca42 6px, transparent 6px) 40px 0 / 20px 20px no-repeat;
   }
   
   .markdown-content pre code {
-    @apply bg-transparent p-0 text-sm leading-relaxed font-mono;
-    text-shadow: 0 0 20px rgba(64, 192, 255, 0.3);
+    @apply bg-transparent p-0 text-sm leading-relaxed font-mono text-gray-800;
   }
   
-  /* 内联代码样式 - 霓虹效果 */
+  /* 内联代码样式 - 简洁风格 */
   .markdown-content :not(pre) > code {
-    @apply relative bg-gradient-to-r from-primary-100/90 to-secondary-100/90 
-           text-primary-900 px-2 py-1 rounded-md text-sm font-mono font-medium
-           border border-primary-200/50;
-    text-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+    @apply bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm font-mono font-medium;
   }
   
   /* Button Components */
