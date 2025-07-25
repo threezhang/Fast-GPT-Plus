@@ -141,71 +141,7 @@ permalink: /quick-start/
     </div>
 
     <!-- FAQ Section -->
-    <div class="glass-card p-8 mb-12">
-        <h2 class="text-2xl font-semibold mb-6">常见问题</h2>
-        
-        <div class="space-y-4" x-data="{ activeIndex: null }">
-            <!-- Question 1 -->
-            <div class="border border-gray-200 rounded-lg">
-                <button @click="activeIndex = activeIndex === 0 ? null : 0" 
-                        class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition">
-                    <span class="font-medium">充值后多久生效？</span>
-                    <svg class="w-5 h-5 text-gray-500 transform transition-transform" 
-                         :class="activeIndex === 0 ? 'rotate-180' : ''"
-                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
-                </button>
-                <div x-show="activeIndex === 0" 
-                     x-transition:enter="transition ease-out duration-200"
-                     x-transition:enter-start="opacity-0 transform -translate-y-2"
-                     x-transition:enter-end="opacity-100 transform translate-y-0"
-                     class="px-6 py-4 border-t border-gray-200">
-                    <p class="text-gray-600">通常在 5 分钟内生效。如果超过 10 分钟未生效，请联系客服。</p>
-                </div>
-            </div>
-            
-            <!-- Question 2 -->
-            <div class="border border-gray-200 rounded-lg">
-                <button @click="activeIndex = activeIndex === 1 ? null : 1" 
-                        class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition">
-                    <span class="font-medium">需要提供密码吗？</span>
-                    <svg class="w-5 h-5 text-gray-500 transform transition-transform" 
-                         :class="activeIndex === 1 ? 'rotate-180' : ''"
-                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
-                </button>
-                <div x-show="activeIndex === 1" 
-                     x-transition:enter="transition ease-out duration-200"
-                     x-transition:enter-start="opacity-0 transform -translate-y-2"
-                     x-transition:enter-end="opacity-100 transform translate-y-0"
-                     class="px-6 py-4 border-t border-gray-200">
-                    <p class="text-gray-600">不需要！我们只需要您的邮箱地址，绝不会索要密码或其他敏感信息。</p>
-                </div>
-            </div>
-            
-            <!-- Question 3 -->
-            <div class="border border-gray-200 rounded-lg">
-                <button @click="activeIndex = activeIndex === 2 ? null : 2" 
-                        class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition">
-                    <span class="font-medium">充值失败怎么办？</span>
-                    <svg class="w-5 h-5 text-gray-500 transform transition-transform" 
-                         :class="activeIndex === 2 ? 'rotate-180' : ''"
-                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
-                </button>
-                <div x-show="activeIndex === 2" 
-                     x-transition:enter="transition ease-out duration-200"
-                     x-transition:enter-start="opacity-0 transform -translate-y-2"
-                     x-transition:enter-end="opacity-100 transform translate-y-0"
-                     class="px-6 py-4 border-t border-gray-200">
-                    <p class="text-gray-600">如果充值失败，我们承诺 100% 退款。请联系客服微信：laozhangdaichong</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% include components/faq-accordion.html class="mb-12" %}
 
     <!-- CTA Section -->
     <div class="text-center">

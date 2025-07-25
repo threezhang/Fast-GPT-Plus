@@ -6,7 +6,7 @@ permalink: /
 <!-- Hero Section -->
 <section class="hero-bg relative overflow-hidden py-20 text-white">
     <div class="absolute inset-0 opacity-20">
-        <img src="{{ site.baseurl }}/assets/icons/hero-illustration.svg" class="w-full h-full object-cover" alt="Background pattern">
+        <img src="{{ site.baseurl }}/assets/icons/hero-illustration.png" class="w-full h-full object-cover" alt="Background pattern">
     </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6"
@@ -139,7 +139,7 @@ permalink: /
             <!-- Step by Step Guide -->
             {% capture steps_content %}
             <h2 class="text-2xl font-semibold mb-8 flex items-center">
-                <img src="{{ site.baseurl }}/assets/icons/process-flow.svg" class="h-8 mr-4" alt="Process">
+                <img src="{{ site.baseurl }}/assets/icons/process-flow.png" class="h-8 mr-4" alt="Process">
                 三步完成ChatGPT Plus充值
             </h2>
             
@@ -223,7 +223,7 @@ permalink: /
             
             <!-- Success indicator -->
             <div class="bg-gradient-to-r from-success/10 to-green-50 rounded-xl p-6 text-center">
-                <img src="{{ site.baseurl }}/assets/icons/success-check.svg" class="w-16 h-16 mx-auto mb-4" alt="Success">
+                <img src="{{ site.baseurl }}/assets/icons/success-check.png" class="w-16 h-16 mx-auto mb-4" alt="Success">
                 <p class="text-gray-800 font-medium">充值成功后，5分钟内生效！</p>
             </div>
             {% endcapture %}
@@ -235,7 +235,7 @@ permalink: /
                 {% capture speed_content %}
                 <div class="flex items-start">
                     <div class="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl p-3 mr-4">
-                        <img src="{{ site.baseurl }}/assets/icons/lightning-bolt.svg" class="w-8 h-8" alt="Speed">
+                        <img src="{{ site.baseurl }}/assets/icons/lightning-bolt.png" class="w-8 h-8" alt="Speed">
                     </div>
                     <div>
                         <h3 class="text-lg font-semibold mb-2">极速充值</h3>
@@ -247,7 +247,7 @@ permalink: /
                 {% capture security_content %}
                 <div class="flex items-start">
                     <div class="bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl p-3 mr-4">
-                        <img src="{{ site.baseurl }}/assets/icons/shield-security.svg" class="w-8 h-8" alt="Security">
+                        <img src="{{ site.baseurl }}/assets/icons/shield-security.png" class="w-8 h-8" alt="Security">
                     </div>
                     <div>
                         <h3 class="text-lg font-semibold mb-2">安全可靠</h3>

@@ -62,7 +62,7 @@ ChatGPT Plus iOS充值是利用App Store官方订阅系统，通过汇率差价�
 
 ### 🏆 为什么选择iOS充值而非虚拟卡？
 
-![价格对比图](assets/images/price-comparison.svg)
+![价格对比图](assets/images/price-comparison.png)
 
 #### 技术优势
 - **🔐 更安全**：iOS官方充值渠道，不会触发风控
@@ -78,7 +78,7 @@ ChatGPT Plus iOS充值是利用App Store官方订阅系统，通过汇率差价�
 
 ## 🚀 ChatGPT Plus充值快速开始（野卡替代通道）
 
-![充值步骤图](assets/images/recharge-steps.svg)
+![充值步骤图](assets/images/recharge-steps.png)
 
 ### 第一步：选择充值入口
 
@@ -194,7 +194,7 @@ A: 可以。我们是正规公司，支持开具增值税普通发票。
 
 ## 🛡️ iOS充值安全保障
 
-![安全保障体系](assets/images/security-system.svg)
+![安全保障体系](assets/images/security-system.png)
 
 - ✅ **正规公司运营**：工商注册，可开发票
 - ✅ **官方渠道充值**：100%安全，不影响账号
