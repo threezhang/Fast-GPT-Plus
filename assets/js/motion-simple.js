@@ -87,8 +87,20 @@
       }, observerOptions);
 
       // Observe all animatable elements
-      document.querySelectorAll('.scroll-fade, .fade-in, .slide-in-left, .slide-in-right, .scale-in').forEach(el => {
-        observer.observe(el);
+      const elements = document.querySelectorAll('.scroll-fade, .fade-in, .slide-in-left, .slide-in-right, .scale-in');
+      elements.forEach((el, index) => {
+        // Check if element is already in viewport on load
+        const rect = el.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+        
+        if (isVisible && !el.classList.contains('animated')) {
+          // Animate immediately for visible elements
+          el.classList.add('animated');
+          animate.fadeIn(el, index * 50);
+        } else {
+          // Otherwise observe for scroll
+          observer.observe(el);
+        }
       });
     }
   }

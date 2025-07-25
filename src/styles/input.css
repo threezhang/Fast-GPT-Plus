@@ -227,10 +227,15 @@
   
   /* Scroll animations */
   .scroll-fade {
-    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+    @apply transition-all duration-700 ease-out;
   }
   
-  .scroll-fade.visible {
+  .scroll-fade:not(.animated) {
+    @apply opacity-0 translate-y-8;
+  }
+  
+  .scroll-fade.visible,
+  .scroll-fade.animated {
     @apply opacity-100 translate-y-0;
   }
   
