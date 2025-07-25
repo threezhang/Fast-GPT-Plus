@@ -39,3 +39,6 @@ dist/
 build/
 _site/
 .jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+assets/css/main.css

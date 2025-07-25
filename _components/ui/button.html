@@ -1,0 +1,88 @@
+{% comment %}
+  Button Component
+  Usage: {% include ui/button.html text="Click me" variant="primary" size="md" href="/link" %}
+  
+  Parameters:
+  - text: Button text (required)
+  - variant: primary, secondary, outline, ghost, danger (default: primary)
+  - size: sm, md, lg (default: md)
+  - href: Link URL (optional, creates an anchor instead of button)
+  - class: Additional CSS classes
+  - icon: Icon SVG or HTML (optional)
+  - iconPosition: left, right (default: left)
+  - disabled: true/false (default: false)
+  - type: button, submit, reset (default: button, only for button element)
+{% endcomment %}
+
+{% assign variant = include.variant | default: 'primary' %}
+{% assign size = include.size | default: 'md' %}
+{% assign iconPosition = include.iconPosition | default: 'left' %}
+{% assign disabled = include.disabled | default: false %}
+{% assign type = include.type | default: 'button' %}
+
+{% capture baseClasses %}
+  inline-flex items-center justify-center font-medium transition-all duration-200 
+  focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 
+  disabled:opacity-50 disabled:cursor-not-allowed
+{% endcapture %}
+
+{% capture variantClasses %}
+  {% case variant %}
+    {% when 'primary' %}
+      bg-primary-600 text-white hover:bg-primary-700 focus-visible:ring-primary-500
+      shadow-sm hover:shadow-md
+    {% when 'secondary' %}
+      bg-secondary-600 text-white hover:bg-secondary-700 focus-visible:ring-secondary-500
+      shadow-sm hover:shadow-md
+    {% when 'outline' %}
+      border-2 border-gray-300 bg-transparent hover:bg-gray-50 text-gray-700
+      hover:border-gray-400 focus-visible:ring-gray-500
+    {% when 'ghost' %}
+      bg-transparent hover:bg-gray-100 text-gray-700 hover:text-gray-900
+      focus-visible:ring-gray-500
+    {% when 'danger' %}
+      bg-danger text-white hover:bg-red-600 focus-visible:ring-red-500
+      shadow-sm hover:shadow-md
+  {% endcase %}
+{% endcapture %}
+
+{% capture sizeClasses %}
+  {% case size %}
+    {% when 'sm' %}
+      px-3 py-1.5 text-sm rounded-md gap-1.5
+    {% when 'md' %}
+      px-4 py-2 text-base rounded-lg gap-2
+    {% when 'lg' %}
+      px-6 py-3 text-lg rounded-xl gap-2.5
+  {% endcase %}
+{% endcapture %}
+
+{% capture allClasses %}
+  {{ baseClasses | strip }} {{ variantClasses | strip }} {{ sizeClasses | strip }} {{ include.class }}
+{% endcapture %}
+
+{% if include.href %}
+  <a href="{{ include.href }}" 
+     class="{{ allClasses | strip }}"
+     {% if disabled %}aria-disabled="true" onclick="return false;"{% endif %}>
+    {% if include.icon and iconPosition == 'left' %}
+      <span class="flex-shrink-0">{{ include.icon }}</span>
+    {% endif %}
+    <span>{{ include.text }}</span>
+    {% if include.icon and iconPosition == 'right' %}
+      <span class="flex-shrink-0">{{ include.icon }}</span>
+    {% endif %}
+  </a>
+{% else %}
+  <button type="{{ type }}"
+          class="{{ allClasses | strip }}"
+          {% if disabled %}disabled{% endif %}>
+    {% if include.icon and iconPosition == 'left' %}
+      <span class="flex-shrink-0">{{ include.icon }}</span>
+    {% endif %}
+    <span>{{ include.text }}</span>
+    {% if include.icon and iconPosition == 'right' %}
+      <span class="flex-shrink-0">{{ include.icon }}</span>
+    {% endif %}
+  </button>
+{% endif %}
