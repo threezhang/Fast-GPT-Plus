@@ -3,66 +3,17 @@ layout: default
 permalink: /
 ---
 
-<!-- Hero Section -->
-<section class="hero-bg relative overflow-hidden py-20 text-white">
-    <div class="absolute inset-0 opacity-20">
-        <img src="{{ site.baseurl }}/assets/icons/hero-illustration.png" class="w-full h-full object-cover" alt="Background pattern">
-    </div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <div class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6"
-             x-data 
-             x-motion="{ animate: { opacity: [0, 1], scale: [0.8, 1] }, duration: 0.6 }">
-            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span class="text-sm font-medium">野卡最佳替代方案</span>
-        </div>
-        
-        <h1 class="text-4xl md:text-6xl font-light mb-6 tracking-tight"
-            x-data 
-            x-motion="{ animate: { opacity: [0, 1], y: [30, 0] }, duration: 0.8, delay: 0.1 }">
-            ChatGPT Plus<br>
-            <span class="font-semibold">快速充值指南</span>
-        </h1>
-        <p class="text-xl md:text-2xl mb-8 opacity-90 font-light max-w-3xl mx-auto"
-           x-data 
-           x-motion="{ animate: { opacity: [0, 1], y: [30, 0] }, duration: 0.8, delay: 0.2 }">
-            通过iOS官方渠道，5分钟完成充值<br>
-            安全、稳定、便捷的充值解决方案
-        </p>
-        
-        <div class="flex flex-col sm:flex-row gap-4 justify-center"
-             x-data 
-             x-motion="{ animate: { opacity: [0, 1], y: [30, 0] }, duration: 0.8, delay: 0.3 }">
-            {% include ui/button.html text="立即充值 ¥158/月" variant="primary" size="lg" href="https://go.fastgptplus.com" class="glass-button hover-lift" %}
-            
-            <a href="{{ site.baseurl }}/quick-start/" class="inline-flex items-center justify-center font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border-2 border-gray-300 bg-transparent hover:bg-gray-50 text-gray-700 hover:border-gray-400 focus-visible:ring-gray-500 px-6 py-3 text-lg rounded-xl gap-2.5 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20">查看教程</a>
-        </div>
-        
-        <!-- Trust badges -->
-        <div class="mt-12 flex flex-wrap justify-center gap-8 text-white/80 text-sm">
-            <div class="flex items-center space-x-2" x-data x-motion="{ animate: { opacity: [0, 1], x: [-20, 0] }, duration: 0.6, delay: 0.4 }">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>100,000+ 用户信赖</span>
-            </div>
-            <div class="flex items-center space-x-2" x-data x-motion="{ animate: { opacity: [0, 1], x: [-20, 0] }, duration: 0.6, delay: 0.5 }">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
-                </svg>
-                <span>5分钟快速到账</span>
-            </div>
-            <div class="flex items-center space-x-2" x-data x-motion="{ animate: { opacity: [0, 1], x: [-20, 0] }, duration: 0.6, delay: 0.6 }">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>安全官方渠道</span>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- Hero Section with Aurora Effect -->
+{% include sections/hero-aurora.html 
+  badge="野卡最佳替代方案"
+  title="ChatGPT Plus 快速充值指南"
+  subtitle="通过iOS官方渠道，5分钟完成充值<br>安全、稳定、便捷的充值解决方案"
+  cta_primary_text="立即充值 ¥158/月"
+  cta_primary_url="https://go.fastgptplus.com"
+  cta_secondary_text="查看教程"
+  cta_secondary_url="/quick-start/"
+  features=site.data.hero_features
+%}
 
 <!-- Main Content -->
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -228,111 +179,48 @@ permalink: /
             </div>
             {% endcapture %}
             
-            {% include ui/card.html content=steps_content variant="glass" padding="lg" class="scroll-fade" %}
+            {% include ui/card.html content=steps_content variant="glass" padding="lg" class="scroll-fade glow-card" %}
 
-            <!-- Features Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {% capture speed_content %}
-                <div class="flex items-start">
-                    <div class="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl p-3 mr-4">
-                        <img src="{{ site.baseurl }}/assets/icons/lightning-bolt.png" class="w-8 h-8" alt="Speed">
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold mb-2">极速充值</h3>
-                        <p class="text-gray-600">通过iOS官方渠道充值，5分钟内完成，无需等待。</p>
-                    </div>
-                </div>
-                {% endcapture %}
-                
-                {% capture security_content %}
-                <div class="flex items-start">
-                    <div class="bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl p-3 mr-4">
-                        <img src="{{ site.baseurl }}/assets/icons/shield-security.png" class="w-8 h-8" alt="Security">
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold mb-2">安全可靠</h3>
-                        <p class="text-gray-600">官方认可渠道，不会触发风控，您的账号100%安全。</p>
-                    </div>
-                </div>
-                {% endcapture %}
-                
-                {% capture price_content %}
-                <div class="flex items-start">
-                    <div class="bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl p-3 mr-4">
-                        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="url(#price-gradient)" stroke-width="2">
-                            <defs>
-                                <linearGradient id="price-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#a855f7"/>
-                                    <stop offset="100%" style="stop-color:#ec4899"/>
-                                </linearGradient>
-                            </defs>
-                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 110 7H6" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold mb-2">价格优惠</h3>
-                        <p class="text-gray-600">利用汇率差价，仅需¥158/月，比官方价格节省20%以上。</p>
-                    </div>
-                </div>
-                {% endcapture %}
-                
-                {% capture support_content %}
-                <div class="flex items-start">
-                    <div class="bg-gradient-to-br from-yellow-100 to-amber-100 rounded-xl p-3 mr-4">
-                        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
-                            <path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold mb-2">专业客服</h3>
-                        <p class="text-gray-600">7×24小时客服支持，微信：laozhangdaichong</p>
-                    </div>
-                </div>
-                {% endcapture %}
-                
-                {% include ui/card.html content=speed_content hover=true class="scroll-fade" padding="md" %}
-                {% include ui/card.html content=security_content hover=true class="scroll-fade" padding="md" %}
-                {% include ui/card.html content=price_content hover=true class="scroll-fade" padding="md" %}
-                {% include ui/card.html content=support_content hover=true class="scroll-fade" padding="md" %}
+            <!-- Features Bento Grid -->
+            {% capture bento_features %}
+            [
+              {
+                "title": "极速充值",
+                "content": "<p>通过iOS官方渠道充值，5分钟内完成，无需等待。</p>",
+                "size": "sm",
+                "variant": "glow",
+                "icon": "<img src='{{ site.baseurl }}/assets/icons/lightning-bolt.png' class='w-6 h-6' alt='Speed'>"
+              },
+              {
+                "title": "安全可靠",
+                "content": "<p>官方认可渠道，不会触发风控，您的账号100%安全。</p>",
+                "size": "sm",
+                "variant": "glass",
+                "icon": "<img src='{{ site.baseurl }}/assets/icons/shield-security.png' class='w-6 h-6' alt='Security'>"
+              },
+              {
+                "title": "价格优惠",
+                "content": "<p>利用汇率差价，仅需¥158/月，比官方价格节省20%以上。</p>",
+                "size": "sm",
+                "variant": "aurora",
+                "icon": "<svg class='w-6 h-6' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M12 2v20M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 110 7H6' stroke-linecap='round' stroke-linejoin='round'/></svg>"
+              },
+              {
+                "title": "专业客服",
+                "content": "<p>7×24小时客服支持，微信：laozhangdaichong</p>",
+                "size": "sm",
+                "variant": "glow",
+                "icon": "<svg class='w-6 h-6' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129' stroke-linecap='round' stroke-linejoin='round'/></svg>"
+              }
+            ]
+            {% endcapture %}
+            
+            <div class="my-8">
+              {% include ui/bento-grid.html items=bento_features gap="gap-4" %}
             </div>
 
             <!-- FAQ Section -->
-            {% capture faq_content %}
-            <h2 class="text-2xl font-semibold mb-8">常见问题</h2>
-            
-            <div class="space-y-6">
-                <div class="border-b border-gray-100 pb-6">
-                    <h4 class="font-semibold mb-3 text-lg">充值后多久生效？</h4>
-                    <p class="text-gray-600">一般5分钟内生效。系统会自动处理订单，确保您能快速使用ChatGPT Plus。</p>
-                </div>
-                
-                <div class="border-b border-gray-100 pb-6">
-                    <h4 class="font-semibold mb-3 text-lg">需要提供密码吗？</h4>
-                    <p class="text-gray-600">不需要！我们只需要您的邮箱地址，绝不索要密码。</p>
-                </div>
-                
-                <div class="border-b border-gray-100 pb-6">
-                    <h4 class="font-semibold mb-3 text-lg">支持退款吗？</h4>
-                    <p class="text-gray-600">支持。如果充值失败，我们承诺100%退款。</p>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-3 text-lg">和野卡有什么区别？</h4>
-                    <p class="text-gray-600">野卡已经停服。我们使用iOS官方充值渠道，更安全稳定，不会跑路。</p>
-                </div>
-            </div>
-            
-            <div class="mt-8 text-center">
-                <a href="{{ site.baseurl }}/faq/" class="text-primary-600 hover:text-primary-700 font-medium inline-flex items-center group">
-                    查看更多常见问题
-                    <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-            {% endcapture %}
-            
-            {% include ui/card.html content=faq_content variant="glass" padding="lg" class="scroll-fade" %}
+            {% include components/faq-accordion.html class="my-8" %}
         </div>
     </div>
 </div>

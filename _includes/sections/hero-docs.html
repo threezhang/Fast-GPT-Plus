@@ -1,0 +1,117 @@
+<!-- Documentation Page Hero with Aurora Effect -->
+<div class="relative min-h-[40vh] flex items-center justify-center overflow-hidden">
+  <!-- Aurora Background -->
+  <div class="aurora-bg absolute inset-0">
+    <div class="aurora-gradient aurora-gradient-1"></div>
+    <div class="aurora-gradient aurora-gradient-2"></div>
+    <div class="aurora-gradient aurora-gradient-3"></div>
+  </div>
+  
+  <!-- Grid Pattern Overlay -->
+  <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+  
+  <!-- Content -->
+  <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16">
+    <!-- Breadcrumb -->
+    <nav class="mb-6">
+      <ol class="flex items-center justify-center space-x-2 text-sm">
+        <li>
+          <a href="{{ site.baseurl }}/" class="text-gray-500 hover:text-neon-cyan transition-colors">首页</a>
+        </li>
+        <li class="text-gray-400">/</li>
+        <li>
+          <a href="{{ site.baseurl }}/docs/" class="text-gray-500 hover:text-neon-cyan transition-colors">文档</a>
+        </li>
+        {% if include.category %}
+        <li class="text-gray-400">/</li>
+        <li class="text-neon-cyan">{{ include.category }}</li>
+        {% endif %}
+      </ol>
+    </nav>
+    
+    <!-- Badge -->
+    {% if include.badge %}
+    <div class="inline-flex items-center px-4 py-2 bg-dark-surface/80 backdrop-blur-md border border-neon-cyan/30 rounded-full text-neon-cyan text-sm font-medium mb-6 animate-pulse-soft">
+      <span class="w-2 h-2 bg-neon-cyan rounded-full mr-2 animate-pulse"></span>
+      {{ include.badge }}
+    </div>
+    {% endif %}
+    
+    <!-- Title -->
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+      <span class="gradient-text-animated">{{ include.title }}</span>
+    </h1>
+    
+    <!-- Description -->
+    {% if include.description %}
+    <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
+      {{ include.description }}
+    </p>
+    {% endif %}
+    
+    <!-- Meta Info -->
+    <div class="flex items-center justify-center space-x-6 text-sm text-gray-400">
+      {% if include.reading_time %}
+      <div class="flex items-center">
+        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        {{ include.reading_time }} 分钟阅读
+      </div>
+      {% endif %}
+      
+      {% if include.last_updated %}
+      <div class="flex items-center">
+        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg>
+        更新于 {{ include.last_updated }}
+      </div>
+      {% endif %}
+    </div>
+    
+    <!-- Quick Actions -->
+    {% if include.show_actions %}
+    <div class="mt-8 flex items-center justify-center space-x-4">
+      <a href="#content" class="text-neon-cyan hover:text-white transition-colors">
+        <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </a>
+    </div>
+    {% endif %}
+  </div>
+  
+  <!-- Decorative Elements -->
+  <div class="particle-container absolute inset-0 pointer-events-none"></div>
+</div>
+
+<!-- Document Content Wrapper -->
+<div id="content" class="relative bg-gradient-to-b from-dark-bg to-gray-900">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="glass-modern rounded-2xl p-8 md:p-12 shadow-aurora">
+      <article class="prose prose-invert prose-lg max-w-none
+        prose-headings:font-bold prose-headings:tracking-tight
+        prose-h1:text-4xl prose-h1:mb-8 prose-h1:gradient-text
+        prose-h2:text-3xl prose-h2:mb-6 prose-h2:text-white prose-h2:border-b prose-h2:border-gray-800 prose-h2:pb-4
+        prose-h3:text-2xl prose-h3:mb-4 prose-h3:text-gray-100
+        prose-h4:text-xl prose-h4:mb-3 prose-h4:text-gray-200
+        prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-6
+        prose-a:text-neon-cyan prose-a:no-underline prose-a:hover:text-neon-pink prose-a:transition-colors
+        prose-strong:text-white prose-strong:font-semibold
+        prose-code:text-neon-cyan prose-code:bg-dark-surface prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:before:content-[''] prose-code:after:content-['']
+        prose-pre:bg-dark-surface prose-pre:border prose-pre:border-gray-800 prose-pre:shadow-inner
+        prose-blockquote:border-l-neon-cyan prose-blockquote:bg-dark-surface/50 prose-blockquote:backdrop-blur prose-blockquote:rounded-r-xl prose-blockquote:pl-6 prose-blockquote:py-4 prose-blockquote:not-italic
+        prose-ul:text-gray-300 prose-ul:marker:text-neon-cyan
+        prose-ol:text-gray-300 prose-ol:marker:text-neon-pink
+        prose-table:border-collapse prose-table:overflow-hidden prose-table:rounded-xl
+        prose-thead:bg-dark-surface prose-thead:border-b prose-thead:border-gray-800
+        prose-th:text-white prose-th:font-semibold prose-th:px-6 prose-th:py-4
+        prose-td:text-gray-300 prose-td:px-6 prose-td:py-4 prose-td:border-b prose-td:border-gray-800
+        prose-tr:hover:bg-dark-surface/50 prose-tr:transition-colors
+        prose-img:rounded-xl prose-img:shadow-aurora prose-img:mx-auto">
+        {{ content }}
+      </article>
+    </div>
+  </div>
+</div>

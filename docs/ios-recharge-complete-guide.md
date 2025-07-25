@@ -1,13 +1,16 @@
 ---
-layout: default
-title: ChatGPT Plus iOS充值完整指南
+layout: docs
+title: iOS充值完整指南
+badge: 全面教程
+category: 实操指南
+description: 最全面的ChatGPT Plus iOS充值技术教程，涵盖从原理到实操的所有细节。无论您是技术小白还是经验用户，都能通过本指南成功完成充值。
+reading_time: 15
+last_updated: 2025-01-25
 ---
 
-# 🎯 ChatGPT Plus iOS充值完整指南【2025最新版】
+本指南是最全面的ChatGPT Plus iOS充值技术教程，涵盖从原理到实操的所有细节。无论您是技术小白还是经验用户，都能通过本指南成功完成充值。
 
-> 本指南是最全面的ChatGPT Plus iOS充值技术教程，涵盖从原理到实操的所有细节。无论您是技术小白还是经验用户，都能通过本指南成功完成充值。
-
-## 📚 目录导航
+## 目录导航
 
 1. [iOS充值技术背景](#ios充值技术背景)
 2. [充值前准备工作](#充值前准备工作)
@@ -18,7 +21,7 @@ title: ChatGPT Plus iOS充值完整指南
 7. [成本效益分析](#成本效益分析)
 8. [进阶使用技巧](#进阶使用技巧)
 
-## 🌍 iOS充值技术背景
+## iOS充值技术背景
 
 ### ChatGPT Plus订阅现状
 

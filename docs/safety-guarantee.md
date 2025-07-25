@@ -1,13 +1,15 @@
 ---
-layout: default
-title: FastGPTPlus 安全保障体系 - 保障您的ChatGPT充值安全
+layout: docs
+title: 安全保障体系
+badge: 重点推荐
+category: 保障措施
 description: 全面了解FastGPTPlus的多重安全保障措施，包括账号安全、资金安全、企业资质保障。与虚拟卡、共享账号对比，选择最安全的充值方式。
 keywords: ChatGPT充值安全, FastGPTPlus安全保障, 账号安全, 资金安全, 退款保障, 正规充值, 隐私保护, 充值风险
+reading_time: 6
+last_updated: 2025-01-25
 ---
 
-# 🛡️ FastGPTPlus 安全保障体系
-
-> 安全是我们的首要承诺。本文详细介绍我们的多重安全保障措施。
+安全是我们的首要承诺。本文详细介绍我们的多重安全保障措施。
 
 ## 🔒 账号安全保障
 

@@ -1,13 +1,16 @@
 ---
-layout: default
-title: ChatGPT Plus支付失败完整解决方案
+layout: docs
+title: 支付失败解决方案
+badge: 常见问题
+category: 故障排除
+description: 遇到ChatGPT Plus支付失败？本文提供详细的故障排除指南，包括信用卡被拒、风控问题、地区限制等常见问题的解决方案。
+reading_time: 8
+last_updated: 2025-01-25
 ---
 
-# 💳 ChatGPT Plus支付失败完整解决方案
+90%的国内用户在订阅ChatGPT Plus时会遇到支付失败。本文详细分析失败原因并提供解决方案。
 
-> 90%的国内用户在订阅ChatGPT Plus时会遇到支付失败。本文详细分析失败原因并提供解决方案。
-
-## 🚫 ChatGPT Plus支付失败常见提示
+## ChatGPT Plus支付失败常见提示
 
 ### 1. "Your credit card was declined"
 **中文**：您的信用卡被拒绝  

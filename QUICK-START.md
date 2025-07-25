@@ -22,7 +22,7 @@ permalink: /quick-start/
         
         <!-- Step 1 -->
         <div class="relative flex items-start mb-12 scroll-fade">
-            <div class="flex-shrink-0 w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-xl z-10">
+            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-neon-blue to-neon-purple text-white rounded-full flex items-center justify-center font-bold text-xl z-10 shadow-neon">
                 1
             </div>
             <div class="ml-8 flex-1">
@@ -32,15 +32,16 @@ permalink: /quick-start/
                 </p>
                 {% include ui/button.html 
                   text="go.fastgptplus.com" 
-                  variant="primary" 
+                  variant="neon" 
                   size="lg" 
                   href="https://go.fastgptplus.com"
                   class="mb-4"
+                  effect="glow"
                   icon='<svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round"/></svg>'
                   iconPosition="right" %}
-                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-                    <p class="text-sm text-blue-800">
-                        💡 提示：这是我们的官方充值网站，安全可靠，支持支付宝/微信支付
+                <div class="glass-modern p-4 border-l-4 border-neon-cyan rounded-xl">
+                    <p class="text-sm text-gray-700">
+                        <span class="text-neon-cyan font-semibold">💡 提示：</span>这是我们的官方充值网站，安全可靠，支持支付宝/微信支付
                     </p>
                 </div>
             </div>
@@ -48,20 +49,20 @@ permalink: /quick-start/
 
         <!-- Step 2 -->
         <div class="relative flex items-start mb-12 scroll-fade">
-            <div class="flex-shrink-0 w-16 h-16 bg-secondary-600 text-white rounded-full flex items-center justify-center font-bold text-xl z-10">
+            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-aurora-start to-aurora-end text-white rounded-full flex items-center justify-center font-bold text-xl z-10 shadow-aurora">
                 2
             </div>
             <div class="ml-8 flex-1">
                 <h3 class="text-2xl font-semibold mb-3">选择充值套餐</h3>
                 {% capture pricing_content %}
-                <div class="bg-gradient-to-r from-primary-50 to-secondary-50 p-6 rounded-xl">
+                <div class="glass-modern glow-card p-6 rounded-2xl">
                     <div class="flex items-center justify-between mb-4">
                         <div>
                             <h4 class="text-xl font-semibold text-gray-800">ChatGPT Plus 月度订阅</h4>
                             <p class="text-gray-600">官方 iOS 渠道充值</p>
                         </div>
                         <div class="text-right">
-                            <p class="text-3xl font-bold gradient-text">¥158</p>
+                            <p class="text-3xl font-bold text-gradient-animated">¥158</p>
                             <p class="text-sm text-gray-600">/月</p>
                         </div>
                     </div>
@@ -96,7 +97,7 @@ permalink: /quick-start/
 
         <!-- Step 3 -->
         <div class="relative flex items-start mb-12 scroll-fade">
-            <div class="flex-shrink-0 w-16 h-16 bg-success text-white rounded-full flex items-center justify-center font-bold text-xl z-10">
+            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-neon-green to-success text-white rounded-full flex items-center justify-center font-bold text-xl z-10 shadow-neon">
                 3
             </div>
             <div class="ml-8 flex-1">
@@ -123,7 +124,7 @@ permalink: /quick-start/
 
         <!-- Step 4 -->
         <div class="relative flex items-start scroll-fade">
-            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-primary-600 to-secondary-600 text-white rounded-full flex items-center justify-center font-bold text-xl z-10">
+            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-accent-neon to-accent-aurora text-white rounded-full flex items-center justify-center font-bold text-xl z-10 animate-glow-pulse">
                 ✓
             </div>
             <div class="ml-8 flex-1">
@@ -131,9 +132,9 @@ permalink: /quick-start/
                 <p class="text-gray-700 mb-4">
                     支付成功后，填写您的 ChatGPT 账号邮箱，系统会在 5 分钟内完成充值
                 </p>
-                <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                    <p class="text-sm text-green-800">
-                        ✅ 充值成功后，您会收到邮件通知，即可登录 ChatGPT 使用 Plus 功能
+                <div class="glass-modern p-4 border-l-4 border-neon-green rounded-xl">
+                    <p class="text-sm text-gray-700">
+                        <span class="text-neon-green font-semibold">✅ 成功：</span>充值成功后，您会收到邮件通知，即可登录 ChatGPT 使用 Plus 功能
                     </p>
                 </div>
             </div>
@@ -147,10 +148,11 @@ permalink: /quick-start/
     <div class="text-center">
         {% include ui/button.html 
           text="立即开始充值" 
-          variant="primary" 
+          variant="aurora" 
           size="lg" 
           href="https://go.fastgptplus.com"
           class="hover-lift"
+          effect="ripple"
           icon='<svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round"/></svg>' %}
         
         <p class="text-gray-600 mt-4">

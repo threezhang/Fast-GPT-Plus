@@ -1,0 +1,55 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
+  
+  <!-- Tailwind CSS -->
+  <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="{{ '/src/styles/modern-ui.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/src/styles/animations.css' | relative_url }}" rel="stylesheet">
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | relative_url }}">
+  
+  <!-- SEO Meta Tags -->
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+</head>
+<body class="bg-dark-bg text-white">
+  <!-- Navigation -->
+  {% include layout/navbar.html %}
+  
+  <!-- Document Hero -->
+  {% include sections/hero-docs.html 
+    badge=page.badge
+    title=page.title
+    description=page.description
+    category=page.category
+    reading_time=page.reading_time
+    last_updated=page.last_updated
+    show_actions=true
+  %}
+  
+  <!-- Footer -->
+  {% include layout/footer.html %}
+  
+  <!-- Scripts -->
+  <script src="{{ '/src/scripts/animations.js' | relative_url }}"></script>
+</body>
+</html>
