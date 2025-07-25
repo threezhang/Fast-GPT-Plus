@@ -42,11 +42,26 @@
            prose-li:text-gray-700 prose-li:leading-relaxed prose-li:pl-2
            prose-blockquote:border-l-4 prose-blockquote:border-primary-500 prose-blockquote:bg-primary-50 prose-blockquote:rounded-r-lg prose-blockquote:not-italic prose-blockquote:px-6 prose-blockquote:py-4
            prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded-md prose-code:text-sm prose-code:font-mono prose-code:before:content-none prose-code:after:content-none
-           prose-pre:bg-gray-50 prose-pre:rounded-xl prose-pre:border prose-pre:border-gray-200
+           prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:rounded-xl prose-pre:border prose-pre:border-gray-700 prose-pre:shadow-lg
            prose-table:rounded-xl prose-table:overflow-hidden prose-table:shadow-sm
            prose-th:bg-gray-100 prose-th:border prose-th:border-gray-200 prose-th:px-6 prose-th:py-3 prose-th:text-left prose-th:font-semibold
            prose-td:border prose-td:border-gray-200 prose-td:px-6 prose-td:py-3
-           prose-img:rounded-xl prose-img:shadow-lg;
+           prose-img:rounded-xl prose-img:shadow-lg prose-img:my-8 prose-img:mx-auto;
+  }
+  
+  /* 代码块语法高亮 */
+  .markdown-content pre {
+    @apply bg-gray-900 text-gray-100 p-6 rounded-xl overflow-x-auto;
+    tab-size: 2;
+  }
+  
+  .markdown-content pre code {
+    @apply bg-transparent p-0 text-sm leading-relaxed;
+  }
+  
+  /* 内联代码样式 */
+  .markdown-content :not(pre) > code {
+    @apply bg-primary-100 text-primary-900 px-1.5 py-0.5 rounded text-sm font-medium;
   }
   
   /* Button Components */
