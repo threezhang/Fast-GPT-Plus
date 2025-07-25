@@ -1,0 +1,214 @@
+/* 文档增强样式 - 特殊元素和效果 */
+
+/* 文档页面标题区域美化 */
+.page-header-docs {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header-docs::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Emoji 图标优化 */
+.markdown-content h1 > *:first-child,
+.markdown-content h2 > *:first-child,
+.markdown-content h3 > *:first-child {
+  margin-right: 0.5rem;
+  display: inline-block;
+  font-size: 1.1em;
+}
+
+/* 特殊提示框样式 */
+.markdown-content .tip,
+.markdown-content .warning,
+.markdown-content .danger,
+.markdown-content .info {
+  @apply p-4 rounded-lg my-6 border-l-4;
+}
+
+.markdown-content .tip {
+  @apply bg-green-50 border-green-500 text-green-800;
+}
+
+.markdown-content .warning {
+  @apply bg-yellow-50 border-yellow-500 text-yellow-800;
+}
+
+.markdown-content .danger {
+  @apply bg-red-50 border-red-500 text-red-800;
+}
+
+.markdown-content .info {
+  @apply bg-blue-50 border-blue-500 text-blue-800;
+}
+
+/* 目录导航样式 */
+.markdown-content .toc {
+  @apply bg-gray-50 rounded-lg p-6 my-8;
+}
+
+.markdown-content .toc h2 {
+  @apply text-lg font-semibold mb-4 mt-0 border-0 pb-0;
+  color: #4a5568;
+}
+
+.markdown-content .toc ul {
+  @apply space-y-2 my-0;
+}
+
+.markdown-content .toc a {
+  @apply text-gray-600 no-underline hover:text-primary-600;
+  transition: all 0.2s ease;
+}
+
+/* 代码块增强 */
+.markdown-content pre {
+  position: relative;
+}
+
+/* 代码块语言标识 */
+.markdown-content pre::before {
+  content: attr(data-lang);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.25rem 0.75rem;
+  background: rgba(0, 0, 0, 0.3);
+  color: #9ca3af;
+  font-size: 0.75rem;
+  border-bottom-left-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+/* 复制代码按钮样式 */
+.copy-code-button {
+  @apply absolute top-2 right-2 px-3 py-1 text-xs bg-gray-700 hover:bg-gray-600 text-gray-300 rounded transition-colors;
+}
+
+/* 标签样式 */
+.markdown-content .badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.markdown-content .badge-primary {
+  @apply bg-primary-100 text-primary-800;
+}
+
+.markdown-content .badge-success {
+  @apply bg-green-100 text-green-800;
+}
+
+.markdown-content .badge-warning {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.markdown-content .badge-danger {
+  @apply bg-red-100 text-red-800;
+}
+
+/* 步骤列表样式 */
+.markdown-content .steps {
+  counter-reset: step-counter;
+  @apply space-y-4 my-8;
+}
+
+.markdown-content .steps > li {
+  counter-increment: step-counter;
+  @apply relative pl-12 pb-8;
+  list-style: none;
+}
+
+.markdown-content .steps > li::before {
+  content: counter(step-counter);
+  @apply absolute left-0 top-0 w-8 h-8 bg-primary-500 text-white rounded-full flex items-center justify-center font-semibold text-sm;
+}
+
+.markdown-content .steps > li::after {
+  content: '';
+  @apply absolute left-4 top-8 bottom-0 w-0.5 bg-gray-300;
+}
+
+.markdown-content .steps > li:last-child::after {
+  display: none;
+}
+
+/* 键盘按键样式 */
+.markdown-content kbd {
+  @apply inline-block px-2 py-1 text-sm font-mono bg-gray-100 border border-gray-300 rounded shadow-sm;
+  font-family: 'SF Mono', Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+/* 文档内卡片样式 */
+.markdown-content .doc-card {
+  @apply bg-white border border-gray-200 rounded-lg p-6 my-6 shadow-sm hover:shadow-md transition-shadow;
+}
+
+.markdown-content .doc-card h3 {
+  @apply mt-0 mb-3 text-xl font-semibold;
+}
+
+/* 高亮文本 */
+.markdown-content mark {
+  @apply bg-yellow-200 px-1 rounded;
+}
+
+/* 视频嵌入样式 */
+.markdown-content .video-container {
+  @apply relative w-full my-8 rounded-lg overflow-hidden shadow-lg;
+  padding-bottom: 56.25%; /* 16:9 比例 */
+}
+
+.markdown-content .video-container iframe {
+  @apply absolute top-0 left-0 w-full h-full;
+}
+
+/* 文档内按钮样式 */
+.markdown-content .btn {
+  @apply inline-flex items-center px-4 py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors no-underline;
+}
+
+.markdown-content .btn-secondary {
+  @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+}
+
+/* 折叠内容样式 */
+.markdown-content details {
+  @apply my-6 bg-gray-50 rounded-lg p-4;
+}
+
+.markdown-content summary {
+  @apply font-semibold cursor-pointer hover:text-primary-600 transition-colors;
+  user-select: none;
+}
+
+.markdown-content details[open] summary {
+  @apply mb-3 pb-3 border-b border-gray-200;
+}
+
+/* 打印样式优化 */
+@media print {
+  .markdown-content {
+    @apply text-black;
+  }
+  
+  .markdown-content a {
+    @apply text-black underline;
+  }
+  
+  .markdown-content pre {
+    @apply border border-gray-300 bg-white text-black;
+  }
+  
+  .page-header-docs,
+  .markdown-content .video-container {
+    display: none;
+  }
+}

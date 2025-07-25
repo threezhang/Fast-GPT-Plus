@@ -45,9 +45,9 @@
     <!-- Tailwind CSS (Compiled) -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
     
-    <!-- Modern UI Styles -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/src/styles/modern-ui.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/src/styles/animations.css">
+    <!-- Documentation Styles -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/src/styles/docs.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/src/styles/docs-enhancements.css">
     
     <!-- Alpine.js for interactivity -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
@@ -65,18 +65,18 @@
         </style>
     </noscript>
 </head>
-<body class="bg-dark-bg text-white antialiased">
+<body class="bg-gray-50 text-gray-900 antialiased">
     <!-- Page Loader -->
     <div class="page-loader" id="pageLoader">
         <div class="loader-icon"></div>
     </div>
     
-    <!-- Navigation -->
-    {% include layout/navbar.html %}
+    <!-- Header -->
+    {% include layout/header.html %}
     
     <!-- Page Header with Gradient Background -->
     {% if page.url != "/" %}
-    <div class="relative overflow-hidden bg-gradient-to-br from-primary-500 to-secondary-600">
+    <div class="relative overflow-hidden {% if page.url contains '/docs/' %}page-header-docs{% else %}bg-gradient-to-br from-primary-500 to-secondary-600{% endif %}">
         <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-10">
             <svg class="w-full h-full" viewBox="0 0 1200 400" preserveAspectRatio="none">
@@ -92,16 +92,24 @@
         <!-- Page Title -->
         <div class="relative py-16 px-4 sm:px-6 lg:px-8">
             <div class="max-w-7xl mx-auto">
+                {% if page.url contains '/docs/' %}
+                <!-- 文档页面标题 -->
+                <nav class="mb-4 text-white/80 text-sm">
+                    <a href="{{ site.baseurl }}/" class="hover:text-white">首页</a>
+                    <span class="mx-2">/</span>
+                    <a href="{{ site.baseurl }}/docs/" class="hover:text-white">文档</a>
+                </nav>
+                {% endif %}
                 <h1 class="text-4xl font-light text-white tracking-tight fade-in" 
                     x-data 
                     x-motion="{ animate: { opacity: [0, 1], y: [20, 0] }, duration: 0.8 }">
                     {{ page.title | default: "Fast-GPT-Plus" }}
                 </h1>
-                {% if page.subtitle %}
-                <p class="text-white/90 mt-3 text-lg font-light"
+                {% if page.subtitle or page.description %}
+                <p class="text-white/90 mt-3 text-lg font-light max-w-3xl"
                    x-data 
                    x-motion="{ animate: { opacity: [0, 1], y: [20, 0] }, duration: 0.8, delay: 0.2 }">
-                    {{ page.subtitle }}
+                    {{ page.subtitle | default: page.description }}
                 </p>
                 {% endif %}
             </div>
@@ -171,5 +179,10 @@
         }
     }
     </script>
+    
+    <!-- 文档页面增强脚本 -->
+    {% if page.url contains '/docs/' %}
+    <script src="{{ site.baseurl }}/src/scripts/docs-enhance.js"></script>
+    {% endif %}
 </body>
 </html>
