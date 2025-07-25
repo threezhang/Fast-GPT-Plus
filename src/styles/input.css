@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import Modern UI Effects */
+@import 'modern-ui.css';
+
+/* Import Advanced Animations */
+@import 'animations.css';
+
 /* Base Typography Improvements */
 @layer base {
   html {
@@ -26,42 +32,143 @@
 
 /* Component Classes */
 @layer components {
-  /* Enhanced Markdown Styles with Typography Plugin */
+  /* Enhanced Markdown Styles with Typography Plugin - 2025 Update */
   .markdown-content {
     @apply prose prose-lg prose-gray max-w-none
-           prose-headings:font-semibold 
-           prose-h1:text-4xl prose-h1:font-bold prose-h1:mb-8 prose-h1:tracking-tight
-           prose-h2:text-3xl prose-h2:font-semibold prose-h2:mb-6 prose-h2:mt-12 prose-h2:border-b-2 prose-h2:border-gray-200 prose-h2:pb-3
-           prose-h3:text-2xl prose-h3:font-semibold prose-h3:mb-4 prose-h3:mt-8
-           prose-h4:text-xl prose-h4:font-medium prose-h4:mb-3 prose-h4:mt-6
+           /* Headings with gradient effect */
+           prose-headings:font-light 
+           prose-h1:text-5xl prose-h1:font-extralight prose-h1:mb-10 prose-h1:tracking-tight
+           prose-h1:bg-gradient-to-r prose-h1:from-gray-900 prose-h1:to-gray-600 
+           prose-h1:bg-clip-text prose-h1:text-transparent
+           prose-h2:text-3xl prose-h2:font-light prose-h2:mb-8 prose-h2:mt-16 
+           prose-h2:relative prose-h2:pb-4
+           prose-h3:text-2xl prose-h3:font-normal prose-h3:mb-6 prose-h3:mt-10
+           prose-h3:text-gray-800
+           prose-h4:text-xl prose-h4:font-medium prose-h4:mb-4 prose-h4:mt-8
+           prose-h4:text-gray-700
+           
+           /* Enhanced paragraph styling */
            prose-p:text-gray-700 prose-p:leading-loose prose-p:mb-6
-           prose-a:text-primary-600 prose-a:font-medium prose-a:no-underline hover:prose-a:text-primary-700 prose-a:transition-colors
-           prose-strong:text-gray-900 prose-strong:font-semibold
-           prose-ul:list-disc prose-ul:ml-6 prose-ul:space-y-3
-           prose-ol:list-decimal prose-ol:ml-6 prose-ol:space-y-3
-           prose-li:text-gray-700 prose-li:leading-relaxed prose-li:pl-2
-           prose-blockquote:border-l-4 prose-blockquote:border-primary-500 prose-blockquote:bg-primary-50 prose-blockquote:rounded-r-lg prose-blockquote:not-italic prose-blockquote:px-6 prose-blockquote:py-4
-           prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded-md prose-code:text-sm prose-code:font-mono prose-code:before:content-none prose-code:after:content-none
-           prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:rounded-xl prose-pre:border prose-pre:border-gray-700 prose-pre:shadow-lg
-           prose-table:rounded-xl prose-table:overflow-hidden prose-table:shadow-sm
-           prose-th:bg-gray-100 prose-th:border prose-th:border-gray-200 prose-th:px-6 prose-th:py-3 prose-th:text-left prose-th:font-semibold
-           prose-td:border prose-td:border-gray-200 prose-td:px-6 prose-td:py-3
-           prose-img:rounded-xl prose-img:shadow-lg prose-img:my-8 prose-img:mx-auto;
+           prose-p:font-light
+           
+           /* Modern link styling */
+           prose-a:text-primary-600 prose-a:font-medium prose-a:no-underline 
+           prose-a:relative prose-a:transition-all
+           hover:prose-a:text-primary-700
+           
+           /* Lists with custom markers */
+           prose-ul:list-none prose-ul:ml-0 prose-ul:space-y-3
+           prose-ol:list-none prose-ol:ml-0 prose-ol:space-y-3
+           prose-li:text-gray-700 prose-li:leading-relaxed prose-li:relative prose-li:pl-8
+           
+           /* Modern blockquote */
+           prose-blockquote:border-0 prose-blockquote:relative
+           prose-blockquote:bg-gradient-to-r prose-blockquote:from-primary-50 prose-blockquote:to-secondary-50
+           prose-blockquote:rounded-2xl prose-blockquote:not-italic 
+           prose-blockquote:px-8 prose-blockquote:py-6 prose-blockquote:my-8
+           prose-blockquote:shadow-sm
+           
+           /* Inline code styling */
+           prose-code:bg-gradient-to-r prose-code:from-primary-100 prose-code:to-secondary-100
+           prose-code:px-2 prose-code:py-1 prose-code:rounded-md prose-code:text-sm 
+           prose-code:font-mono prose-code:font-medium
+           prose-code:before:content-none prose-code:after:content-none
+           
+           /* Code blocks with glassmorphism */
+           prose-pre:bg-gray-900/95 prose-pre:backdrop-blur-sm
+           prose-pre:text-gray-100 prose-pre:rounded-2xl 
+           prose-pre:border prose-pre:border-gray-700/50 
+           prose-pre:shadow-2xl prose-pre:shadow-black/20
+           
+           /* Modern tables */
+           prose-table:rounded-2xl prose-table:overflow-hidden prose-table:shadow-md
+           prose-table:border prose-table:border-gray-200
+           prose-th:bg-gradient-to-r prose-th:from-gray-50 prose-th:to-gray-100 
+           prose-th:border-b prose-th:border-gray-200 
+           prose-th:px-6 prose-th:py-4 prose-th:text-left prose-th:font-semibold
+           prose-td:border-b prose-td:border-gray-100 prose-td:px-6 prose-td:py-4
+           
+           /* Images with hover effect */
+           prose-img:rounded-2xl prose-img:shadow-xl prose-img:my-10 prose-img:mx-auto
+           prose-img:transition-all prose-img:duration-300
+           hover:prose-img:shadow-2xl hover:prose-img:scale-[1.02];
   }
   
-  /* 代码块语法高亮 */
+  /* Custom list markers */
+  .markdown-content ul > li::before {
+    content: '';
+    @apply absolute left-0 top-[0.6rem] w-2 h-2 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-full;
+  }
+  
+  .markdown-content ol {
+    counter-reset: list-counter;
+  }
+  
+  .markdown-content ol > li {
+    counter-increment: list-counter;
+  }
+  
+  .markdown-content ol > li::before {
+    content: counter(list-counter);
+    @apply absolute left-0 top-0 flex items-center justify-center w-6 h-6 
+           bg-gradient-to-br from-primary-500 to-secondary-500 
+           text-white text-xs font-bold rounded-full;
+  }
+  
+  /* H2 underline effect */
+  .markdown-content h2::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-20 h-1 
+           bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full;
+  }
+  
+  /* Link hover effect */
+  .markdown-content a::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 
+           bg-gradient-to-r from-primary-600 to-secondary-600 
+           transition-all duration-300;
+  }
+  
+  .markdown-content a:hover::after {
+    @apply w-full;
+  }
+  
+  /* Blockquote icon */
+  .markdown-content blockquote::before {
+    content: '"';
+    @apply absolute -top-4 left-4 text-6xl text-primary-300 font-serif;
+  }
+  
+  /* 代码块语法高亮 - 现代编辑器风格 */
   .markdown-content pre {
-    @apply bg-gray-900 text-gray-100 p-6 rounded-xl overflow-x-auto;
+    @apply relative bg-[#0d1117] text-gray-100 p-6 rounded-2xl overflow-x-auto;
     tab-size: 2;
+    box-shadow: 0 0 40px rgba(64, 192, 255, 0.1);
+  }
+  
+  /* 代码块头部 */
+  .markdown-content pre::before {
+    content: '';
+    @apply absolute top-4 left-6 flex gap-2;
+    width: 60px;
+    height: 12px;
+    background: radial-gradient(circle, #ff5f57 6px, transparent 6px) 0 0 / 20px 20px no-repeat,
+                radial-gradient(circle, #ffbd2e 6px, transparent 6px) 20px 0 / 20px 20px no-repeat,
+                radial-gradient(circle, #28ca42 6px, transparent 6px) 40px 0 / 20px 20px no-repeat;
   }
   
   .markdown-content pre code {
-    @apply bg-transparent p-0 text-sm leading-relaxed;
+    @apply bg-transparent p-0 text-sm leading-relaxed font-mono;
+    text-shadow: 0 0 20px rgba(64, 192, 255, 0.3);
   }
   
-  /* 内联代码样式 */
+  /* 内联代码样式 - 霓虹效果 */
   .markdown-content :not(pre) > code {
-    @apply bg-primary-100 text-primary-900 px-1.5 py-0.5 rounded text-sm font-medium;
+    @apply relative bg-gradient-to-r from-primary-100/90 to-secondary-100/90 
+           text-primary-900 px-2 py-1 rounded-md text-sm font-mono font-medium
+           border border-primary-200/50;
+    text-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
   }
   
   /* Button Components */

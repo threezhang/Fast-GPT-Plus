@@ -4,7 +4,7 @@
   
   Parameters:
   - text: Button text (required)
-  - variant: primary, secondary, outline, ghost, danger (default: primary)
+  - variant: primary, secondary, outline, ghost, danger, neon, magnetic, aurora (default: primary)
   - size: sm, md, lg (default: md)
   - href: Link URL (optional, creates an anchor instead of button)
   - class: Additional CSS classes
@@ -12,6 +12,7 @@
   - iconPosition: left, right (default: left)
   - disabled: true/false (default: false)
   - type: button, submit, reset (default: button, only for button element)
+  - effect: ripple, glow, shimmer (optional special effects)
 {% endcomment %}
 
 {% assign variant = include.variant | default: 'primary' %}
@@ -43,6 +44,18 @@
     {% when 'danger' %}
       bg-danger text-white hover:bg-red-600 focus-visible:ring-red-500
       shadow-sm hover:shadow-md
+    {% when 'neon' %}
+      bg-dark-surface text-neon-cyan border-2 border-neon-cyan
+      hover:text-dark-surface hover:shadow-neon neon-button
+      focus-visible:ring-neon-cyan
+    {% when 'magnetic' %}
+      bg-gradient-to-r from-aurora-start to-aurora-end text-white
+      hover:shadow-aurora magnetic-button
+      focus-visible:ring-aurora-mid
+    {% when 'aurora' %}
+      aurora-bg-animated text-white border border-white/20
+      hover:border-white/40 hover:shadow-aurora glass-modern
+      focus-visible:ring-white/50
   {% endcase %}
 {% endcapture %}
 
@@ -61,26 +74,34 @@
   {{ baseClasses | strip }} {{ variantClasses | strip }} {{ sizeClasses | strip }} {{ include.class }}
 {% endcapture %}
 
+{% capture effectClasses %}
+  {% if include.effect == 'ripple' %}ripple{% endif %}
+  {% if include.effect == 'glow' %}pulse-glow{% endif %}
+  {% if include.effect == 'shimmer' %}shimmer{% endif %}
+{% endcapture %}
+
 {% if include.href %}
   <a href="{{ include.href }}" 
-     class="{{ allClasses | strip }}"
-     {% if disabled %}aria-disabled="true" onclick="return false;"{% endif %}>
+     class="{{ allClasses | strip }} {{ effectClasses | strip }}"
+     {% if disabled %}aria-disabled="true" onclick="return false;"{% endif %}
+     {% if variant == 'magnetic' %}data-magnetic="true"{% endif %}>
     {% if include.icon and iconPosition == 'left' %}
       <span class="flex-shrink-0">{{ include.icon }}</span>
     {% endif %}
-    <span>{{ include.text }}</span>
+    <span {% if variant == 'magnetic' %}class="magnetic-text"{% endif %}>{{ include.text }}</span>
     {% if include.icon and iconPosition == 'right' %}
       <span class="flex-shrink-0">{{ include.icon }}</span>
     {% endif %}
   </a>
 {% else %}
   <button type="{{ type }}"
-          class="{{ allClasses | strip }}"
-          {% if disabled %}disabled{% endif %}>
+          class="{{ allClasses | strip }} {{ effectClasses | strip }}"
+          {% if disabled %}disabled{% endif %}
+          {% if variant == 'magnetic' %}data-magnetic="true"{% endif %}>
     {% if include.icon and iconPosition == 'left' %}
       <span class="flex-shrink-0">{{ include.icon }}</span>
     {% endif %}
-    <span>{{ include.text }}</span>
+    <span {% if variant == 'magnetic' %}class="magnetic-text"{% endif %}>{{ include.text }}</span>
     {% if include.icon and iconPosition == 'right' %}
       <span class="flex-shrink-0">{{ include.icon }}</span>
     {% endif %}
