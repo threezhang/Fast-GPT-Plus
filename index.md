@@ -34,21 +34,9 @@ permalink: /
         <div class="flex flex-col sm:flex-row gap-4 justify-center"
              x-data 
              x-motion="{ animate: { opacity: [0, 1], y: [30, 0] }, duration: 0.8, delay: 0.3 }">
-            {% include ui/button.html 
-              text="立即充值 ¥158/月" 
-              variant="primary" 
-              size="lg" 
-              href="https://go.fastgptplus.com"
-              class="glass-button hover-lift"
-              icon='<svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round"/></svg>' %}
+            {% include ui/button.html text="立即充值 ¥158/月" variant="primary" size="lg" href="https://go.fastgptplus.com" class="glass-button hover-lift" %}
             
-            {% include ui/button.html 
-              text="查看教程" 
-              variant="outline" 
-              size="lg" 
-              href="{{ site.baseurl }}/quick-start/"
-              class="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20"
-              icon='<svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>' %}
+            <a href="{{ site.baseurl }}/quick-start/" class="inline-flex items-center justify-center font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border-2 border-gray-300 bg-transparent hover:bg-gray-50 text-gray-700 hover:border-gray-400 focus-visible:ring-gray-500 px-6 py-3 text-lg rounded-xl gap-2.5 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20">查看教程</a>
         </div>
         
         <!-- Trust badges -->
@@ -142,13 +130,7 @@ permalink: /
                 </div>
                 {% endcapture %}
                 
-                {% include ui/card.html 
-                  title="开始之前的准备" 
-                  icon='<svg class="w-5 h-5 text-primary-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>'
-                  content=checklist_content
-                  variant="glass"
-                  hover=true
-                  class="scroll-fade" %}
+                {% include ui/card.html title="开始之前的准备" content=checklist_content variant="glass" hover=true class="scroll-fade" %}
             </div>
         </div>
 
@@ -246,11 +228,7 @@ permalink: /
             </div>
             {% endcapture %}
             
-            {% include ui/card.html 
-              content=steps_content
-              variant="glass"
-              padding="lg"
-              class="scroll-fade" %}
+            {% include ui/card.html content=steps_content variant="glass" padding="lg" class="scroll-fade" %}
 
             <!-- Features Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -354,11 +332,7 @@ permalink: /
             </div>
             {% endcapture %}
             
-            {% include ui/card.html 
-              content=faq_content
-              variant="glass"
-              padding="lg"
-              class="scroll-fade" %}
+            {% include ui/card.html content=faq_content variant="glass" padding="lg" class="scroll-fade" %}
         </div>
     </div>
 </div>

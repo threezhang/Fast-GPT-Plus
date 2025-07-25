@@ -1,0 +1,89 @@
+{% comment %}
+  Card Component
+  Usage: {% include ui/card.html title="Card Title" content="Card content" %}
+  
+  Parameters:
+  - title: Card title (optional)
+  - subtitle: Card subtitle (optional)
+  - content: Card content (required)
+  - footer: Card footer content (optional)
+  - variant: default, glass, gradient, outline (default: default)
+  - padding: sm, md, lg (default: md)
+  - hover: true/false - Enable hover effects (default: false)
+  - icon: Icon SVG or HTML for the header (optional)
+  - class: Additional CSS classes
+  - headerClass: Additional classes for header
+  - bodyClass: Additional classes for body
+  - footerClass: Additional classes for footer
+{% endcomment %}
+
+{% assign variant = include.variant | default: 'default' %}
+{% assign padding = include.padding | default: 'md' %}
+{% assign hover = include.hover | default: false %}
+
+{% capture baseClasses %}
+  relative overflow-hidden transition-all duration-200
+{% endcapture %}
+
+{% capture variantClasses %}
+  {% case variant %}
+    {% when 'default' %}
+      bg-white rounded-xl shadow-sm border border-gray-100
+      {% if hover %}hover:shadow-lg hover:-translate-y-1{% endif %}
+    {% when 'glass' %}
+      glass-card
+      {% if hover %}hover:border-white/30 hover:shadow-2xl{% endif %}
+    {% when 'gradient' %}
+      bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl 
+      border border-primary-100
+      {% if hover %}hover:from-primary-100 hover:to-secondary-100 hover:shadow-lg{% endif %}
+    {% when 'outline' %}
+      bg-transparent rounded-xl border-2 border-gray-200
+      {% if hover %}hover:border-gray-300 hover:bg-gray-50{% endif %}
+  {% endcase %}
+{% endcapture %}
+
+{% capture paddingClasses %}
+  {% case padding %}
+    {% when 'sm' %}
+      p-4
+    {% when 'md' %}
+      p-6
+    {% when 'lg' %}
+      p-8
+  {% endcase %}
+{% endcapture %}
+
+<div class="{{ baseClasses | strip }} {{ variantClasses | strip }} {{ include.class }}">
+  {% if include.title or include.subtitle or include.icon %}
+    <div class="{{ paddingClasses | strip }} {% if include.content or include.footer %}border-b border-gray-100{% endif %} {{ include.headerClass }}">
+      <div class="flex items-start">
+        {% if include.icon %}
+          <div class="flex-shrink-0 mr-4">
+            {{ include.icon }}
+          </div>
+        {% endif %}
+        <div class="flex-1">
+          {% if include.title %}
+            <h3 class="text-lg font-semibold text-gray-900">{{ include.title }}</h3>
+          {% endif %}
+          {% if include.subtitle %}
+            <p class="mt-1 text-sm text-gray-600">{{ include.subtitle }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  
+  {% if include.content %}
+    <div class="{{ paddingClasses | strip }} {{ include.bodyClass }}">
+      {{ include.content }}
+    </div>
+  {% endif %}
+  
+  {% if include.footer %}
+    <div class="{{ paddingClasses | strip }} bg-gray-50 border-t border-gray-100 {{ include.footerClass }}">
+      {{ include.footer }}
+    </div>
+  {% endif %}
+</div>

@@ -1,0 +1,113 @@
+{% comment %}
+  Dialog/Modal Component
+  Usage: {% include ui/dialog.html id="myDialog" title="Dialog Title" content="Dialog content" %}
+  
+  Parameters:
+  - id: Unique dialog ID (required)
+  - title: Dialog title (optional)
+  - content: Dialog content (required)
+  - footer: Dialog footer content (optional)
+  - size: sm, md, lg, xl (default: md)
+  - closeButton: true/false - Show close button (default: true)
+  - overlay: true/false - Show overlay (default: true)
+  - class: Additional CSS classes for dialog
+{% endcomment %}
+
+{% assign size = include.size | default: 'md' %}
+{% assign closeButton = include.closeButton | default: true %}
+{% assign overlay = include.overlay | default: true %}
+
+{% capture sizeClasses %}
+  {% case size %}
+    {% when 'sm' %}
+      max-w-sm
+    {% when 'md' %}
+      max-w-md
+    {% when 'lg' %}
+      max-w-2xl
+    {% when 'xl' %}
+      max-w-4xl
+  {% endcase %}
+{% endcapture %}
+
+<div id="{{ include.id }}" 
+     class="dialog fixed inset-0 z-50 hidden"
+     x-data="{ open: false }"
+     x-show="open"
+     x-cloak>
+  
+  {% if overlay %}
+    <!-- Overlay -->
+    <div class="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity"
+         x-show="open"
+         x-transition:enter="ease-out duration-300"
+         x-transition:enter-start="opacity-0"
+         x-transition:enter-end="opacity-100"
+         x-transition:leave="ease-in duration-200"
+         x-transition:leave-start="opacity-100"
+         x-transition:leave-end="opacity-0"
+         @click="open = false"></div>
+  {% endif %}
+  
+  <!-- Dialog Panel -->
+  <div class="fixed inset-0 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-2xl w-full {{ sizeClasses | strip }} transform transition-all {{ include.class }}"
+         x-show="open"
+         x-transition:enter="ease-out duration-300"
+         x-transition:enter-start="opacity-0 scale-95"
+         x-transition:enter-end="opacity-100 scale-100"
+         x-transition:leave="ease-in duration-200"
+         x-transition:leave-start="opacity-100 scale-100"
+         x-transition:leave-end="opacity-0 scale-95"
+         @click.away="open = false">
+      
+      {% if include.title or closeButton %}
+        <!-- Header -->
+        <div class="flex items-center justify-between p-6 border-b border-gray-100">
+          {% if include.title %}
+            <h3 class="text-xl font-semibold text-gray-900">{{ include.title }}</h3>
+          {% endif %}
+          {% if closeButton %}
+            <button @click="open = false"
+                    class="p-2 rounded-lg hover:bg-gray-100 transition-colors">
+              <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          {% endif %}
+        </div>
+      {% endif %}
+      
+      <!-- Content -->
+      <div class="p-6">
+        {{ include.content }}
+      </div>
+      
+      {% if include.footer %}
+        <!-- Footer -->
+        <div class="p-6 bg-gray-50 rounded-b-2xl border-t border-gray-100">
+          {{ include.footer }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<!-- Dialog trigger helper script -->
+<script>
+  // Helper function to open dialog
+  window.openDialog = function(dialogId) {
+    const dialog = document.getElementById(dialogId);
+    if (dialog && dialog.__x) {
+      dialog.__x.$data.open = true;
+    }
+  }
+  
+  // Helper function to close dialog
+  window.closeDialog = function(dialogId) {
+    const dialog = document.getElementById(dialogId);
+    if (dialog && dialog.__x) {
+      dialog.__x.$data.open = false;
+    }
+  }
+</script>
