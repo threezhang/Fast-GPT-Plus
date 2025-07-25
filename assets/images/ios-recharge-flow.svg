@@ -53,7 +53,7 @@
   <!-- Step 3: Payment Processing -->
   <rect class="sub-box" x="150" y="300" width="320" height="80" rx="10" />
   <text x="310" y="335" text-anchor="middle" class="text-dark" font-weight="bold">支付处理中心</text>
-  <text x="310" y="360" text-anchor="middle" class="text-dark">订单验证 & 支付确认</text>
+  <text x="310" y="360" text-anchor="middle" class="text-dark">订单验证 &amp; 支付确认</text>
   
   <!-- Arrow 3 -->
   <path class="arrow" d="M310 380 L310 420" />
