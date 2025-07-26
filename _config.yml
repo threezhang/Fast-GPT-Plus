@@ -1,7 +1,7 @@
 # GitHub Pages 配置
 # theme: jekyll-theme-minimal  # 注释掉默认主题，使用自定义layout
-title: Fast-GPT-Plus - ChatGPT Plus iOS充值服务
-description: 野卡Bewildcard最佳替代方案，支付宝微信快充，5分钟搞定。官方iOS渠道，安全稳定，10万+用户信赖。
+title: ChatGPT代充服务 - 5分钟快速充值仅需158元 | 野卡跑路最佳替代
+description: 野卡WildCard跑路后的最佳ChatGPT代充方案。支持支付宝微信，5分钟快速充值ChatGPT Plus，仅需158元/月，比市场价便宜10元。10万+野卡用户的选择，iOS官方充值渠道。
 baseurl: "/Fast-GPT-Plus"  # GitHub仓库名
 url: "https://threezhang.github.io"  # GitHub Pages URL
 show_downloads: false
@@ -13,8 +13,8 @@ plugins:
   - jekyll-seo-tag
 
 # SEO优化
-tagline: ChatGPT Plus充值最便捷的解决方案
-keywords: "ChatGPT Plus充值,Bewildcard替代,野卡替代,iOS充值,支付宝充值,微信支付,GPT-4订阅,OpenAI充值"
+tagline: 野卡跑路后最佳ChatGPT代充服务 - 仅需158元/月
+keywords: "ChatGPT代充,ChatGPT代充服务,野卡跑路,wildcard跑路,ChatGPT Plus充值,ChatGPT充值158元,bewildcard替代,野卡替代方案,ChatGPT支付宝充值,ChatGPT微信充值,ChatGPT Plus 5分钟充值,野卡跑路怎么办"
 lang: zh-CN
 author:
   name: Fast-GPT-Plus Team
@@ -45,12 +45,12 @@ defaults:
 
 # 导航菜单
 navigation:
-  - title: 快速开始
+  - title: ChatGPT代充教程
     url: /quick-start/
-  - title: 野卡替代方案
+  - title: 野卡跑路替代方案
     url: /docs/bewildcard-alternative/
-  - title: 常见问题
-    url: /docs/payment-failure-solution/
+  - title: 代充常见问题
+    url: /faq/
 
 # URL设置
 permalink: pretty

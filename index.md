@@ -1,6 +1,10 @@
 ---
 layout: default
 permalink: /
+title: ChatGPT代充服务 - 5分钟快速充值，最低价158元 | 野卡跑路最佳替代
+description: 野卡WildCard跑路后的最佳ChatGPT代充方案。支持支付宝微信，5分钟快速充值ChatGPT Plus，仅需158元/月，比竞品便宜10元。10万+用户信赖的iOS官方充值渠道。
+keywords: ChatGPT代充,ChatGPT代充服务,野卡跑路替代,wildcard跑路,ChatGPT Plus充值,ChatGPT充值158元,bewildcard替代,ChatGPT支付宝充值,ChatGPT微信充值,ChatGPT Plus 5分钟充值
+author: Fast-GPT-Plus Team
 ---
 
 <!-- Hero Section -->
@@ -15,26 +19,26 @@ permalink: /
             <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <span class="text-sm font-medium">野卡最佳替代方案</span>
+            <span class="text-sm font-medium">野卡WildCard跑路后最佳替代方案</span>
         </div>
         
         <h1 class="text-4xl md:text-6xl font-light mb-6 tracking-tight"
             x-data 
             x-motion="{ animate: { opacity: [0, 1], y: [30, 0] }, duration: 0.8, delay: 0.1 }">
-            ChatGPT Plus<br>
-            <span class="font-semibold">快速充值指南</span>
+            ChatGPT Plus代充<br>
+            <span class="font-semibold">5分钟充值 仅需¥158</span>
         </h1>
         <p class="text-xl md:text-2xl mb-8 opacity-90 font-light max-w-3xl mx-auto"
            x-data 
            x-motion="{ animate: { opacity: [0, 1], y: [30, 0] }, duration: 0.8, delay: 0.2 }">
-            通过iOS官方渠道，5分钟完成充值<br>
-            安全、稳定、便捷的充值解决方案
+            野卡WildCard/Bewildcard跑路后的最佳ChatGPT代充方案<br>
+            支付宝微信支付，比其他代充平台便宜10元
         </p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center"
              x-data 
              x-motion="{ animate: { opacity: [0, 1], y: [30, 0] }, duration: 0.8, delay: 0.3 }">
-            {% include ui/button.html text="立即充值 ¥158/月" variant="primary" size="lg" href="https://go.fastgptplus.com" class="glass-button hover-lift" %}
+            {% include ui/button.html text="立即代充 ¥158/月（比市场价低10元）" variant="primary" size="lg" href="https://go.fastgptplus.com" class="glass-button hover-lift" %}
             
             <a href="{{ site.baseurl }}/quick-start/" class="inline-flex items-center justify-center font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border-2 border-gray-300 bg-transparent hover:bg-gray-50 text-gray-700 hover:border-gray-400 focus-visible:ring-gray-500 px-6 py-3 text-lg rounded-xl gap-2.5 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20">查看教程</a>
         </div>
@@ -136,11 +140,44 @@ permalink: /
 
         <!-- Main Content Area -->
         <div class="lg:col-span-2 space-y-8">
+            <!-- 野卡用户专属提示 -->
+            <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-300 rounded-xl p-6 mb-8 scroll-fade">
+                <h3 class="text-xl font-semibold text-amber-900 mb-3 flex items-center">
+                    <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    野卡/WildCard/Bewildcard用户注意
+                </h3>
+                <p class="text-amber-800 mb-3">
+                    野卡已于2025年7月12日停止服务，无法再进行充值。我们提供更安全、更便宜的ChatGPT代充服务：
+                </p>
+                <ul class="space-y-2 text-amber-700">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span><strong>价格更低</strong>：仅需158元/月（市场价168元）</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span><strong>更加安全</strong>：iOS官方渠道，不会触发风控</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span><strong>无需虚拟卡</strong>：支持支付宝/微信直接支付</span>
+                    </li>
+                </ul>
+            </div>
+
             <!-- Step by Step Guide -->
             {% capture steps_content %}
             <h2 class="text-2xl font-semibold mb-8 flex items-center">
                 <img src="{{ site.baseurl }}/assets/icons/process-flow.png" class="h-8 mr-4" alt="Process">
-                三步完成ChatGPT Plus充值
+                三步完成ChatGPT Plus代充
             </h2>
             
             <!-- Step 1 -->
@@ -176,13 +213,14 @@ permalink: /
                         <h3 class="text-xl font-semibold mb-3">支付充值费用</h3>
                         <div class="bg-gray-50 p-6 rounded-xl mb-4">
                             <div class="flex items-center justify-between mb-4">
-                                <span class="text-lg font-medium text-gray-700">充值价格</span>
+                                <span class="text-lg font-medium text-gray-700">ChatGPT代充价格</span>
                                 <div class="text-right">
                                     <span class="text-3xl font-bold gradient-text">¥158</span>
                                     <span class="text-gray-600 text-sm">/月</span>
+                                    <span class="text-xs text-red-500 line-through block">市场价¥168</span>
                                 </div>
                             </div>
-                            <p class="text-gray-600 text-sm">比官方便宜20%，支持支付宝/微信支付</p>
+                            <p class="text-gray-600 text-sm">全网最低价！比其他代充平台便宜10元，支持支付宝/微信支付</p>
                         </div>
                         <p class="text-gray-700">使用支付宝或微信扫码支付即可。</p>
                     </div>
@@ -224,7 +262,8 @@ permalink: /
             <!-- Success indicator -->
             <div class="bg-gradient-to-r from-success/10 to-green-50 rounded-xl p-6 text-center">
                 <img src="{{ site.baseurl }}/assets/icons/success-check.png" class="w-16 h-16 mx-auto mb-4" alt="Success">
-                <p class="text-gray-800 font-medium">充值成功后，5分钟内生效！</p>
+                <p class="text-gray-800 font-medium mb-2">ChatGPT Plus代充成功后，5分钟内生效！</p>
+                <p class="text-sm text-gray-600">已为10万+野卡用户提供稳定的ChatGPT代充服务</p>
             </div>
             {% endcapture %}
             
@@ -271,7 +310,7 @@ permalink: /
                     </div>
                     <div>
                         <h3 class="text-lg font-semibold mb-2">价格优惠</h3>
-                        <p class="text-gray-600">利用汇率差价，仅需¥158/月，比官方价格节省20%以上。</p>
+                        <p class="text-gray-600">ChatGPT代充仅需¥158/月，比其他代充平台（¥168）便宜10元，全网最低价。</p>
                     </div>
                 </div>
                 {% endcapture %}
