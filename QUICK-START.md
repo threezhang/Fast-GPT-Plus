@@ -9,7 +9,7 @@ permalink: /quick-start/
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <!-- Hero Section -->
     <div class="text-center mb-12 scroll-fade">
-        <h1 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
             ⚡ ChatGPT Plus代充教程 - 仅需¥158/月
         </h1>
         <p class="text-xl text-gray-700 max-w-3xl mx-auto mb-4">
@@ -43,7 +43,7 @@ permalink: /quick-start/
         
         <!-- Step 1 -->
         <div class="relative flex items-start mb-12 scroll-fade">
-            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-neon-blue to-neon-purple text-white rounded-full flex items-center justify-center font-bold text-xl z-10 shadow-neon">
+            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 text-white rounded-full flex items-center justify-center font-bold text-xl z-10 shadow-lg">
                 1
             </div>
             <div class="ml-8 flex-1">
@@ -53,16 +53,15 @@ permalink: /quick-start/
                 </p>
                 {% include ui/button.html 
                   text="go.fastgptplus.com" 
-                  variant="neon" 
+                  variant="primary" 
                   size="lg" 
                   href="https://go.fastgptplus.com"
                   class="mb-4"
-                  effect="glow"
                   icon='<svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round"/></svg>'
                   iconPosition="right" %}
-                <div class="glass-modern p-4 border-l-4 border-neon-cyan rounded-xl">
+                <div class="bg-blue-50 p-4 border-l-4 border-blue-500 rounded-lg">
                     <p class="text-sm text-gray-700">
-                        <span class="text-neon-cyan font-semibold">💡 提示：</span>这是我们的官方充值网站，安全可靠，支持支付宝/微信支付
+                        <span class="text-blue-700 font-semibold">💡 提示：</span>这是我们的官方充值网站，安全可靠，支持支付宝/微信支付
                     </p>
                 </div>
             </div>
@@ -70,20 +69,20 @@ permalink: /quick-start/
 
         <!-- Step 2 -->
         <div class="relative flex items-start mb-12 scroll-fade">
-            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-aurora-start to-aurora-end text-white rounded-full flex items-center justify-center font-bold text-xl z-10 shadow-aurora">
+            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl z-10 shadow-lg">
                 2
             </div>
             <div class="ml-8 flex-1">
                 <h3 class="text-2xl font-semibold mb-3">选择ChatGPT代充套餐</h3>
                 {% capture pricing_content %}
-                <div class="glass-modern glow-card p-6 rounded-2xl">
+                <div class="bg-white border border-gray-200 shadow-md hover:shadow-lg transition-shadow p-6 rounded-xl">
                     <div class="flex items-center justify-between mb-4">
                         <div>
                             <h4 class="text-xl font-semibold text-gray-800">ChatGPT Plus 代充服务</h4>
                             <p class="text-gray-600">野卡跑路后最佳替代方案</p>
                         </div>
                         <div class="text-right">
-                            <p class="text-3xl font-bold text-gradient-animated">¥158</p>
+                            <p class="text-3xl font-bold text-gray-900">¥158</p>
                             <p class="text-sm text-gray-600 line-through">市场价¥168</p>
                             <p class="text-xs text-red-600 font-bold">省¥10/月</p>
                         </div>
@@ -119,7 +118,7 @@ permalink: /quick-start/
 
         <!-- Step 3 -->
         <div class="relative flex items-start mb-12 scroll-fade">
-            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-neon-green to-success text-white rounded-full flex items-center justify-center font-bold text-xl z-10 shadow-neon">
+            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-full flex items-center justify-center font-bold text-xl z-10 shadow-lg">
                 3
             </div>
             <div class="ml-8 flex-1">
@@ -146,7 +145,7 @@ permalink: /quick-start/
 
         <!-- Step 4 -->
         <div class="relative flex items-start scroll-fade">
-            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-accent-neon to-accent-aurora text-white rounded-full flex items-center justify-center font-bold text-xl z-10 animate-glow-pulse">
+            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl z-10">
                 ✓
             </div>
             <div class="ml-8 flex-1">
@@ -154,7 +153,7 @@ permalink: /quick-start/
                 <p class="text-gray-700 mb-4">
                     支付成功后，填写您的 ChatGPT 账号邮箱，系统会在 5 分钟内完成充值
                 </p>
-                <div class="glass-modern p-4 border-l-4 border-neon-green rounded-xl">
+                <div class="bg-green-50 p-4 border-l-4 border-green-500 rounded-lg">
                     <p class="text-sm text-gray-700">
                         <span class="text-neon-green font-semibold">✅ 成功：</span>充值成功后，您会收到邮件通知，即可登录 ChatGPT 使用 Plus 功能
                     </p>
@@ -203,11 +202,10 @@ permalink: /quick-start/
     <div class="text-center">
         {% include ui/button.html 
           text="立即开始ChatGPT代充 - ¥158/月" 
-          variant="aurora" 
+          variant="primary" 
           size="lg" 
           href="https://go.fastgptplus.com"
-          class="hover-lift"
-          effect="ripple"
+          class="hover:-translate-y-1 transition-transform"
           icon='<svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round"/></svg>' %}
         
         <p class="text-gray-600 mt-4">
